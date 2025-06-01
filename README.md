@@ -8,7 +8,7 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 🧰 Tools & Technologies I Use
 
-### 💻 Languages & Frameworks
+### 💻 Languages, Frameworks & Libraries
 <p>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="32" height="32" alt="C" title="C" aria-label="C">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="32" height="32" alt="C++" title="C++" aria-label="C++">
