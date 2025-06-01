@@ -93,13 +93,13 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 📂 Latest Projects
 - [Portals](https://havocspage.net/projects.html#portals): A custom game engine inspired by Doom, currently in development and intended for a future game project
-- [havIDE](https://havocspage.net/projects.html#havIDE): My own integrated development environment (IDE) built specifically for managing and working on C++ projects
-
-{toolsSection}
+- [havIDE](https://havocspage.net/projects.html#havIDE): An integrated development environment (IDE), currently in development, designed specifically for managing and working on C++ projects
 
 ## 📰 Latest News
 
 {newsSection}
+
+{toolsSection}
 
 ---
 
