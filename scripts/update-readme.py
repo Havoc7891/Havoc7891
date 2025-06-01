@@ -42,6 +42,7 @@ def generateReadme():
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" width="32" height="32" alt="Angular" title="Angular" aria-label="Angular">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="32" height="32" alt="NodeJS" title="NodeJS" aria-label="NodeJS">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="32" height="32" alt="Express" title="Express" aria-label="Express">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sdl/sdl-original.svg" width="32" height="32" alt="SDL" title="SDL" aria-label="SDL">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="32" height="32" alt="PHP" title="PHP" aria-label="PHP">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="32" height="32" alt="Python" title="Python" aria-label="Python">
 </p>
@@ -53,6 +54,7 @@ def generateReadme():
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="32" height="32" alt="MySQL" title="MySQL" aria-label="MySQL">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" width="32" height="32" alt="MariaDB" title="MariaDB" aria-label="MariaDB">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg" width="32" height="32" alt="MS SQL Server" title="MS SQL Server" aria-label="MS SQL Server">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="32" height="32" alt="Apache" title="Apache" aria-label="Apache">
 
 </p>
 
@@ -70,6 +72,7 @@ def generateReadme():
     <img src="https://cdn.simpleicons.org/cplusplusbuilder/e62431" width="32" height="32" alt="C++ Builder" title="C++ Builder" aria-label="C++ Builder">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg" width="32" height="32" alt="CMake" title="CMake" aria-label="CMake">
     <img src="https://cdn.simpleicons.org/notepadplusplus/90e59a" width="32" height="32" alt="Notepad++" title="Notepad++" aria-label="Notepad++">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" width="32" height="32" alt="PyCharm" title="PyCharm" aria-label="PyCharm">
 </p>
 
 ### 🔧 Utilities & Testing
@@ -79,6 +82,7 @@ def generateReadme():
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" width="32" height="32" alt="Postman" title="Postman" aria-label="Postman">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" width="32" height="32" alt="Photoshop" title="Photoshop" aria-label="Photoshop">
     <img src="https://avatars.githubusercontent.com/u/11067286?s=200&v=4" width="32" height="32" alt="Paint.NET" title="Paint.NET" aria-label="Paint.NET">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" width="32" height="32" alt="Premiere Pro" title="Premiere Pro" aria-label="Premiere Pro">
 </p>
 """
 
