@@ -4,7 +4,17 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 📂 Latest Projects
 - [Portals](https://havocspage.net/projects.html#portals): A custom game engine inspired by Doom, currently in development and intended for a future game project
-- [havIDE](https://havocspage.net/projects.html#havIDE): My own integrated development environment (IDE) built specifically for managing and working on C++ projects
+- [havIDE](https://havocspage.net/projects.html#havIDE): An integrated development environment (IDE), currently in development, designed specifically for managing and working on C++ projects
+
+## 📰 Latest News
+
+<!-- Latest News - Start -->
+- 05/31/2025 - [Automating My GitHub Profile README with RSS, Python, and a GitHub Action](https://www.havocspage.net/articles/2025-05-31.html)
+- 05/28/2025 - [Website and Project Updates](https://www.havocspage.net/articles/2025-05-28.html)
+- 04/28/2025 - [Second Video of My Doom-Style Map Editor Released on YouTube and a Peek at My C++ IDE](https://www.havocspage.net/articles/2025-04-28.html)
+- 03/02/2025 - [havGSD Released](https://www.havocspage.net/articles/2025-03-02.html)
+- 02/22/2025 - [The Pushing Point Released (Updated: February 22)](https://www.havocspage.net/articles/2025-02-20.html)
+<!-- Latest News - End -->
 
 ## 🧰 Tools & Technologies I Use
 
@@ -66,16 +76,6 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" width="32" height="32" alt="Premiere Pro" title="Premiere Pro" aria-label="Premiere Pro">
 </p>
 
-
-## 📰 Latest News
-
-<!-- Latest News - Start -->
-- 05/31/2025 - [Automating My GitHub Profile README with RSS, Python, and a GitHub Action](https://www.havocspage.net/articles/2025-05-31.html)
-- 05/28/2025 - [Website and Project Updates](https://www.havocspage.net/articles/2025-05-28.html)
-- 04/28/2025 - [Second Video of My Doom-Style Map Editor Released on YouTube and a Peek at My C++ IDE](https://www.havocspage.net/articles/2025-04-28.html)
-- 03/02/2025 - [havGSD Released](https://www.havocspage.net/articles/2025-03-02.html)
-- 02/22/2025 - [The Pushing Point Released (Updated: February 22)](https://www.havocspage.net/articles/2025-02-20.html)
-<!-- Latest News - End -->
 
 ---
 
