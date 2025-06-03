@@ -36,7 +36,7 @@ jobs:
           REPO="${{ github.repository }}"
           BRANCH="${{ github.ref_name }}"
           FILE="README.md"
-          COMMITMESSAGE="Updated README"
+          COMMITMESSAGE="Update README"
 
           LOCALCONTENT=$(base64 -w 0 updated-readme.md)
 
