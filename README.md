@@ -23,6 +23,7 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="32" height="32" alt="C" title="C" aria-label="C">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="32" height="32" alt="C++" title="C++" aria-label="C++">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="32" height="32" alt="C#" title="C#" aria-label="C#">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" width="32" height="32" alt=".NET" title=".NET" aria-label=".NET">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" width="32" height="32" alt=".NET Core" title=".NET Core" aria-label=".NET Core">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blazor/blazor-original.svg" width="32" height="32" alt="Blazor" title="Blazor" aria-label="Blazor">
     <img src="https://raw.githubusercontent.com/MudBlazor/MudBlazor/5509f5175c9df0f97069b6014b9dd41276ded219/content/MudBlazor.svg" width="32" height="32" alt="MudBlazor" title="MudBlazor" aria-label="MudBlazor">
@@ -30,10 +31,13 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="32" height="32" alt="CSS3" title="CSS3" aria-label="CSS3">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="32" height="32" alt="JavaScript" title="JavaScript" aria-label="JavaScript">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="32" height="32" alt="TypeScript" title="TypeScript" aria-label="TypeScript">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" width="32" height="32" alt="JQuery" title="JQuery" aria-label="JQuery">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" width="32" height="32" alt="Angular" title="Angular" aria-label="Angular">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rxjs/rxjs-original.svg" width="32" height="32" alt="RxJS" title="RxJS" aria-label="RxJS">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="32" height="32" alt="NodeJS" title="NodeJS" aria-label="NodeJS">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="32" height="32" alt="Express" title="Express" aria-label="Express">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sdl/sdl-original.svg" width="32" height="32" alt="SDL" title="SDL" aria-label="SDL">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opengl/opengl-original.svg" width="32" height="32" alt="OpenGL" title="OpenGL" aria-label="OpenGL">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="32" height="32" alt="PHP" title="PHP" aria-label="PHP">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="32" height="32" alt="Python" title="Python" aria-label="Python">
 </p>
@@ -41,9 +45,11 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 ### ☁️ Cloud, DevOps & Backend
 <p>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="32" height="32" alt="Azure" title="Azure" aria-label="Azure">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg" width="32" height="32" alt="Azure DevOps" title="Azure DevOps" aria-label="Azure DevOps">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="32" height="32" alt="Git" title="Git" aria-label="Git">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="32" height="32" alt="MySQL" title="MySQL" aria-label="MySQL">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" width="32" height="32" alt="MariaDB" title="MariaDB" aria-label="MariaDB">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg" width="32" height="32" alt="Azure SQL Database" title="Azure SQL Database" aria-label="Azure SQL Database">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg" width="32" height="32" alt="MS SQL Server" title="MS SQL Server" aria-label="MS SQL Server">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="32" height="32" alt="Apache" title="Apache" aria-label="Apache">
 
@@ -74,6 +80,15 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" width="32" height="32" alt="Photoshop" title="Photoshop" aria-label="Photoshop">
     <img src="https://avatars.githubusercontent.com/u/11067286?s=200&v=4" width="32" height="32" alt="Paint.NET" title="Paint.NET" aria-label="Paint.NET">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" width="32" height="32" alt="Premiere Pro" title="Premiere Pro" aria-label="Premiere Pro">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-original.svg" width="32" height="32" alt="FileZilla" title="FileZilla" aria-label="FileZilla">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="32" height="32" alt="Bash" title="Bash" aria-label="Bash">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg" width="32" height="32" alt="PowerShell" title="PowerShell" aria-label="PowerShell">
+</p>
+
+### ⚙️ Operating Systems
+<p>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="32" height="32" alt="Linux" title="Linux" aria-label="Linux">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows11/windows11-original.svg" width="32" height="32" alt="Windows" title="Windows" aria-label="Windows">
 </p>
 
 
