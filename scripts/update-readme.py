@@ -1,7 +1,7 @@
 import feedparser
 from datetime import datetime
 
-FEEDURL = "https://www.havocspage.net/rss.xml"
+FEEDURL = "https://havoc.de/rss.xml"
 MAXENTRIES = 5
 
 STARTMARKER = "<!-- Latest News - Start -->"
