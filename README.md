@@ -9,11 +9,11 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 ## 📰 Latest News
 
 <!-- Latest News - Start -->
-- 05/31/2025 - [Automating My GitHub Profile README with RSS, Python, and a GitHub Action](https://www.havocspage.net/articles/2025-05-31.html)
-- 05/28/2025 - [Website and Project Updates](https://www.havocspage.net/articles/2025-05-28.html)
-- 04/28/2025 - [Second Video of My Doom-Style Map Editor Released on YouTube and a Peek at My C++ IDE](https://www.havocspage.net/articles/2025-04-28.html)
-- 03/02/2025 - [havGSD Released](https://www.havocspage.net/articles/2025-03-02.html)
-- 02/22/2025 - [The Pushing Point Released (Updated: February 22)](https://www.havocspage.net/articles/2025-02-20.html)
+- 06/19/2025 - [New Domain, New Name, and Projects Page Update](https://havoc.de/articles/2025-06-19.html)
+- 05/31/2025 - [Automating My GitHub Profile README with RSS, Python, and a GitHub Action](https://havoc.de/articles/2025-05-31.html)
+- 05/28/2025 - [Website and Project Updates](https://havoc.de/articles/2025-05-28.html)
+- 04/28/2025 - [Second Video of My Doom-Style Map Editor Released on YouTube and a Peek at My C++ IDE](https://havoc.de/articles/2025-04-28.html)
+- 03/02/2025 - [havGSD Released](https://havoc.de/articles/2025-03-02.html)
 <!-- Latest News - End -->
 
 ## 🧰 Tools & Technologies I Use
