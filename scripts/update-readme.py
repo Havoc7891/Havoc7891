@@ -35,7 +35,7 @@ def generateReadme():
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" width="32" height="32" alt=".NET" title=".NET" aria-label=".NET">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" width="32" height="32" alt=".NET Core" title=".NET Core" aria-label=".NET Core">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blazor/blazor-original.svg" width="32" height="32" alt="Blazor" title="Blazor" aria-label="Blazor">
-    <img src="https://raw.githubusercontent.com/MudBlazor/MudBlazor/5509f5175c9df0f97069b6014b9dd41276ded219/content/MudBlazor.svg" width="32" height="32" alt="MudBlazor" title="MudBlazor" aria-label="MudBlazor">
+    <img src="icons/MudBlazor.svg" width="32" height="32" alt="MudBlazor" title="MudBlazor" aria-label="MudBlazor">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="32" height="32" alt="HTML5" title="HTML5" aria-label="HTML5">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="32" height="32" alt="CSS3" title="CSS3" aria-label="CSS3">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="32" height="32" alt="JavaScript" title="JavaScript" aria-label="JavaScript">
@@ -68,6 +68,7 @@ def generateReadme():
 ### 🎨 Frontend Styling
 <p>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="32" height="32" alt="Tailwind CSS" title="Tailwind CSS" aria-label="Tailwind CSS">
+    <img src="icons/daisyUI.svg" width="32" height="32" alt="daisyUI" title="daisyUI" aria-label="daisyUI">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="32" height="32" alt="Bootstrap" title="Bootstrap" aria-label="Bootstrap">
 </p>
 
@@ -75,7 +76,7 @@ def generateReadme():
 <p>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg" width="32" height="32" alt="Visual Studio" title="Visual Studio" aria-label="Visual Studio">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="32" height="32" alt="Visual Studio Code" title="Visual Studio Code" aria-label="Visual Studio Code">
-    <img src="https://raw.githubusercontent.com/eranif/codelite/bac35a37c42ff75f7ebfc9c9b9889ca9e5723eed/svgs/dark-theme/codelite-logo.svg" width="32" height="32" alt="CodeLite" title="CodeLite" aria-label="CodeLite">
+    <img src="icons/CodeLite.svg" width="32" height="32" alt="CodeLite" title="CodeLite" aria-label="CodeLite">
     <img src="https://cdn.simpleicons.org/cplusplusbuilder/e62431" width="32" height="32" alt="C++ Builder" title="C++ Builder" aria-label="C++ Builder">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg" width="32" height="32" alt="CMake" title="CMake" aria-label="CMake">
     <img src="https://cdn.simpleicons.org/notepadplusplus/90e59a" width="32" height="32" alt="Notepad++" title="Notepad++" aria-label="Notepad++">
@@ -85,10 +86,10 @@ def generateReadme():
 ### 🔧 Utilities & Testing
 <p>
     <img src="https://cdn.simpleicons.org/phpmyadmin/6c78af" width="32" height="32" alt="phpMyAdmin" title="phpMyAdmin" aria-label="phpMyAdmin">
-    <img src="https://raw.githubusercontent.com/danmar/cppcheck/f28aeaee431f4d1ebb5cc75abd80e3c943fe486f/gui/cppcheck-gui.svg" width="32" height="32" alt="Cppcheck" title="Cppcheck" aria-label="Cppcheck">
+    <img src="icons/Cppcheck.svg" width="32" height="32" alt="Cppcheck" title="Cppcheck" aria-label="Cppcheck">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" width="32" height="32" alt="Postman" title="Postman" aria-label="Postman">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" width="32" height="32" alt="Photoshop" title="Photoshop" aria-label="Photoshop">
-    <img src="https://avatars.githubusercontent.com/u/11067286?s=200&v=4" width="32" height="32" alt="Paint.NET" title="Paint.NET" aria-label="Paint.NET">
+    <img src="icons/Paint.NET.png" width="32" height="32" alt="Paint.NET" title="Paint.NET" aria-label="Paint.NET">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" width="32" height="32" alt="Premiere Pro" title="Premiere Pro" aria-label="Premiere Pro">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-original.svg" width="32" height="32" alt="FileZilla" title="FileZilla" aria-label="FileZilla">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="32" height="32" alt="Bash" title="Bash" aria-label="Bash">
