@@ -68,3 +68,42 @@ jobs:
             -H "Accept: application/vnd.github.v3+json" \
             https://api.github.com/repos/$REPO/contents/$FILE \
             -d @-
+
+  cleanup-cache:
+    runs-on: ubuntu-latest
+    needs: update-readme
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - name: Install GitHub CLI
+        run: |
+          type -p gh >/dev/null || (
+            type -p curl >/dev/null || sudo apt-get update -y && sudo apt-get install -y curl
+            curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+            sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
+            echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+            sudo apt-get update -y
+            sudo apt-get install -y gh
+          )
+
+      - name: Authenticate GitHub CLI
+        env:
+          GHTOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: echo "${GHTOKEN}" | gh auth login --with-token
+
+      - name: Delete caches >= 3 days
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          cutoff=$(date -d "-3 days" +%s)
+          gh api --paginate repos/$REPO/actions/caches \
+            --jq '.actions_caches[] | "\(.id) \(.last_accessed_at)"' | \
+          while read -r id last_accessed; do
+            ts=$(date -d "$last_accessed" +%s)
+            if [ "$ts" -le "$cutoff" ]; then
+              echo "Deleting cache id $id (last accessed $last_accessed)"
+              gh api --method DELETE repos/$REPO/actions/caches/$id
+            fi
+          done
