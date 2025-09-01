@@ -9,11 +9,7 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 ## 📰 Latest News
 
 <!-- Latest News - Start -->
-- 08/26/2025 - [Times of Darkness Re-Released](https://havoc.de/articles/2025-08-26.html)
-- 08/24/2025 - [havCurCtr Released and Projects Page Update](https://havoc.de/articles/2025-08-24.html)
-- 07/27/2025 - [One Year with Duolingo - Is It Actually Effective?](https://havoc.de/articles/2025-07-27.html)
-- 07/07/2025 - [Minor Website Updates](https://havoc.de/articles/2025-07-07.html)
-- 06/30/2025 - [Third Video of My Doom-Style Map Editor Released on YouTube](https://havoc.de/articles/2025-06-30.html)
+
 <!-- Latest News - End -->
 
 ## 🧰 Tools & Technologies I Use
