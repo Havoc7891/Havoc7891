@@ -76,6 +76,7 @@ def generateReadme():
 <p>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg" width="32" height="32" alt="Visual Studio" title="Visual Studio" aria-label="Visual Studio">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="32" height="32" alt="Visual Studio Code" title="Visual Studio Code" aria-label="Visual Studio Code">
+    <img src="icons/CopilotStudio.svg" width="32" height="32" alt="Microsoft Copilot Studio" title="Microsoft Copilot Studio" aria-label="Microsoft Copilot Studio">
     <img src="icons/CodeLite.svg" width="32" height="32" alt="CodeLite" title="CodeLite" aria-label="CodeLite">
     <img src="https://cdn.simpleicons.org/cplusplusbuilder/e62431" width="32" height="32" alt="C++ Builder" title="C++ Builder" aria-label="C++ Builder">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg" width="32" height="32" alt="CMake" title="CMake" aria-label="CMake">
