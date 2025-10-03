@@ -83,6 +83,7 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" width="32" height="32" alt="Photoshop" title="Photoshop" aria-label="Photoshop">
     <img src="icons/Paint.NET.png" width="32" height="32" alt="Paint.NET" title="Paint.NET" aria-label="Paint.NET">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" width="32" height="32" alt="Premiere Pro" title="Premiere Pro" aria-label="Premiere Pro">
+    <img src="icons/Clipchamp.svg" width="32" height="32" alt="Microsoft Clipchamp" title="Microsoft Clipchamp" aria-label="Microsoft Clipchamp">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-original.svg" width="32" height="32" alt="FileZilla" title="FileZilla" aria-label="FileZilla">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="32" height="32" alt="Bash" title="Bash" aria-label="Bash">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg" width="32" height="32" alt="PowerShell" title="PowerShell" aria-label="PowerShell">
