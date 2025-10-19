@@ -76,34 +76,50 @@ jobs:
       actions: write
       contents: read
     steps:
-      - name: Install GitHub CLI
-        run: |
-          type -p gh >/dev/null || (
-            type -p curl >/dev/null || sudo apt-get update -y && sudo apt-get install -y curl
-            curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
-            sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
-            echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-            sudo apt-get update -y
-            sudo apt-get install -y gh
-          )
-
-      - name: Authenticate GitHub CLI
+      - name: Delete caches >= 3 days old
         env:
-          GHTOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: echo "${GHTOKEN}" | gh auth login --with-token
-
-      - name: Delete caches >= 3 days
-        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
+
+          echo "Fetching caches for $REPO..."
           cutoff=$(date -d "-3 days" +%s)
-          gh api --paginate repos/$REPO/actions/caches \
-            --jq '.actions_caches[] | "\(.id) \(.last_accessed_at)"' | \
-          while read -r id last_accessed; do
+          cutoff_readable=$(date -d "@$cutoff" --iso-8601=seconds)
+          echo "Cutoff timestamp: $cutoff ($cutoff_readable)"
+          echo "Deleting caches last accessed on or before: $cutoff_readable"
+          echo ""
+
+          caches=$(gh api --paginate "repos/$REPO/actions/caches" --jq '.actions_caches[]')
+
+          if [ -z "$caches" ]; then
+            echo "No caches found."
+            exit 0
+          fi
+
+          deleted=0
+          kept=0
+
+          while IFS= read -r cache; do
+            id=$(echo "$cache" | jq -r '.id')
+            last_accessed=$(echo "$cache" | jq -r '.last_accessed_at')
             ts=$(date -d "$last_accessed" +%s)
+            age_seconds=$(( $(date +%s) - ts ))
+            age_days=$(( age_seconds / 86400 ))
+            age_hours=$(( (age_seconds % 86400) / 3600 ))
+
             if [ "$ts" -le "$cutoff" ]; then
-              echo "Deleting cache id $id (last accessed $last_accessed)"
-              gh api --method DELETE repos/$REPO/actions/caches/$id
+              echo "Deleting cache id $id (last accessed $last_accessed, ${age_days}d ${age_hours}h old)"
+              if gh api --method DELETE "repos/$REPO/actions/caches/$id"; then
+                deleted=$((deleted + 1))
+              else
+                echo "Failed to delete cache $id"
+              fi
+            else
+              echo "Keeping cache id $id (last accessed $last_accessed, ${age_days}d ${age_hours}h old)"
+              kept=$((kept + 1))
             fi
-          done
+          done < <(echo "$caches" | jq -c '.')
+
+          echo ""
+          echo "Cache cleanup completed. Deleted: $deleted, Kept: $kept"
