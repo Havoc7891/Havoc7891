@@ -70,6 +70,7 @@ def generateReadme():
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="32" height="32" alt="Tailwind CSS" title="Tailwind CSS" aria-label="Tailwind CSS">
     <img src="icons/daisyUI.svg" width="32" height="32" alt="daisyUI" title="daisyUI" aria-label="daisyUI">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="32" height="32" alt="Bootstrap" title="Bootstrap" aria-label="Bootstrap">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularmaterial/angularmaterial-original.svg" width="32" height="32" alt="Angular Material" title="Angular Material" aria-label="Angular Material">
 </p>
 
 ### 🧰 IDEs & Development Tools
