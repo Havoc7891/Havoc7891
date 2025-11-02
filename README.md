@@ -9,11 +9,11 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 ## 📰 Latest News
 
 <!-- Latest News - Start -->
+- 11/02/2025 - [Shadow Knights Development Update: Controller Support, Save Game Feature, and WinMerge Translation Work](https://havoc.de/articles/2025-11-02.html)
 - 10/16/2025 - [Shadow Knights Source Port - Preview Video Released on YouTube](https://havoc.de/articles/2025-10-16.html)
 - 10/10/2025 - [Windows Keyboard Layout "IntAltGr" Released](https://havoc.de/articles/2025-10-10.html)
 - 10/05/2025 - [Doom-Style Map Editor and Engine Progress Update](https://havoc.de/articles/2025-10-05.html)
 - 09/23/2025 - [havLightbox Version 0.3 Released](https://havoc.de/articles/2025-09-23.html)
-- 09/17/2025 - [More Old Projects (Re-)Released](https://havoc.de/articles/2025-09-17.html)
 <!-- Latest News - End -->
 
 ## 🧰 Tools & Technologies I Use
