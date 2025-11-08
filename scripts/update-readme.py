@@ -36,6 +36,7 @@ def generateReadme():
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" width="32" height="32" alt=".NET Core" title=".NET Core" aria-label=".NET Core">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blazor/blazor-original.svg" width="32" height="32" alt="Blazor" title="Blazor" aria-label="Blazor">
     <img src="icons/MudBlazor.svg" width="32" height="32" alt="MudBlazor" title="MudBlazor" aria-label="MudBlazor">
+    <img src="icons/wxWidgets.svg" width="32" height="32" alt="wxWidgets" title="wxWidgets" aria-label="wxWidgets">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="32" height="32" alt="HTML5" title="HTML5" aria-label="HTML5">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="32" height="32" alt="CSS3" title="CSS3" aria-label="CSS3">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="32" height="32" alt="JavaScript" title="JavaScript" aria-label="JavaScript">
@@ -121,6 +122,12 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 {newsSection}
 
 {toolsSection}
+
+## 📝 Attributions & Legal Notice
+
+Some icons and logos included in this repository are the property of their respective owners. They are used here **for identification and reference purposes only** under their respective open licenses or trademark policies. No affiliation or endorsement is implied.
+
+See [📄 icons/ATTRIBUTIONS.md](icons/ATTRIBUTIONS.md) for full attribution and license details.
 
 ---
 
