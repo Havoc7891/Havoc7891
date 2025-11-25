@@ -82,6 +82,8 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 <p>
     <img src="https://cdn.simpleicons.org/phpmyadmin/6c78af" width="32" height="32" alt="phpMyAdmin" title="phpMyAdmin" aria-label="phpMyAdmin">
     <img src="icons/Cppcheck.svg" width="32" height="32" alt="Cppcheck" title="Cppcheck" aria-label="Cppcheck">
+    <img src="icons/HxD.png" width="32" height="32" alt="HxD" title="HxD" aria-label="HxD">
+    <img src="icons/WinMerge.png" width="32" height="32" alt="WinMerge" title="WinMerge" aria-label="WinMerge">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" width="32" height="32" alt="Postman" title="Postman" aria-label="Postman">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" width="32" height="32" alt="Photoshop" title="Photoshop" aria-label="Photoshop">
     <img src="icons/Paint.NET.png" width="32" height="32" alt="Paint.NET" title="Paint.NET" aria-label="Paint.NET">
