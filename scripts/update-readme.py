@@ -1,3 +1,4 @@
+import hashlib
 import os
 import feedparser
 import requests
@@ -24,6 +25,7 @@ GITHUBLANGUAGECOLORS = {
     "PowerShell": "#012456",
     "Other": "#EDEDED",
 }
+LEGENDICONSFOLDER = "legend-icons"
 
 def getAggregatedLanguages(username: str) -> dict:
     token = os.getenv("GITHUB_TOKEN")
@@ -69,82 +71,151 @@ def getAggregatedLanguages(username: str) -> dict:
         for lang, count in langTotals.most_common()
     }
 
-def getDarkModeSafeColor(colorHex: str) -> str:
-    return (
-        f"color-mix(in srgb, {colorHex} 85%, white 15%)"
+def generateTopLanguagesSvg(languages: dict, colorMap: dict, filename: str):
+    if not languages:
+        svg = """<svg xmlns="http://www.w3.org/2000/svg" width="400" height="40" viewBox="0 0 400 40" role="img">
+  <title>Top Languages</title>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="14">
+    No language data
+  </text>
+</svg>
+"""
+        with open(filename, "w", encoding="utf-8") as file:
+            file.write(svg)
+        return
+
+    # Sort languages by percentage descending
+    items = sorted(languages.items(), key=lambda x: x[1], reverse=True)
+
+    # SVG layout
+    width = 700
+    height = 12
+    barX = 0
+    barY = 2
+    barHeight = 8
+    radius = barHeight / 2
+
+    currentX = barX
+
+    svgParts = []
+
+    svgParts.append(
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+        f'viewBox="0 0 {width} {height}" role="img">'
     )
+    svgParts.append("<title>Top Languages</title>")
+
+    # Clip path to get rounded ends for the whole stacked bar
+    svgParts.append("<defs>")
+    svgParts.append(
+        f'<clipPath id="barClip">'
+        f'<rect x="{barX}" y="{barY}" width="{width}" height="{barHeight}" '
+        f'rx="{radius}" ry="{radius}" />'
+        f'</clipPath>'
+    )
+    svgParts.append("</defs>")
+
+    # Group for stacked segments, clipped to rounded rect
+    svgParts.append(f'<g clip-path="url(#barClip)">')
+
+    totalPct = sum(p for _, p in items) or 1.0
+
+    for i, (lang, pct) in enumerate(items):
+        if pct <= 0:
+            continue
+
+        segmentWidth = width * (pct / totalPct)
+
+        # Ensure last segment ends exactly at bar width to avoid gaps from float rounding
+        if i == len(items) - 1:
+            segmentWidth = width - (currentX - barX)
+
+        color = colorMap.get(lang, "#999999")
+
+        svgParts.append(
+            f'<rect x="{currentX:.2f}" y="{barY}" width="{segmentWidth:.2f}" '
+            f'height="{barHeight}" fill="{color}" />'
+        )
+
+        currentX += segmentWidth
+
+    svgParts.append("</g>")
+    svgParts.append("</svg>")
+
+    with open(filename, "w", encoding="utf-8") as file:
+        file.write("\n".join(svgParts))
+
+def generateLegendCircleSvg(color: str, filename: str):
+    os.makedirs(LEGENDICONSFOLDER, exist_ok=True)
+
+    # SVG template
+    svgTemplate = f"""<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12">
+<circle cx="6" cy="6" r="5" fill="{color}" />
+</svg>
+"""
+
+    # Compute hash of the content
+    newHash = hashlib.sha256(svgTemplate.encode("utf-8")).hexdigest()
+
+    # If file exists, compare hash
+    if os.path.exists(filename):
+        with open(filename, "r", encoding="utf-8") as file:
+            existing = file.read()
+        existingHash = hashlib.sha256(existing.encode("utf-8")).hexdigest()
+
+        if existingHash == newHash:
+            # Cache hit: no need to rewrite file
+            return
+
+    # Cache miss: write new file
+    with open(filename, "w", encoding="utf-8") as file:
+        file.write(svgTemplate)
+
+def cleanupLegendIcons(currentLanguages: dict, directory: str):
+    if not os.path.isdir(directory):
+        return # Nothing to clean
+
+    # Create the set of expected filenames
+    expected = set()
+    for lang in currentLanguages:
+        safeName = lang.lower().replace("#", "sharp").replace("+", "plus")
+        expected.add(f"legend-{safeName}.svg")
+
+    # Walk through the folder and delete old ones
+    for filename in os.listdir(directory):
+        if filename.endswith(".svg") and filename.startswith("legend-"):
+            if filename not in expected:
+                os.remove(os.path.join(directory, filename))
 
 def buildLanguageSection(languages: dict, colorMap: dict):
     if not languages:
-        return """## 📊 Top Languages Across My Public GitHub Repositories\nCould not fetch language stats."""
+        return "## 📊 Top Languages Across My Public GitHub Repositories\nCould not fetch language stats."
 
-    # Sort languages by percentage descending
-    languages = dict(sorted(languages.items(), key=lambda x: x[1], reverse=True))
+    os.makedirs(LEGENDICONSFOLDER, exist_ok=True)
 
-    # Wrapper - Start
-    html = [
-        """## 📊 Top Languages Across My Public GitHub Repositories\n""",
-        """<div style="width: 100%; max-width: 700px; margin: 15px 0;">""",
+    # Generate / update the SVG file for the stacked bar
+    generateTopLanguagesSvg(languages, colorMap, "top-languages.svg")
+
+    # Markdown section embedding the SVG
+    lines = [
+        "## 📊 Top Languages Across My Public GitHub Repositories",
+        "",
+        "![Top Languages](top-languages.svg)",
+        "",
     ]
 
-    # Stacked Bar - Start
-    html.append(
-        f"""<style>"""
-        f""".stack-bar-bg {{"""
-        f"""background-color: #D1D9E0;"""
-        f"""}}"""
-        f"""@media (prefers-color-scheme: light) {{"""
-        f""".stack-bar-bg {{"""
-        f"""background-color: #D1D9E0;"""
-        f"""}}"""
-        f"""}}"""
-        f"""@media (prefers-color-scheme: dark) {{"""
-        f""".stack-bar-bg {{"""
-        f"""background-color: #3D444D;"""
-        f"""}}"""
-        f"""}}"""
-        f"""</style>"""
-        f"""<div class="stack-bar-bg" style="display: flex; height: 8px; border-radius: 7px; overflow: hidden; gap: 2px;">"""
-    )
+    # Generate / update legend
+    for lang, pct in sorted(languages.items(), key=lambda x: x[1], reverse=True):
+        color = colorMap.get(lang, "#999999")
+        safeName = lang.lower().replace("#", "sharp").replace("+", "plus")
+        iconFile = os.path.join(LEGENDICONSFOLDER, f"legend-{safeName}.svg")
+        generateLegendCircleSvg(color, iconFile)
+        webPath = iconFile.replace(os.sep, "/")
+        lines.append(f"<img src=\"{webPath}\" width=\"12\" height=\"12\"> **{lang}** {pct:.1f}%")
 
-    for i, (lang, pct) in enumerate(languages.items()):
-        baseColor = colorMap.get(lang, "#999999")
-        effectiveColor = getDarkModeSafeColor(baseColor)
+    cleanupLegendIcons(languages, LEGENDICONSFOLDER)
 
-        # Rounded left on first, rounded right on last
-        border = ""
-        if i == 0:
-            border = " border-radius: 7px 0 0 7px;"
-        elif i == len(languages) - 1:
-            border = " border-radius: 0 7px 7px 0;"
-
-        html.append(
-            f"""<div style="background: {effectiveColor}; width: {pct}%;{border}"></div>"""
-        )
-
-    html.append("</div>") # Stacked Bar - End
-
-    # Legend - Start
-    html.append(
-        """<div style="margin-top: 8px; display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px;">"""
-    )
-
-    for lang, pct in languages.items():
-        baseColor = colorMap.get(lang, "#999999")
-        effectiveColor = getDarkModeSafeColor(baseColor)
-
-        html.append(
-            f"""<span style="display: inline-flex; align-items: center; gap: 6px;">"""
-            f"""<span style="background-color: {effectiveColor}; width: 10px; height: 10px; border-radius: 50%;"></span>"""
-            f"""{lang}"""
-            f"""<span style="color: #9198A1">{pct:.1f}%</span>"""
-            f"""</span>"""
-        )
-
-    html.append("</div>") # Legend - End
-    html.append("</div>") # Wrapper - End
-
-    return "\n".join(html)
+    return "\n".join(lines)
 
 def fetchFeedEntries(feedUrl, maxEntries):
     feed = feedparser.parse(feedUrl)
