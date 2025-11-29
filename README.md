@@ -17,67 +17,24 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 ## 📊 Top Languages Across My Public GitHub Repositories
 
 <div style="width: 100%; max-width: 700px; margin: 15px 0;">
-    <style>
-        .stack-bar-bg {
-            background-color: #D1D9E0;
-        }
-        @media (prefers-color-scheme: light) {
-            .stack-bar-bg {
-                background-color: #D1D9E0;
-            }
-        }
-        @media (prefers-color-scheme: dark) {
-            .stack-bar-bg {
-                background-color: #3D444D;
-            }
-        }
-    </style>
-    <div class="stack-bar-bg" style="display: flex; height: 8px; border-radius: 7px; overflow: hidden; gap: 2px;">
-        <div style="background: color-mix(in srgb, #F34B7D 85%, white 15%); width: 87.02%; border-radius: 7px 0 0 7px;"></div>
-        <div style="background: color-mix(in srgb, #F1E05A 85%, white 15%); width: 5.33%;"></div>
-        <div style="background: color-mix(in srgb, #3572A5 85%, white 15%); width: 3.72%;"></div>
-        <div style="background: color-mix(in srgb, #563D7C 85%, white 15%); width: 1.82%;"></div>
-        <div style="background: color-mix(in srgb, #178600 85%, white 15%); width: 1.66%;"></div>
-        <div style="background: color-mix(in srgb, #064F8C 85%, white 15%); width: 0.26%;"></div>
-        <div style="background: color-mix(in srgb, #012456 85%, white 15%); width: 0.18%; border-radius: 0 7px 7px 0;"></div>
-    </div>
-    <div style="margin-top: 8px; display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px;">
-        <span style="display: inline-flex; align-items: center; gap: 6px;">
-            <span style="background-color: color-mix(in srgb, #F34B7D 85%, white 15%); width: 10px; height: 10px; border-radius: 50%;"></span>
-            C++
-            <span style="color: #9198A1">87.0%</span>
-        </span>
-        <span style="display: inline-flex; align-items: center; gap: 6px;">
-            <span style="background-color: color-mix(in srgb, #F1E05A 85%, white 15%); width: 10px; height: 10px; border-radius: 50%;"></span>
-            JavaScript
-            <span style="color: #9198A1">5.3%</span>
-        </span>
-        <span style="display: inline-flex; align-items: center; gap: 6px;">
-            <span style="background-color: color-mix(in srgb, #3572A5 85%, white 15%); width: 10px; height: 10px; border-radius: 50%;"></span>
-            Python
-            <span style="color: #9198A1">3.7%</span>
-        </span>
-        <span style="display: inline-flex; align-items: center; gap: 6px;">
-            <span style="background-color: color-mix(in srgb, #563D7C 85%, white 15%); width: 10px; height: 10px; border-radius: 50%;"></span>
-            CSS
-            <span style="color: #9198A1">1.8%</span>
-        </span>
-        <span style="display: inline-flex; align-items: center; gap: 6px;">
-            <span style="background-color: color-mix(in srgb, #178600 85%, white 15%); width: 10px; height: 10px; border-radius: 50%;"></span>
-            C#
-            <span style="color: #9198A1">1.7%</span>
-        </span>
-        <span style="display: inline-flex; align-items: center; gap: 6px;">
-            <span style="background-color: color-mix(in srgb, #064F8C 85%, white 15%); width: 10px; height: 10px; border-radius: 50%;"></span>
-            CMake
-            <span style="color: #9198A1">0.3%</span>
-        </span>
-        <span style="display: inline-flex; align-items: center; gap: 6px;">
-            <span style="background-color: color-mix(in srgb, #012456 85%, white 15%); width: 10px; height: 10px; border-radius: 50%;"></span>
-            PowerShell
-            <span style="color: #9198A1">0.2%</span>
-        </span>
-    </div>
+<style>.stack-bar-bg {background-color: #D1D9E0;}@media (prefers-color-scheme: light) {.stack-bar-bg {background-color: #D1D9E0;}}@media (prefers-color-scheme: dark) {.stack-bar-bg {background-color: #3D444D;}}</style><div class="stack-bar-bg" style="display: flex; height: 8px; border-radius: 7px; overflow: hidden; gap: 2px;">
+<div style="background: color-mix(in srgb, #F34B7D 85%, white 15%); width: 87.01%; border-radius: 7px 0 0 7px;"></div>
+<div style="background: color-mix(in srgb, #F1E05A 85%, white 15%); width: 5.33%;"></div>
+<div style="background: color-mix(in srgb, #3572A5 85%, white 15%); width: 3.74%;"></div>
+<div style="background: color-mix(in srgb, #563D7C 85%, white 15%); width: 1.82%;"></div>
+<div style="background: color-mix(in srgb, #178600 85%, white 15%); width: 1.66%;"></div>
+<div style="background: color-mix(in srgb, #064F8C 85%, white 15%); width: 0.26%;"></div>
+<div style="background: color-mix(in srgb, #012456 85%, white 15%); width: 0.18%; border-radius: 0 7px 7px 0;"></div>
+</div>
+<div style="margin-top: 8px; display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px;">
+<span style="display: inline-flex; align-items: center; gap: 6px;"><span style="background-color: color-mix(in srgb, #F34B7D 85%, white 15%); width: 10px; height: 10px; border-radius: 50%;"></span>C++<span style="color: #9198A1">87.0%</span></span>
+<span style="display: inline-flex; align-items: center; gap: 6px;"><span style="background-color: color-mix(in srgb, #F1E05A 85%, white 15%); width: 10px; height: 10px; border-radius: 50%;"></span>JavaScript<span style="color: #9198A1">5.3%</span></span>
+<span style="display: inline-flex; align-items: center; gap: 6px;"><span style="background-color: color-mix(in srgb, #3572A5 85%, white 15%); width: 10px; height: 10px; border-radius: 50%;"></span>Python<span style="color: #9198A1">3.7%</span></span>
+<span style="display: inline-flex; align-items: center; gap: 6px;"><span style="background-color: color-mix(in srgb, #563D7C 85%, white 15%); width: 10px; height: 10px; border-radius: 50%;"></span>CSS<span style="color: #9198A1">1.8%</span></span>
+<span style="display: inline-flex; align-items: center; gap: 6px;"><span style="background-color: color-mix(in srgb, #178600 85%, white 15%); width: 10px; height: 10px; border-radius: 50%;"></span>C#<span style="color: #9198A1">1.7%</span></span>
+<span style="display: inline-flex; align-items: center; gap: 6px;"><span style="background-color: color-mix(in srgb, #064F8C 85%, white 15%); width: 10px; height: 10px; border-radius: 50%;"></span>CMake<span style="color: #9198A1">0.3%</span></span>
+<span style="display: inline-flex; align-items: center; gap: 6px;"><span style="background-color: color-mix(in srgb, #012456 85%, white 15%); width: 10px; height: 10px; border-radius: 50%;"></span>PowerShell<span style="color: #9198A1">0.2%</span></span>
+</div>
 </div>
 
 ## 🧰 Tools & Technologies I Use
