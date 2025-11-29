@@ -1,13 +1,152 @@
+import os
 import feedparser
+import requests
 from datetime import datetime
+from collections import Counter
 
 FEEDURL = "https://havoc.de/rss.xml"
 MAXENTRIES = 5
+USERNAME = "Havoc7891"
+MINLANGUAGEPERCENT = 0.1 # Group all languages below this percentage under "Other"
+GITHUBLANGUAGECOLORS = {
+    "C": "#555555",
+    "C++": "#F34B7D",
+    "C#": "#178600",
+    "JavaScript": "#F1E05A",
+    "TypeScript": "#3178C6",
+    "HTML": "#E34C26",
+    "CSS": "#563D7C",
+    "Java": "#B07219",
+    "PHP": "#4F5D95",
+    "SQL": "#E38C00",
+    "Python": "#3572A5",
+    "CMake": "#064F8C",
+    "PowerShell": "#012456",
+    "Other": "#EDEDED",
+}
 
-STARTMARKER = "<!-- Latest News - Start -->"
-ENDMARKER = "<!-- Latest News - End -->"
+def getAggregatedLanguages(username: str) -> dict:
+    token = os.getenv("GITHUB_TOKEN")
+    if not token:
+        return {}
 
-def fetchFeedEntries(feedUrl, maxEntries=5):
+    headers = {"Authorization": f"Bearer {token}"}
+    reposUrl = f"https://api.github.com/users/{username}/repos"
+
+    repos = []
+    page = 1
+    while True:
+        resp = requests.get(reposUrl, headers=headers, params={"page": page, "per_page": 100})
+        if resp.status_code != 200:
+            break
+        data = resp.json()
+        if not data:
+            break
+        repos.extend(data)
+        page += 1
+
+    langTotals = Counter()
+
+    for repo in repos:
+        # Skip forked repositories
+        if repo.get("fork"):
+            continue
+
+        langUrl = repo.get("languages_url")
+        if not langUrl:
+            continue
+
+        langResp = requests.get(langUrl, headers=headers)
+        if langResp.status_code == 200:
+            langTotals.update(langResp.json())
+
+    totalBytes = sum(langTotals.values())
+    if totalBytes == 0:
+        return {}
+
+    return {
+        lang: round((count / totalBytes) * 100, 2)
+        for lang, count in langTotals.most_common()
+    }
+
+def getDarkModeSafeColor(colorHex: str) -> str:
+    return (
+        f"color-mix(in srgb, {colorHex} 85%, white 15%)"
+    )
+
+def buildLanguageSection(languages: dict, colorMap: dict):
+    if not languages:
+        return """## 📊 Top Languages Across My Public GitHub Repositories\nCould not fetch language stats."""
+
+    # Sort languages by percentage descending
+    languages = dict(sorted(languages.items(), key=lambda x: x[1], reverse=True))
+
+    # Wrapper - Start
+    html = [
+        """## 📊 Top Languages Across My Public GitHub Repositories\n""",
+        """<div style="width: 100%; max-width: 700px; margin: 15px 0;">""",
+    ]
+
+    # Stacked Bar - Start
+    html.append(
+        f"""    <style>
+        .stack-bar-bg {{
+            background-color: #D1D9E0;
+        }}
+        @media (prefers-color-scheme: light) {{
+            .stack-bar-bg {{
+                background-color: #D1D9E0;
+            }}
+        }}
+        @media (prefers-color-scheme: dark) {{
+            .stack-bar-bg {{
+                background-color: #3D444D;
+            }}
+        }}
+    </style>
+    <div class="stack-bar-bg" style="display: flex; height: 8px; border-radius: 7px; overflow: hidden; gap: 2px;">"""
+    )
+
+    for i, (lang, pct) in enumerate(languages.items()):
+        baseColor = colorMap.get(lang, "#999999")
+        effectiveColor = getDarkModeSafeColor(baseColor)
+
+        # Rounded left on first, rounded right on last
+        border = ""
+        if i == 0:
+            border = " border-radius: 7px 0 0 7px;"
+        elif i == len(languages) - 1:
+            border = " border-radius: 0 7px 7px 0;"
+
+        html.append(
+            f"""        <div style="background: {effectiveColor}; width: {pct}%;{border}"></div>"""
+        )
+
+    html.append("    </div>") # Stacked Bar - End
+
+    # Legend - Start
+    html.append(
+        """    <div style="margin-top: 8px; display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px;">"""
+    )
+
+    for lang, pct in languages.items():
+        baseColor = colorMap.get(lang, "#999999")
+        effectiveColor = getDarkModeSafeColor(baseColor)
+
+        html.append(
+            f"""        <span style="display: inline-flex; align-items: center; gap: 6px;">
+            <span style="background-color: {effectiveColor}; width: 10px; height: 10px; border-radius: 50%;"></span>
+            {lang}
+            <span style="color: #9198A1">{pct:.1f}%</span>
+        </span>"""
+        )
+
+    html.append("    </div>") # Legend - End
+    html.append("</div>") # Wrapper - End
+
+    return "\n".join(html)
+
+def fetchFeedEntries(feedUrl, maxEntries):
     feed = feedparser.parse(feedUrl)
     entries = feed.entries[:maxEntries]
     lines = []
@@ -21,8 +160,19 @@ def fetchFeedEntries(feedUrl, maxEntries=5):
     return "\n".join(lines)
 
 def generateReadme():
-    newsPosts = fetchFeedEntries(FEEDURL, MAXENTRIES)
-    newsSection = f"{STARTMARKER}\n{newsPosts}\n{ENDMARKER}"
+    newsSection = fetchFeedEntries(FEEDURL, MAXENTRIES)
+
+    languages = getAggregatedLanguages(USERNAME)
+
+    mainLanguages = {k: v for k, v in languages.items() if v >= MINLANGUAGEPERCENT}
+    otherTotal = sum(v for v in languages.values() if v < MINLANGUAGEPERCENT)
+
+    if otherTotal > 0:
+        mainLanguages["Other"] = round(otherTotal, 2)
+
+    languages = mainLanguages
+
+    languagesSection = buildLanguageSection(languages, GITHUBLANGUAGECOLORS)
 
     toolsSection = """\
 ## 🧰 Tools & Technologies I Use
@@ -123,13 +273,15 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 {newsSection}
 
+{languagesSection}
+
 {toolsSection}
 
 ## 📝 Attributions & Legal Notice
 
 Some icons and logos included in this repository are the property of their respective owners. They are used here **for identification and reference purposes only** under their respective open licenses or trademark policies. No affiliation or endorsement is implied.
 
-See [📄 icons/ATTRIBUTIONS.md](icons/ATTRIBUTIONS.md) for full attribution and license details.
+See [icons/ATTRIBUTIONS.md](icons/ATTRIBUTIONS.md) for full attribution and license details.
 
 ---
 
