@@ -89,22 +89,22 @@ def buildLanguageSection(languages: dict, colorMap: dict):
 
     # Stacked Bar - Start
     html.append(
-        f"""    <style>
-        .stack-bar-bg {{
-            background-color: #D1D9E0;
-        }}
-        @media (prefers-color-scheme: light) {{
-            .stack-bar-bg {{
-                background-color: #D1D9E0;
-            }}
-        }}
-        @media (prefers-color-scheme: dark) {{
-            .stack-bar-bg {{
-                background-color: #3D444D;
-            }}
-        }}
-    </style>
-    <div class="stack-bar-bg" style="display: flex; height: 8px; border-radius: 7px; overflow: hidden; gap: 2px;">"""
+        f"""<style>"""
+        f""".stack-bar-bg {{"""
+        f"""background-color: #D1D9E0;"""
+        f"""}}"""
+        f"""@media (prefers-color-scheme: light) {{"""
+        f""".stack-bar-bg {{"""
+        f"""background-color: #D1D9E0;"""
+        f"""}}"""
+        f"""}}"""
+        f"""@media (prefers-color-scheme: dark) {{"""
+        f""".stack-bar-bg {{"""
+        f"""background-color: #3D444D;"""
+        f"""}}"""
+        f"""}}"""
+        f"""</style>"""
+        f"""<div class="stack-bar-bg" style="display: flex; height: 8px; border-radius: 7px; overflow: hidden; gap: 2px;">"""
     )
 
     for i, (lang, pct) in enumerate(languages.items()):
@@ -119,14 +119,14 @@ def buildLanguageSection(languages: dict, colorMap: dict):
             border = " border-radius: 0 7px 7px 0;"
 
         html.append(
-            f"""        <div style="background: {effectiveColor}; width: {pct}%;{border}"></div>"""
+            f"""<div style="background: {effectiveColor}; width: {pct}%;{border}"></div>"""
         )
 
-    html.append("    </div>") # Stacked Bar - End
+    html.append("</div>") # Stacked Bar - End
 
     # Legend - Start
     html.append(
-        """    <div style="margin-top: 8px; display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px;">"""
+        """<div style="margin-top: 8px; display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px;">"""
     )
 
     for lang, pct in languages.items():
@@ -134,14 +134,14 @@ def buildLanguageSection(languages: dict, colorMap: dict):
         effectiveColor = getDarkModeSafeColor(baseColor)
 
         html.append(
-            f"""        <span style="display: inline-flex; align-items: center; gap: 6px;">
-            <span style="background-color: {effectiveColor}; width: 10px; height: 10px; border-radius: 50%;"></span>
-            {lang}
-            <span style="color: #9198A1">{pct:.1f}%</span>
-        </span>"""
+            f"""<span style="display: inline-flex; align-items: center; gap: 6px;">"""
+            f"""<span style="background-color: {effectiveColor}; width: 10px; height: 10px; border-radius: 50%;"></span>"""
+            f"""{lang}"""
+            f"""<span style="color: #9198A1">{pct:.1f}%</span>"""
+            f"""</span>"""
         )
 
-    html.append("    </div>") # Legend - End
+    html.append("</div>") # Legend - End
     html.append("</div>") # Wrapper - End
 
     return "\n".join(html)
