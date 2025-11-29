@@ -22,53 +22,36 @@ jobs:
           cache: "pip"
 
       - name: Install Dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
 
       - name: Generate README Content
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python scripts/update-readme.py > updated-readme.md
+          python scripts/update-readme.py
+          mv updated-readme.md README.md
 
-      - name: Upload README via GitHub API
-        env:
-          GHTOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and push changes
         run: |
-          REPO="${{ github.repository }}"
-          BRANCH="${{ github.ref_name }}"
-          FILE="README.md"
-          COMMITMESSAGE="Update README"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          LOCALCONTENT=$(base64 -w 0 updated-readme.md)
+          # Add all changed or newly created files
+          git add -A
 
-          REMOTECONTENT=$(curl -s \
-            -H "Authorization: token $GHTOKEN" \
-            -H "Accept: application/vnd.github.v3.raw" \
-            https://api.github.com/repos/$REPO/contents/$FILE)
-
-          REMOTEBASE64=$(echo "$REMOTECONTENT" | base64 -w 0)
-
-          if [ "$LOCALCONTENT" = "$REMOTEBASE64" ]; then
-            echo "README up to date."
-            exit 0
+          # Delete updated-readme.md
+          if [ -f "updated-readme.md" ]; then
+            git rm -f updated-readme.md
           fi
 
-          SHA=$(curl -s \
-            -H "Authorization: token $GHTOKEN" \
-            -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/$REPO/contents/$FILE \
-            | jq -r .sha)
-
-          echo "{
-            \"message\": \"$COMMITMESSAGE\",
-            \"content\": \"$LOCALCONTENT\",
-            \"sha\": \"$SHA\",
-            \"branch\": \"$BRANCH\"
-          }" | curl -X PUT \
-            -H "Authorization: token $GHTOKEN" \
-            -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/$REPO/contents/$FILE \
-            -d @-
+          # Commit only if there are changes
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Update README"
+            git push
+          else
+            echo "README up to date."
+          fi
 
   cleanup-cache:
     runs-on: ubuntu-latest
