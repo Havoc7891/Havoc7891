@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="12" viewBox="0 0 700 12" role="img">
+<title>Top Languages</title>
+<defs>
+<clipPath id="barClip"><rect x="0" y="2" width="700" height="8" rx="4.0" ry="4.0" /></clipPath>
+</defs>
+<g clip-path="url(#barClip)">
+<rect x="0.00" y="2" width="605.91" height="8" fill="#F34B7D" />
+<rect x="605.91" y="2" width="37.10" height="8" fill="#F1E05A" />
+<rect x="643.01" y="2" width="29.68" height="8" fill="#3572A5" />
+<rect x="672.70" y="2" width="12.67" height="8" fill="#563D7C" />
+<rect x="685.37" y="2" width="11.55" height="8" fill="#178600" />
+<rect x="696.92" y="2" width="1.82" height="8" fill="#064F8C" />
+<rect x="698.74" y="2" width="1.26" height="8" fill="#012456" />
+</g>
+</svg>
