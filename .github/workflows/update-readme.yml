@@ -27,7 +27,8 @@ jobs:
 
       - name: Generate README Content
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
           python scripts/update-readme.py
           mv updated-readme.md README.md

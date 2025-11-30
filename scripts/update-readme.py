@@ -6,7 +6,7 @@ from datetime import datetime
 from collections import Counter
 
 FEEDURL = "https://havoc.de/rss.xml"
-MAXENTRIES = 5
+FEEDMAXENTRIES = 5
 USERNAME = "Havoc7891"
 MINLANGUAGEPERCENT = 0.1 # Group all languages below this percentage under "Other"
 GITHUBLANGUAGECOLORS = {
@@ -26,9 +26,11 @@ GITHUBLANGUAGECOLORS = {
     "Other": "#EDEDED",
 }
 LEGENDICONSFOLDER = "legend-icons"
+YOUTUBECHANNELID = "UCaGa30jV6OWFpjBWY3r4GWQ"
+YOUTUBEMAXENTRIES = 6
 
 def getAggregatedLanguages(username: str) -> dict:
-    token = os.getenv("GITHUB_TOKEN")
+    token = os.getenv("GH_TOKEN")
     if not token:
         return {}
 
@@ -187,7 +189,7 @@ def cleanupLegendIcons(currentLanguages: dict, directory: str):
             if filename not in expected:
                 os.remove(os.path.join(directory, filename))
 
-def buildLanguageSection(languages: dict, colorMap: dict):
+def buildLanguagesSection(languages: dict, colorMap: dict):
     if not languages:
         return "## 📊 Top Languages Across My Public GitHub Repositories\nCould not fetch language stats."
 
@@ -217,6 +219,78 @@ def buildLanguageSection(languages: dict, colorMap: dict):
 
     return "\n".join(lines)
 
+def getUploadsPlaylistId(channelId, apiKey):
+    url = "https://www.googleapis.com/youtube/v3/channels"
+    params = {
+        "part": "contentDetails",
+        "id": channelId,
+        "key": apiKey
+    }
+
+    resp = requests.get(url, params=params)
+    resp.raise_for_status()
+    data = resp.json()
+
+    try:
+        return data["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    except (KeyError, IndexError):
+        return None
+
+def fetchLatestYouTubeVideos(channelId, maxEntries):
+    apiKey = os.getenv("YOUTUBE_API_KEY")
+    if not apiKey:
+        return []
+
+    uploadsPlaylistId = getUploadsPlaylistId(channelId, apiKey)
+    if not uploadsPlaylistId:
+        return []
+
+    url = "https://www.googleapis.com/youtube/v3/playlistItems"
+    params = {
+        "part": "snippet",
+        "playlistId": uploadsPlaylistId,
+        "maxResults": maxEntries,
+        "key": apiKey
+    }
+
+    resp = requests.get(url, params=params)
+    resp.raise_for_status()
+    data = resp.json()
+
+    videos = []
+    for item in data.get("items", []):
+        snippet = item["snippet"]
+        videoId = snippet["resourceId"]["videoId"]
+
+        videos.append({
+            "title": snippet["title"],
+            "url": f"https://www.youtube.com/watch?v={videoId}",
+            "thumb": f"https://img.youtube.com/vi/{videoId}/maxresdefault.jpg",
+            "published": datetime.strptime(snippet["publishedAt"], "%Y-%m-%dT%H:%M:%SZ").strftime("%B %d, %Y")
+        })
+
+    return videos
+
+def buildVideosSection(videos):
+    if not videos:
+        return "No recent videos found."
+
+    htmlParts = []
+    htmlParts.append("<div>\n")
+
+    for video in videos:
+        htmlParts.append(
+            f'    <a href="{video["url"]}">'
+            f'<img src="{video["thumb"]}" width="400" '
+            f'alt="{video["title"]} - {video["published"]}" '
+            f'title="{video["title"]} - {video["published"]}" '
+            f'aria-label="{video["title"]} - {video["published"]}">'
+            f'</a>\n'
+        )
+
+    htmlParts.append("</div>")
+    return "".join(htmlParts)
+
 def fetchFeedEntries(feedUrl, maxEntries):
     feed = feedparser.parse(feedUrl)
     entries = feed.entries[:maxEntries]
@@ -231,7 +305,10 @@ def fetchFeedEntries(feedUrl, maxEntries):
     return "\n".join(lines)
 
 def generateReadme():
-    newsSection = fetchFeedEntries(FEEDURL, MAXENTRIES)
+    newsSection = fetchFeedEntries(FEEDURL, FEEDMAXENTRIES)
+
+    videos = fetchLatestYouTubeVideos(YOUTUBECHANNELID, YOUTUBEMAXENTRIES)
+    videosSection = buildVideosSection(videos)
 
     languages = getAggregatedLanguages(USERNAME)
 
@@ -243,7 +320,7 @@ def generateReadme():
 
     languages = mainLanguages
 
-    languagesSection = buildLanguageSection(languages, GITHUBLANGUAGECOLORS)
+    languagesSection = buildLanguagesSection(languages, GITHUBLANGUAGECOLORS)
 
     toolsSection = """\
 ## 🧰 Tools & Technologies I Use
@@ -343,6 +420,10 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 ## 📰 Latest News
 
 {newsSection}
+
+## 📹 Latest Videos
+
+{videosSection}
 
 {languagesSection}
 
