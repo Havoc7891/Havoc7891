@@ -90,7 +90,7 @@ def generateTopLanguagesSvg(languages: dict, colorMap: dict, filename: str):
     items = sorted(languages.items(), key=lambda x: x[1], reverse=True)
 
     # SVG layout
-    width = 700
+    width = 720
     height = 12
     barX = 0
     barY = 2
@@ -282,9 +282,9 @@ def buildVideosSection(videos):
         htmlParts.append(
             f'    <a href="{video["url"]}">'
             f'<img src="{video["thumb"]}" width="400" '
-            f'alt="{video["title"]} - {video["published"]}" '
-            f'title="{video["title"]} - {video["published"]}" '
-            f'aria-label="{video["title"]} - {video["published"]}">'
+            f'alt="{video["title"]} | {video["published"]}" '
+            f'title="{video["title"]} | {video["published"]}" '
+            f'aria-label="{video["title"]} | {video["published"]}">'
             f'</a>\n'
         )
 
