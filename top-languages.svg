@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="12" viewBox="0 0 700 12" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="12" viewBox="0 0 720 12" role="img">
 <title>Top Languages</title>
 <defs>
-<clipPath id="barClip"><rect x="0" y="2" width="700" height="8" rx="4.0" ry="4.0" /></clipPath>
+<clipPath id="barClip"><rect x="0" y="2" width="720" height="8" rx="4.0" ry="4.0" /></clipPath>
 </defs>
 <g clip-path="url(#barClip)">
-<rect x="0.00" y="2" width="602.51" height="8" fill="#F34B7D" />
-<rect x="602.51" y="2" width="36.95" height="8" fill="#F1E05A" />
-<rect x="639.46" y="2" width="33.31" height="8" fill="#3572A5" />
-<rect x="672.78" y="2" width="12.67" height="8" fill="#563D7C" />
-<rect x="685.44" y="2" width="11.48" height="8" fill="#178600" />
-<rect x="696.92" y="2" width="1.82" height="8" fill="#064F8C" />
-<rect x="698.74" y="2" width="1.26" height="8" fill="#012456" />
+<rect x="0.00" y="2" width="619.72" height="8" fill="#F34B7D" />
+<rect x="619.72" y="2" width="38.01" height="8" fill="#F1E05A" />
+<rect x="657.73" y="2" width="34.27" height="8" fill="#3572A5" />
+<rect x="692.00" y="2" width="13.03" height="8" fill="#563D7C" />
+<rect x="705.03" y="2" width="11.81" height="8" fill="#178600" />
+<rect x="716.83" y="2" width="1.87" height="8" fill="#064F8C" />
+<rect x="718.70" y="2" width="1.30" height="8" fill="#012456" />
 </g>
 </svg>
