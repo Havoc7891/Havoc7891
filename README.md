@@ -8,11 +8,11 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 📰 Latest News
 
+- 12/15/2025 - [havCSON Released](https://havoc.de/articles/2025-12-15.html)
 - 12/10/2025 - [My Website Turns 25 - Time for a Redesign](https://havoc.de/articles/2025-12-10.html)
 - 12/01/2025 - [Shadow Knights Development Update: SKE Completed and GitHub Profile Automation Script Additions](https://havoc.de/articles/2025-12-01.html)
 - 11/19/2025 - [Shadow Knights Development Update: Projects Page Addition and Start of SKE Development](https://havoc.de/articles/2025-11-19.html)
 - 11/16/2025 - [Havoc Startup Minimizer Released](https://havoc.de/articles/2025-11-16.html)
-- 11/02/2025 - [Shadow Knights Development Update: Controller Support, Save Game Feature, and WinMerge Translation Work](https://havoc.de/articles/2025-11-02.html)
 
 ## 📹 Latest Videos
 
@@ -29,13 +29,13 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ![Top Languages](top-languages.svg)
 
-<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 86.1%
-<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 5.3%
-<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 4.8%
-<img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.8%
-<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 1.6%
-<img src="legend-icons/legend-cmake.svg" width="12" height="12"> **CMake** 0.3%
-<img src="legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.2%
+<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 88.5%
+<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 4.4%
+<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.9%
+<img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.5%
+<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 1.4%
+<img src="legend-icons/legend-cmake.svg" width="12" height="12"> **CMake** 0.2%
+<img src="legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.1%
 
 ## 🧰 Tools & Technologies I Use
 
