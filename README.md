@@ -8,21 +8,21 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 📰 Latest News
 
+- 12/26/2025 - [Hovertank Source Port - Preview Video Released on YouTube](https://havoc.de/articles/2025-12-26.html)
 - 12/15/2025 - [havCSON Released](https://havoc.de/articles/2025-12-15.html)
 - 12/10/2025 - [My Website Turns 25 - Time for a Redesign](https://havoc.de/articles/2025-12-10.html)
 - 12/01/2025 - [Shadow Knights Development Update: SKE Completed and GitHub Profile Automation Script Additions](https://havoc.de/articles/2025-12-01.html)
 - 11/19/2025 - [Shadow Knights Development Update: Projects Page Addition and Start of SKE Development](https://havoc.de/articles/2025-11-19.html)
-- 11/16/2025 - [Havoc Startup Minimizer Released](https://havoc.de/articles/2025-11-16.html)
 
 ## 📹 Latest Videos
 
 <div>
+    <a href="https://www.youtube.com/watch?v=koTnosr6xOw"><img src="https://img.youtube.com/vi/koTnosr6xOw/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" title="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" aria-label="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025"></a>
     <a href="https://www.youtube.com/watch?v=wGnbADiWN3U"><img src="https://img.youtube.com/vi/wGnbADiWN3U/maxresdefault.jpg" width="400" alt="Shadow Knights (id Software) Source Port - Controller Support and Save Game Feature (November 2025) | November 02, 2025" title="Shadow Knights (id Software) Source Port - Controller Support and Save Game Feature (November 2025) | November 02, 2025" aria-label="Shadow Knights (id Software) Source Port - Controller Support and Save Game Feature (November 2025) | November 02, 2025"></a>
     <a href="https://www.youtube.com/watch?v=dD5XcPIg-7A"><img src="https://img.youtube.com/vi/dD5XcPIg-7A/maxresdefault.jpg" width="400" alt="Shadow Knights (id Software) Source Port - Preview (October 2025) | October 15, 2025" title="Shadow Knights (id Software) Source Port - Preview (October 2025) | October 15, 2025" aria-label="Shadow Knights (id Software) Source Port - Preview (October 2025) | October 15, 2025"></a>
     <a href="https://www.youtube.com/watch?v=72SPZdShLJc"><img src="https://img.youtube.com/vi/72SPZdShLJc/maxresdefault.jpg" width="400" alt="Times of Darkness (Half-Life Mod, 2003) - Walkthrough | September 13, 2025" title="Times of Darkness (Half-Life Mod, 2003) - Walkthrough | September 13, 2025" aria-label="Times of Darkness (Half-Life Mod, 2003) - Walkthrough | September 13, 2025"></a>
     <a href="https://www.youtube.com/watch?v=XaGywknkmSk"><img src="https://img.youtube.com/vi/XaGywknkmSk/maxresdefault.jpg" width="400" alt="Doom-Style Map Editor - Texture Selector/Viewer & Vertex Manipulation Tool | June 30, 2025" title="Doom-Style Map Editor - Texture Selector/Viewer & Vertex Manipulation Tool | June 30, 2025" aria-label="Doom-Style Map Editor - Texture Selector/Viewer & Vertex Manipulation Tool | June 30, 2025"></a>
     <a href="https://www.youtube.com/watch?v=A2CiVDu1JuU"><img src="https://img.youtube.com/vi/A2CiVDu1JuU/maxresdefault.jpg" width="400" alt="Doom-Style Map Editor - Immediate Mode GUI & Sector Overlap Fix | April 28, 2025" title="Doom-Style Map Editor - Immediate Mode GUI & Sector Overlap Fix | April 28, 2025" aria-label="Doom-Style Map Editor - Immediate Mode GUI & Sector Overlap Fix | April 28, 2025"></a>
-    <a href="https://www.youtube.com/watch?v=5sj7OlP0GBQ"><img src="https://img.youtube.com/vi/5sj7OlP0GBQ/maxresdefault.jpg" width="400" alt="The Pushing Point | February 19, 2025" title="The Pushing Point | February 19, 2025" aria-label="The Pushing Point | February 19, 2025"></a>
 </div>
 
 ## 📊 Top Languages Across My Public GitHub Repositories
