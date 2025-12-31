@@ -8,11 +8,11 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 📰 Latest News
 
+- 12/31/2025 - [havWndSwitcher Released](https://havoc.de/articles/2025-12-31.html)
 - 12/26/2025 - [Hovertank Source Port - Preview Video Released on YouTube](https://havoc.de/articles/2025-12-26.html)
 - 12/15/2025 - [havCSON Released](https://havoc.de/articles/2025-12-15.html)
 - 12/10/2025 - [My Website Turns 25 - Time for a Redesign](https://havoc.de/articles/2025-12-10.html)
 - 12/01/2025 - [Shadow Knights Development Update: SKE Completed and GitHub Profile Automation Script Additions](https://havoc.de/articles/2025-12-01.html)
-- 11/19/2025 - [Shadow Knights Development Update: Projects Page Addition and Start of SKE Development](https://havoc.de/articles/2025-11-19.html)
 
 ## 📹 Latest Videos
 
@@ -29,13 +29,13 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ![Top Languages](top-languages.svg)
 
-<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 88.5%
-<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 4.4%
-<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.9%
-<img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.5%
-<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 1.4%
+<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 77.1%
+<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 13.9%
+<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.8%
+<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.4%
+<img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.3%
+<img src="legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.3%
 <img src="legend-icons/legend-cmake.svg" width="12" height="12"> **CMake** 0.2%
-<img src="legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.1%
 
 ## 🧰 Tools & Technologies I Use
 
