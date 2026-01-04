@@ -8,11 +8,11 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 📰 Latest News
 
+- 01/04/2026 - [Shadow Knights Development Update: SKE Map Renderer Rewritten in OpenGL](https://havoc.de/articles/2026-01-04.html)
 - 12/31/2025 - [havWndSwitcher Released](https://havoc.de/articles/2025-12-31.html)
 - 12/26/2025 - [Hovertank Source Port - Preview Video Released on YouTube](https://havoc.de/articles/2025-12-26.html)
 - 12/15/2025 - [havCSON Released](https://havoc.de/articles/2025-12-15.html)
 - 12/10/2025 - [My Website Turns 25 - Time for a Redesign](https://havoc.de/articles/2025-12-10.html)
-- 12/01/2025 - [Shadow Knights Development Update: SKE Completed and GitHub Profile Automation Script Additions](https://havoc.de/articles/2025-12-01.html)
 
 ## 📹 Latest Videos
 
