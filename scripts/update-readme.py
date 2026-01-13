@@ -21,7 +21,7 @@ GITHUBLANGUAGECOLORS = {
     "PHP": "#4F5D95",
     "SQL": "#E38C00",
     "Python": "#3572A5",
-    "CMake": "#064F8C",
+    "CMake": "#DA3434",
     "PowerShell": "#012456",
     "Other": "#EDEDED",
 }
