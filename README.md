@@ -8,11 +8,11 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 📰 Latest News
 
+- 01/18/2026 - [Escape Made Easy (E.M.E.) Version 0.4 Released, havCSON Version 0.2 Released, and Doom-Style Engine Progress Update](https://havoc.de/articles/2026-01-18.html)
 - 01/04/2026 - [Shadow Knights Development Update: SKE Map Renderer Rewritten in OpenGL](https://havoc.de/articles/2026-01-04.html)
 - 12/31/2025 - [havWndSwitcher Released](https://havoc.de/articles/2025-12-31.html)
 - 12/26/2025 - [Hovertank Source Port - Preview Video Released on YouTube](https://havoc.de/articles/2025-12-26.html)
 - 12/15/2025 - [havCSON Released](https://havoc.de/articles/2025-12-15.html)
-- 12/10/2025 - [My Website Turns 25 - Time for a Redesign](https://havoc.de/articles/2025-12-10.html)
 
 ## 📹 Latest Videos
 
@@ -29,8 +29,8 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ![Top Languages](top-languages.svg)
 
-<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 77.1%
-<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 13.9%
+<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 77.3%
+<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 13.8%
 <img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.8%
 <img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.4%
 <img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.3%
