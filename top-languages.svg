@@ -4,12 +4,12 @@
 <clipPath id="barClip"><rect x="0" y="2" width="720" height="8" rx="4.0" ry="4.0" /></clipPath>
 </defs>
 <g clip-path="url(#barClip)">
-<rect x="0.00" y="2" width="557.37" height="8" fill="#F34B7D" />
-<rect x="557.37" y="2" width="98.56" height="8" fill="#178600" />
-<rect x="655.93" y="2" width="27.14" height="8" fill="#F1E05A" />
-<rect x="683.07" y="2" width="24.41" height="8" fill="#3572A5" />
-<rect x="707.47" y="2" width="9.29" height="8" fill="#563D7C" />
-<rect x="716.76" y="2" width="1.87" height="8" fill="#012456" />
-<rect x="718.63" y="2" width="1.37" height="8" fill="#DA3434" />
+<rect x="0.00" y="2" width="517.12" height="8" fill="#F34B7D" />
+<rect x="517.12" y="2" width="142.76" height="8" fill="#178600" />
+<rect x="659.89" y="2" width="25.20" height="8" fill="#F1E05A" />
+<rect x="685.08" y="2" width="22.61" height="8" fill="#3572A5" />
+<rect x="707.69" y="2" width="8.64" height="8" fill="#563D7C" />
+<rect x="716.33" y="2" width="2.45" height="8" fill="#012456" />
+<rect x="718.78" y="2" width="1.22" height="8" fill="#DA3434" />
 </g>
 </svg>
