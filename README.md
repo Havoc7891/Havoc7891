@@ -8,11 +8,11 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 📰 Latest News
 
+- 02/17/2026 - [Hovertank Development Update: Improved Mod Manager Search](https://havoc.de/articles/2026-02-17.html)
 - 02/15/2026 - [Hovertank Development Update: Hovertank Editor (HVE) Completed](https://havoc.de/articles/2026-02-15.html)
 - 02/08/2026 - [Hovertank Development Update: Mod Manager & Test Mod Demo Video on YouTube, and havINI Version 0.6 Released](https://havoc.de/articles/2026-02-08.html)
 - 01/31/2026 - [havTransparentWnd Released](https://havoc.de/articles/2026-01-31.html)
 - 01/25/2026 - [Hovertank Development Update: Modding Support Groundwork Complete and havINI Version 0.5 Released](https://havoc.de/articles/2026-01-25.html)
-- 01/18/2026 - [Escape Made Easy (E.M.E.) Version 0.4 Released, havCSON Version 0.2 Released, and Doom-Style Engine Progress Update](https://havoc.de/articles/2026-01-18.html)
 
 ## 📹 Latest Videos
 
