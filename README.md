@@ -8,11 +8,11 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 📰 Latest News
 
+- 02/23/2026 - [havTermKit Released](https://havoc.de/articles/2026-02-23.html)
 - 02/22/2026 - [Hovertank Development Update: Virtual Keyboard for Controllers](https://havoc.de/articles/2026-02-22.html)
 - 02/17/2026 - [Hovertank Development Update: Improved Mod Manager Search](https://havoc.de/articles/2026-02-17.html)
 - 02/15/2026 - [Hovertank Development Update: Hovertank Editor (HVE) Completed](https://havoc.de/articles/2026-02-15.html)
 - 02/08/2026 - [Hovertank Development Update: Mod Manager & Test Mod Demo Video on YouTube, and havINI Version 0.6 Released](https://havoc.de/articles/2026-02-08.html)
-- 01/31/2026 - [havTransparentWnd Released](https://havoc.de/articles/2026-01-31.html)
 
 ## 📹 Latest Videos
 
@@ -29,11 +29,12 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ![Top Languages](top-languages.svg)
 
-<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 71.8%
-<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 19.8%
+<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 71.2%
+<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 19.6%
 <img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.5%
 <img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.1%
 <img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.2%
+<img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 0.9%
 <img src="legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.3%
 <img src="legend-icons/legend-cmake.svg" width="12" height="12"> **CMake** 0.2%
 
