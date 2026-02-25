@@ -8,21 +8,21 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 📰 Latest News
 
+- 02/25/2026 - [First Video of My GTA 1-Style Game Released on YouTube](https://havoc.de/articles/2026-02-25.html)
 - 02/23/2026 - [havTermKit Released](https://havoc.de/articles/2026-02-23.html)
 - 02/22/2026 - [Hovertank Development Update: Virtual Keyboard for Controllers](https://havoc.de/articles/2026-02-22.html)
 - 02/17/2026 - [Hovertank Development Update: Improved Mod Manager Search](https://havoc.de/articles/2026-02-17.html)
 - 02/15/2026 - [Hovertank Development Update: Hovertank Editor (HVE) Completed](https://havoc.de/articles/2026-02-15.html)
-- 02/08/2026 - [Hovertank Development Update: Mod Manager & Test Mod Demo Video on YouTube, and havINI Version 0.6 Released](https://havoc.de/articles/2026-02-08.html)
 
 ## 📹 Latest Videos
 
 <div>
+    <a href="https://www.youtube.com/watch?v=OBIG8NlgEOg"><img src="https://img.youtube.com/vi/OBIG8NlgEOg/maxresdefault.jpg" width="400" alt="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" title="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" aria-label="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026"></a>
     <a href="https://www.youtube.com/watch?v=bJVEPD9KDO4"><img src="https://img.youtube.com/vi/bJVEPD9KDO4/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Mod Manager & Test Mod Demo (February 2026) | February 08, 2026" title="Hovertank (id Software) Source Port - Mod Manager & Test Mod Demo (February 2026) | February 08, 2026" aria-label="Hovertank (id Software) Source Port - Mod Manager & Test Mod Demo (February 2026) | February 08, 2026"></a>
     <a href="https://www.youtube.com/watch?v=koTnosr6xOw"><img src="https://img.youtube.com/vi/koTnosr6xOw/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" title="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" aria-label="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025"></a>
     <a href="https://www.youtube.com/watch?v=wGnbADiWN3U"><img src="https://img.youtube.com/vi/wGnbADiWN3U/maxresdefault.jpg" width="400" alt="Shadow Knights (id Software) Source Port - Controller Support and Save Game Feature (November 2025) | November 02, 2025" title="Shadow Knights (id Software) Source Port - Controller Support and Save Game Feature (November 2025) | November 02, 2025" aria-label="Shadow Knights (id Software) Source Port - Controller Support and Save Game Feature (November 2025) | November 02, 2025"></a>
     <a href="https://www.youtube.com/watch?v=dD5XcPIg-7A"><img src="https://img.youtube.com/vi/dD5XcPIg-7A/maxresdefault.jpg" width="400" alt="Shadow Knights (id Software) Source Port - Preview (October 2025) | October 15, 2025" title="Shadow Knights (id Software) Source Port - Preview (October 2025) | October 15, 2025" aria-label="Shadow Knights (id Software) Source Port - Preview (October 2025) | October 15, 2025"></a>
     <a href="https://www.youtube.com/watch?v=72SPZdShLJc"><img src="https://img.youtube.com/vi/72SPZdShLJc/maxresdefault.jpg" width="400" alt="Times of Darkness (Half-Life Mod, 2003) - Walkthrough | September 13, 2025" title="Times of Darkness (Half-Life Mod, 2003) - Walkthrough | September 13, 2025" aria-label="Times of Darkness (Half-Life Mod, 2003) - Walkthrough | September 13, 2025"></a>
-    <a href="https://www.youtube.com/watch?v=XaGywknkmSk"><img src="https://img.youtube.com/vi/XaGywknkmSk/maxresdefault.jpg" width="400" alt="Doom-Style Map Editor - Texture Selector/Viewer & Vertex Manipulation Tool | June 30, 2025" title="Doom-Style Map Editor - Texture Selector/Viewer & Vertex Manipulation Tool | June 30, 2025" aria-label="Doom-Style Map Editor - Texture Selector/Viewer & Vertex Manipulation Tool | June 30, 2025"></a>
 </div>
 
 ## 📊 Top Languages Across My Public GitHub Repositories
