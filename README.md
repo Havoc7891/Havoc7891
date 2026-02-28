@@ -8,11 +8,11 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 📰 Latest News
 
+- 02/28/2026 - [Doom-Style Engine Progress Update: Renderer Rewritten in OpenGL](https://havoc.de/articles/2026-02-28.html)
 - 02/25/2026 - [First Video of My GTA 1-Style Game Released on YouTube](https://havoc.de/articles/2026-02-25.html)
 - 02/23/2026 - [havTermKit Released](https://havoc.de/articles/2026-02-23.html)
 - 02/22/2026 - [Hovertank Development Update: Virtual Keyboard for Controllers](https://havoc.de/articles/2026-02-22.html)
 - 02/17/2026 - [Hovertank Development Update: Improved Mod Manager Search](https://havoc.de/articles/2026-02-17.html)
-- 02/15/2026 - [Hovertank Development Update: Hovertank Editor (HVE) Completed](https://havoc.de/articles/2026-02-15.html)
 
 ## 📹 Latest Videos
 
