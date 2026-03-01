@@ -8,11 +8,11 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 📰 Latest News
 
+- 03/01/2026 - [havTermKit 0.2 and havTermViper Released](https://havoc.de/articles/2026-03-01.html)
 - 02/28/2026 - [Doom-Style Engine Progress Update: Renderer Rewritten in OpenGL](https://havoc.de/articles/2026-02-28.html)
 - 02/25/2026 - [First Video of My GTA 1-Style Game Released on YouTube](https://havoc.de/articles/2026-02-25.html)
 - 02/23/2026 - [havTermKit Released](https://havoc.de/articles/2026-02-23.html)
 - 02/22/2026 - [Hovertank Development Update: Virtual Keyboard for Controllers](https://havoc.de/articles/2026-02-22.html)
-- 02/17/2026 - [Hovertank Development Update: Improved Mod Manager Search](https://havoc.de/articles/2026-02-17.html)
 
 ## 📹 Latest Videos
 
@@ -29,12 +29,12 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ![Top Languages](top-languages.svg)
 
-<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 71.2%
-<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 19.6%
-<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.5%
-<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.1%
-<img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.2%
-<img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 0.9%
+<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 69.4%
+<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 18.4%
+<img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 4.4%
+<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.2%
+<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 2.9%
+<img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.1%
 <img src="legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.3%
 <img src="legend-icons/legend-cmake.svg" width="12" height="12"> **CMake** 0.2%
 
