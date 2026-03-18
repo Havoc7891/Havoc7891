@@ -3,16 +3,17 @@
 My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie Game Developer.
 
 ## 🔖 Featured Projects
-- [Portals](https://havoc.de/projects.html#portals) - A Doom-inspired custom game engine, currently in development for a future game project
-- [havIDE](https://havoc.de/projects.html#havIDE) - An integrated development environment (IDE) for C++ projects, currently in development
+- [havPreviewHandler](https://havoc.de/project/havPreviewHandler) - A shell extension DLL for File Explorer on Windows 11 that provides animated image previews and representative static thumbnails for GIF, WebP, and PNG files (including APNG content in PNG containers)
+- [Portals](https://havoc.de/project/portals) - A Doom-inspired custom game engine, currently in development for a future game project
+- [havIDE](https://havoc.de/project/havIDE) - An integrated development environment (IDE) for C++ projects, currently in development
 
 ## 📰 Latest News
 
+- 03/18/2026 - [havPreviewHandler Released](https://havoc.de/articles/2026-03-18.html)
 - 03/01/2026 - [havTermKit 0.2 and havTermViper Released](https://havoc.de/articles/2026-03-01.html)
 - 02/28/2026 - [Doom-Style Engine Progress Update: Renderer Rewritten in OpenGL](https://havoc.de/articles/2026-02-28.html)
 - 02/25/2026 - [First Video of My GTA 1-Style Game Released on YouTube](https://havoc.de/articles/2026-02-25.html)
 - 02/23/2026 - [havTermKit Released](https://havoc.de/articles/2026-02-23.html)
-- 02/22/2026 - [Hovertank Development Update: Virtual Keyboard for Controllers](https://havoc.de/articles/2026-02-22.html)
 
 ## 📹 Latest Videos
 
