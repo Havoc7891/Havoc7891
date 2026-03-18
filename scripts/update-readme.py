@@ -413,8 +413,9 @@ def generateReadme():
 My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie Game Developer.
 
 ## 🔖 Featured Projects
-- [Portals](https://havoc.de/projects.html#portals) - A Doom-inspired custom game engine, currently in development for a future game project
-- [havIDE](https://havoc.de/projects.html#havIDE) - An integrated development environment (IDE) for C++ projects, currently in development
+- [havPreviewHandler](https://havoc.de/project/havPreviewHandler) - A shell extension DLL for File Explorer on Windows 11 that provides animated image previews and representative static thumbnails for GIF, WebP, and PNG files (including APNG content in PNG containers)
+- [Portals](https://havoc.de/project/portals) - A Doom-inspired custom game engine, currently in development for a future game project
+- [havIDE](https://havoc.de/project/havIDE) - An integrated development environment (IDE) for C++ projects, currently in development
 
 ## 📰 Latest News
 
