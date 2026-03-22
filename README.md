@@ -9,11 +9,11 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 📰 Latest News
 
-- 03/18/2026 - [havPreviewHandler Released](https://havoc.de/articles/2026-03-18.html)
-- 03/01/2026 - [havTermKit 0.2 and havTermViper Released](https://havoc.de/articles/2026-03-01.html)
-- 02/28/2026 - [Doom-Style Engine Progress Update: Renderer Rewritten in OpenGL](https://havoc.de/articles/2026-02-28.html)
-- 02/25/2026 - [First Video of My GTA 1-Style Game Released on YouTube](https://havoc.de/articles/2026-02-25.html)
-- 02/23/2026 - [havTermKit Released](https://havoc.de/articles/2026-02-23.html)
+- 03/22/2026 - [havPreviewHandler v0.1.1 Released, havIDE Development Update, and Web Speech API Fun(ctionality)](https://havoc.de/articles/2026-03-22)
+- 03/18/2026 - [havPreviewHandler Released](https://havoc.de/articles/2026-03-18)
+- 03/01/2026 - [havTermKit 0.2 and havTermViper Released](https://havoc.de/articles/2026-03-01)
+- 02/28/2026 - [Doom-Style Engine Progress Update: Renderer Rewritten in OpenGL](https://havoc.de/articles/2026-02-28)
+- 02/25/2026 - [First Video of My GTA 1-Style Game Released on YouTube](https://havoc.de/articles/2026-02-25)
 
 ## 📹 Latest Videos
 
