@@ -9,21 +9,21 @@ My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie 
 
 ## 📰 Latest News
 
+- 04/04/2026 - [Asphalt Strike and havSeriLite v0.2 Released](https://havoc.de/articles/2026-04-04)
 - 03/26/2026 - [havPreviewHandler v0.2.0 Released](https://havoc.de/articles/2026-03-26)
 - 03/25/2026 - [First Video of My Road Rash-Style Game Released on YouTube](https://havoc.de/articles/2026-03-25)
 - 03/22/2026 - [havPreviewHandler v0.1.1 Released, havIDE Development Update, and Web Speech API Fun(ctionality)](https://havoc.de/articles/2026-03-22)
 - 03/18/2026 - [havPreviewHandler Released](https://havoc.de/articles/2026-03-18)
-- 03/01/2026 - [havTermKit 0.2 and havTermViper Released](https://havoc.de/articles/2026-03-01)
 
 ## 📹 Latest Videos
 
 <div>
+    <a href="https://www.youtube.com/watch?v=RAP8-QavhC4"><img src="https://img.youtube.com/vi/RAP8-QavhC4/maxresdefault.jpg" width="400" alt="Asphalt Strike - Gameplay #1 | April 04, 2026" title="Asphalt Strike - Gameplay #1 | April 04, 2026" aria-label="Asphalt Strike - Gameplay #1 | April 04, 2026"></a>
     <a href="https://www.youtube.com/watch?v=tpGcLdPe4KI"><img src="https://img.youtube.com/vi/tpGcLdPe4KI/maxresdefault.jpg" width="400" alt="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" title="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" aria-label="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026"></a>
     <a href="https://www.youtube.com/watch?v=OBIG8NlgEOg"><img src="https://img.youtube.com/vi/OBIG8NlgEOg/maxresdefault.jpg" width="400" alt="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" title="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" aria-label="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026"></a>
     <a href="https://www.youtube.com/watch?v=bJVEPD9KDO4"><img src="https://img.youtube.com/vi/bJVEPD9KDO4/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Mod Manager & Test Mod Demo (February 2026) | February 08, 2026" title="Hovertank (id Software) Source Port - Mod Manager & Test Mod Demo (February 2026) | February 08, 2026" aria-label="Hovertank (id Software) Source Port - Mod Manager & Test Mod Demo (February 2026) | February 08, 2026"></a>
     <a href="https://www.youtube.com/watch?v=koTnosr6xOw"><img src="https://img.youtube.com/vi/koTnosr6xOw/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" title="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" aria-label="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025"></a>
     <a href="https://www.youtube.com/watch?v=wGnbADiWN3U"><img src="https://img.youtube.com/vi/wGnbADiWN3U/maxresdefault.jpg" width="400" alt="Shadow Knights (id Software) Source Port - Controller Support and Save Game Feature (November 2025) | November 02, 2025" title="Shadow Knights (id Software) Source Port - Controller Support and Save Game Feature (November 2025) | November 02, 2025" aria-label="Shadow Knights (id Software) Source Port - Controller Support and Save Game Feature (November 2025) | November 02, 2025"></a>
-    <a href="https://www.youtube.com/watch?v=dD5XcPIg-7A"><img src="https://img.youtube.com/vi/dD5XcPIg-7A/maxresdefault.jpg" width="400" alt="Shadow Knights (id Software) Source Port - Preview (October 2025) | October 15, 2025" title="Shadow Knights (id Software) Source Port - Preview (October 2025) | October 15, 2025" aria-label="Shadow Knights (id Software) Source Port - Preview (October 2025) | October 15, 2025"></a>
 </div>
 
 ## 📊 Top Languages Across My Public GitHub Repositories
