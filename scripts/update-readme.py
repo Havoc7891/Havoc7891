@@ -410,7 +410,7 @@ def generateReadme():
     readmeContent = f"""\
 # Hi 🤘
 
-My name is **René _"Havoc"_ Nicolaus**. I'm a Senior Software Engineer / Indie Game Developer.
+My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer / Indie Game Developer.
 
 ## 🔖 Featured Projects
 - [havPreviewHandler](https://havoc.de/project/havPreviewHandler) - A shell extension DLL for File Explorer on Windows 11 that provides animated image previews and representative static thumbnails for GIF, WebP, and PNG files (including APNG content in PNG containers)
