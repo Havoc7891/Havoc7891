@@ -15,6 +15,8 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer / Indie Ga
 - 03/26/2026 - [havPreviewHandler v0.2.0 Released](https://havoc.de/articles/2026-03-26)
 - 03/25/2026 - [First Video of My Road Rash-Style Game Released on YouTube](https://havoc.de/articles/2026-03-25)
 
+[More news on havoc.de](https://havoc.de/#news)
+
 ## 📹 Latest Videos
 
 <div>
@@ -33,7 +35,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer / Indie Ga
 <img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 69.7%
 <img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 18.5%
 <img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 4.4%
-<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.3%
+<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.2%
 <img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 2.5%
 <img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.1%
 <img src="legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.3%
@@ -68,7 +70,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer / Indie Ga
 ### ☁️ Cloud, DevOps & Backend
 
 ![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoftazure&logoColor=white&style=for-the-badge)
-![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?logo=azuredevops&logoColor=white&style=for-the-badge)
+![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-4697E9?logo=azuredevops&logoColor=white&style=for-the-badge)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge)
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?logo=mariadb&logoColor=white&style=for-the-badge)
