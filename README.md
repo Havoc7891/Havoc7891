@@ -43,7 +43,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer / Indie Ga
 
 ### 💻 Languages, Frameworks & Libraries
 
-![C](https://img.shields.io/badge/C-AABBCE?logo=c&logoColor=white&style=for-the-badge)
+![C](https://img.shields.io/badge/C-5F86AA?logo=c&logoColor=white&style=for-the-badge)
 ![C++](https://img.shields.io/badge/C++-00599C?logo=cplusplus&logoColor=white&style=for-the-badge)
 ![C#](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white&style=for-the-badge)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white&style=for-the-badge)
@@ -93,7 +93,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer / Indie Ga
 ![Lazygit](https://img.shields.io/badge/Lazygit-303030?style=for-the-badge)
 ![CMake](https://img.shields.io/badge/CMake-064F8C?logo=cmake&logoColor=white&style=for-the-badge)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge)
-![PyCharm](https://img.shields.io/badge/PyCharm-D5EC64?logo=pycharm&logoColor=white&style=for-the-badge)
+![PyCharm](https://img.shields.io/badge/PyCharm-D5EC64?logo=pycharm&logoColor=black&style=for-the-badge)
 
 ### 🔧 Utilities & Testing
 
