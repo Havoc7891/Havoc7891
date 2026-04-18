@@ -5,6 +5,7 @@ import requests
 from datetime import datetime
 from collections import Counter
 
+NEWSPAGEURL = "https://havoc.de/#news"
 FEEDURL = "https://havoc.de/rss.xml"
 FEEDMAXENTRIES = 5
 USERNAME = "Havoc7891"
@@ -293,15 +294,26 @@ def buildVideosSection(videos):
 
 def fetchFeedEntries(feedUrl, maxEntries):
     feed = feedparser.parse(feedUrl)
+
     entries = feed.entries[:maxEntries]
+
     lines = []
+
     for entry in entries:
         title = entry.title
         link = entry.link
         publicationDate = "Unknown Date"
+
         if hasattr(entry, "published_parsed"):
             publicationDate = datetime(*entry.published_parsed[:6]).strftime("%m/%d/%Y")
+
         lines.append(f"- {publicationDate} - [{title}]({link})")
+
+    if lines:
+        lines.append("")
+
+    lines.append(f"[More news on havoc.de]({NEWSPAGEURL})")
+
     return "\n".join(lines)
 
 def generateReadme():
@@ -352,7 +364,7 @@ def generateReadme():
 ### ☁️ Cloud, DevOps & Backend
 
 ![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoftazure&logoColor=white&style=for-the-badge)
-![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?logo=azuredevops&logoColor=white&style=for-the-badge)
+![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-4697E9?logo=azuredevops&logoColor=white&style=for-the-badge)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge)
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?logo=mariadb&logoColor=white&style=for-the-badge)
