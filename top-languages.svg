@@ -4,11 +4,11 @@
 <clipPath id="barClip"><rect x="0" y="2" width="720" height="8" rx="4.0" ry="4.0" /></clipPath>
 </defs>
 <g clip-path="url(#barClip)">
-<rect x="0.00" y="2" width="502.63" height="8" fill="#F34B7D" />
-<rect x="502.63" y="2" width="133.06" height="8" fill="#178600" />
-<rect x="635.69" y="2" width="31.75" height="8" fill="#555555" />
-<rect x="667.44" y="2" width="23.47" height="8" fill="#F1E05A" />
-<rect x="690.91" y="2" width="17.21" height="8" fill="#3572A5" />
+<rect x="0.00" y="2" width="502.13" height="8" fill="#F34B7D" />
+<rect x="502.13" y="2" width="132.91" height="8" fill="#178600" />
+<rect x="635.04" y="2" width="31.68" height="8" fill="#555555" />
+<rect x="666.72" y="2" width="23.47" height="8" fill="#F1E05A" />
+<rect x="690.19" y="2" width="17.93" height="8" fill="#3572A5" />
 <rect x="708.12" y="2" width="7.99" height="8" fill="#563D7C" />
 <rect x="716.11" y="2" width="2.23" height="8" fill="#012456" />
 <rect x="718.34" y="2" width="1.66" height="8" fill="#DA3434" />
