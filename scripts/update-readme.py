@@ -327,15 +327,15 @@ def generateReadme():
 
 ### 💻 Languages, Frameworks & Libraries
 
-![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white&style=for-the-badge)
+![C](https://img.shields.io/badge/C-AABBCE?logo=c&logoColor=white&style=for-the-badge)
 ![C++](https://img.shields.io/badge/C++-00599C?logo=cplusplus&logoColor=white&style=for-the-badge)
 ![C#](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white&style=for-the-badge)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white&style=for-the-badge)
 ![Blazor](https://img.shields.io/badge/Blazor-512BD4?logo=blazor&logoColor=white&style=for-the-badge)
 ![MudBlazor](https://img.shields.io/badge/MudBlazor-594AE2?style=for-the-badge)
-![wxWidgets](https://img.shields.io/badge/wxWidgets-000000?style=for-the-badge)
+![wxWidgets](https://img.shields.io/badge/wxWidgets-2222FF?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css&logoColor=white&style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge)
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=white&style=for-the-badge)
@@ -344,8 +344,8 @@ def generateReadme():
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white&style=for-the-badge)
 ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white&style=for-the-badge)
 ![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?logo=sequelize&logoColor=white&style=for-the-badge)
-![SDL](https://img.shields.io/badge/SDL-000000?style=for-the-badge)
-![OpenGL](https://img.shields.io/badge/OpenGL-5586A4?style=for-the-badge)
+![SDL](https://img.shields.io/badge/SDL-132A47?style=for-the-badge)
+![OpenGL](https://img.shields.io/badge/OpenGL-5586A4?logo=opengl&logoColor=white&style=for-the-badge)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white&style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
 
@@ -356,42 +356,51 @@ def generateReadme():
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge)
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?logo=mariadb&logoColor=white&style=for-the-badge)
-![Azure SQL](https://img.shields.io/badge/Azure_SQL-CC2927?logo=microsoftsqlserver&logoColor=white&style=for-the-badge)
+![Azure SQL](https://img.shields.io/badge/Azure_SQL-1572B9?logo=microsoftsqlserver&logoColor=white&style=for-the-badge)
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?logo=microsoftsqlserver&logoColor=white&style=for-the-badge)
-![Apache](https://img.shields.io/badge/Apache-D22128?logo=apache&logoColor=white&style=for-the-badge)
+![Apache](https://img.shields.io/badge/Apache-AB0000?logo=apache&logoColor=white&style=for-the-badge)
 
 ### 🎨 Frontend Styling
 
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge)
-![daisyUI](https://img.shields.io/badge/daisyUI-5A0EF8?style=for-the-badge)
+![daisyUI](https://img.shields.io/badge/daisyUI-FFC63A?logo=daisyui&logoColor=black&style=for-the-badge)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white&style=for-the-badge)
-![Angular Material](https://img.shields.io/badge/Angular_Material-757575?logo=angular&logoColor=white&style=for-the-badge)
+![Angular Material](https://img.shields.io/badge/Angular_Material-004F4F?logo=angular&logoColor=white&style=for-the-badge)
 
 ### 🧰 IDEs & Development Tools
 
 ![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?logo=visualstudio&logoColor=white&style=for-the-badge)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?logo=visualstudiocode&logoColor=white&style=for-the-badge)
-![Copilot Studio](https://img.shields.io/badge/Copilot_Studio-000000?style=for-the-badge)
-![CodeLite](https://img.shields.io/badge/CodeLite-000000?style=for-the-badge)
-![C++ Builder](https://img.shields.io/badge/C++_Builder-E62431?style=for-the-badge)
+![Copilot Studio](https://img.shields.io/badge/Copilot_Studio-13B4D7?style=for-the-badge)
+![CodeLite](https://img.shields.io/badge/CodeLite-A05A2C?style=for-the-badge)
+![C++ Builder](https://img.shields.io/badge/C++_Builder-E62431?logo=cplusplusbuilder&logoColor=white&style=for-the-badge)
+![Lazygit](https://img.shields.io/badge/Lazygit-303030?style=for-the-badge)
 ![CMake](https://img.shields.io/badge/CMake-064F8C?logo=cmake&logoColor=white&style=for-the-badge)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge)
-![PyCharm](https://img.shields.io/badge/PyCharm-000000?logo=pycharm&logoColor=white&style=for-the-badge)
+![PyCharm](https://img.shields.io/badge/PyCharm-D5EC64?logo=pycharm&logoColor=white&style=for-the-badge)
 
 ### 🔧 Utilities & Testing
 
-![phpMyAdmin](https://img.shields.io/badge/phpMyAdmin-6C78AF?style=for-the-badge)
-![Cppcheck](https://img.shields.io/badge/Cppcheck-000000?style=for-the-badge)
-![HxD](https://img.shields.io/badge/HxD-000000?style=for-the-badge)
-![WinMerge](https://img.shields.io/badge/WinMerge-000000?style=for-the-badge)
+![phpMyAdmin](https://img.shields.io/badge/phpMyAdmin-6C78AF?logo=phpmyadmin&logoColor=white&style=for-the-badge)
+![Cppcheck](https://img.shields.io/badge/Cppcheck-9898FF?style=for-the-badge)
+![Dependencies](https://img.shields.io/badge/Dependencies-808080?style=for-the-badge)
+![HxD](https://img.shields.io/badge/HxD-6AB675?style=for-the-badge)
+![WinMerge](https://img.shields.io/badge/WinMerge-FFCC00?style=for-the-badge)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=white&style=for-the-badge)
-![Photoshop](https://img.shields.io/badge/Photoshop-31A8FF?logo=adobephotoshop&logoColor=white&style=for-the-badge)
-![Paint.NET](https://img.shields.io/badge/Paint.NET-000000?style=for-the-badge)
-![Premiere Pro](https://img.shields.io/badge/Premiere_Pro-9999FF?logo=adobepremierepro&logoColor=white&style=for-the-badge)
-![Clipchamp](https://img.shields.io/badge/Clipchamp-000000?style=for-the-badge)
-![FileZilla](https://img.shields.io/badge/FileZilla-BF0000?style=for-the-badge)
+![FileZilla](https://img.shields.io/badge/FileZilla-BF0000?logo=filezilla&logoColor=white&style=for-the-badge)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white&style=for-the-badge)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?logo=powershell&logoColor=white&style=for-the-badge)
+
+### 🖼️ Creative Tools
+
+![FL Studio](https://img.shields.io/badge/FL_Studio-E46729?style=for-the-badge)
+![Audacity](https://img.shields.io/badge/Audacity-0000CC?logo=audacity&logoColor=white&style=for-the-badge)
+![sfxr](https://img.shields.io/badge/sfxr-C0B090?style=for-the-badge)
+![Photoshop](https://img.shields.io/badge/Photoshop-31A8FF?logo=adobephotoshop&logoColor=white&style=for-the-badge)
+![Paint.NET](https://img.shields.io/badge/Paint.NET-173E8F?style=for-the-badge)
+![Premiere Pro](https://img.shields.io/badge/Premiere_Pro-9999FF?logo=adobepremierepro&logoColor=white&style=for-the-badge)
+![Clipchamp](https://img.shields.io/badge/Clipchamp-6D1DD2?style=for-the-badge)
+![OBS Studio](https://img.shields.io/badge/OBS_Studio-191819?logo=obsstudio&logoColor=white&style=for-the-badge)
 
 ### ⚙️ Operating Systems
 
