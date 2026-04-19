@@ -3,29 +3,29 @@
 My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer / Indie Game Developer.
 
 ## 🔖 Featured Projects
-- [havPreviewHandler](https://havoc.de/project/havPreviewHandler) - A shell extension DLL for File Explorer on Windows 11 that provides animated image previews and representative static thumbnails for GIF, WebP, and PNG files (including APNG content in PNG containers), plus still-frame preview / thumbnail support for MP4 files
+- [havPreviewHandler](https://havoc.de/project/havPreviewHandler) - A shell extension DLL for File Explorer on Windows 11 that provides animated image previews and representative static thumbnails for GIF, WebP, and PNG files (including APNG content in PNG containers), plus still-frame preview / thumbnail support for MP4 and WMV files
 - [Portals](https://havoc.de/project/portals) - A Doom-inspired custom game engine, currently in development for a future game project
 - [havIDE](https://havoc.de/project/havIDE) - An integrated development environment (IDE) for C++ projects, currently in development
 
 ## 📰 Latest News
 
+- 04/19/2026 - [Network Crisis and havPreviewHandler v0.4.0 Released](https://havoc.de/articles/2026-04-19)
 - 04/08/2026 - [havPixEdit and Minor Website Update](https://havoc.de/articles/2026-04-08)
 - 04/06/2026 - [havPreviewHandler v0.3.0 Released](https://havoc.de/articles/2026-04-06)
 - 04/04/2026 - [Asphalt Strike and havSeriLite v0.2 Released](https://havoc.de/articles/2026-04-04)
 - 03/26/2026 - [havPreviewHandler v0.2.0 Released](https://havoc.de/articles/2026-03-26)
-- 03/25/2026 - [First Video of My Road Rash-Style Game Released on YouTube](https://havoc.de/articles/2026-03-25)
 
 [More news on havoc.de](https://havoc.de/#news)
 
 ## 📹 Latest Videos
 
 <div>
+    <a href="https://www.youtube.com/watch?v=LYvdPmw3VHs"><img src="https://img.youtube.com/vi/LYvdPmw3VHs/maxresdefault.jpg" width="400" alt="Network Crisis | April 19, 2026" title="Network Crisis | April 19, 2026" aria-label="Network Crisis | April 19, 2026"></a>
     <a href="https://www.youtube.com/watch?v=RAP8-QavhC4"><img src="https://img.youtube.com/vi/RAP8-QavhC4/maxresdefault.jpg" width="400" alt="Asphalt Strike | April 04, 2026" title="Asphalt Strike | April 04, 2026" aria-label="Asphalt Strike | April 04, 2026"></a>
     <a href="https://www.youtube.com/watch?v=tpGcLdPe4KI"><img src="https://img.youtube.com/vi/tpGcLdPe4KI/maxresdefault.jpg" width="400" alt="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" title="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" aria-label="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026"></a>
     <a href="https://www.youtube.com/watch?v=OBIG8NlgEOg"><img src="https://img.youtube.com/vi/OBIG8NlgEOg/maxresdefault.jpg" width="400" alt="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" title="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" aria-label="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026"></a>
     <a href="https://www.youtube.com/watch?v=bJVEPD9KDO4"><img src="https://img.youtube.com/vi/bJVEPD9KDO4/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Mod Manager & Test Mod Demo (February 2026) | February 08, 2026" title="Hovertank (id Software) Source Port - Mod Manager & Test Mod Demo (February 2026) | February 08, 2026" aria-label="Hovertank (id Software) Source Port - Mod Manager & Test Mod Demo (February 2026) | February 08, 2026"></a>
     <a href="https://www.youtube.com/watch?v=koTnosr6xOw"><img src="https://img.youtube.com/vi/koTnosr6xOw/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" title="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" aria-label="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025"></a>
-    <a href="https://www.youtube.com/watch?v=wGnbADiWN3U"><img src="https://img.youtube.com/vi/wGnbADiWN3U/maxresdefault.jpg" width="400" alt="Shadow Knights (id Software) Source Port - Controller Support and Save Game Feature (November 2025) | November 02, 2025" title="Shadow Knights (id Software) Source Port - Controller Support and Save Game Feature (November 2025) | November 02, 2025" aria-label="Shadow Knights (id Software) Source Port - Controller Support and Save Game Feature (November 2025) | November 02, 2025"></a>
 </div>
 
 ## 📊 Top Languages Across My Public GitHub Repositories
