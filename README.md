@@ -9,11 +9,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer / Indie Ga
 
 ## 📰 Latest News
 
+- 05/02/2026 - [hav Commit Guard Released](https://havoc.de/articles/2026-05-02)
 - 04/28/2026 - [Adding Code Metrics to Project Pages with havCodeMetrics](https://havoc.de/articles/2026-04-28)
 - 04/19/2026 - [Network Crisis and havPreviewHandler v0.4.0 Released](https://havoc.de/articles/2026-04-19)
 - 04/08/2026 - [havPixEdit and Minor Website Update](https://havoc.de/articles/2026-04-08)
 - 04/06/2026 - [havPreviewHandler v0.3.0 Released](https://havoc.de/articles/2026-04-06)
-- 04/04/2026 - [Asphalt Strike and havSeriLite v0.2 Released](https://havoc.de/articles/2026-04-04)
 
 [More news on havoc.de](https://havoc.de/#news)
 
@@ -32,11 +32,12 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer / Indie Ga
 
 ![Top Languages](top-languages.svg)
 
-<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 69.7%
-<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 18.5%
-<img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 4.4%
-<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.2%
-<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 2.5%
+<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 66.0%
+<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 17.5%
+<img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 5.0%
+<img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 4.2%
+<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.4%
+<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 2.4%
 <img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.1%
 <img src="legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.3%
 <img src="legend-icons/legend-cmake.svg" width="12" height="12"> **CMake** 0.2%
