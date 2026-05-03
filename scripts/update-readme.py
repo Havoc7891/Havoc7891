@@ -426,10 +426,10 @@ def generateReadme():
 My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer / Indie Game Developer.
 
 ## 🔖 Featured Projects
-- [hav Commit Guard](https://havoc.de/project/havCommitGuard) - A VS Code commit guard that scans staged Git changes for TODOs, debug leftovers, merge conflict markers, and custom regex matches before you commit
-- [havPreviewHandler](https://havoc.de/project/havPreviewHandler) - A shell extension DLL for File Explorer on Windows 11 that provides animated image previews and representative static thumbnails for GIF, WebP, and PNG files (including APNG content in PNG containers), plus still-frame preview / thumbnail support for MP4 and WMV files
-- [Portals](https://havoc.de/project/portals) - A Doom-inspired custom game engine, currently in development for a future game project
-- [havIDE](https://havoc.de/project/havIDE) - An integrated development environment (IDE) for C++ projects, currently in development
+- **[hav Commit Guard](https://havoc.de/project/havCommitGuard)**: A VS Code commit guard that scans staged Git changes for TODOs, debug leftovers, merge conflict markers, and custom regex matches before you commit
+- **[havPreviewHandler](https://havoc.de/project/havPreviewHandler)**: A shell extension DLL for File Explorer on Windows 11 that provides animated image previews and representative static thumbnails for GIF, WebP, and PNG files (including APNG content in PNG containers), plus still-frame preview / thumbnail support for MP4 and WMV files
+- **[Portals](https://havoc.de/project/portals)**: A Doom-inspired custom game engine, currently in development for a future game project
+- **[havIDE](https://havoc.de/project/havIDE)**: An integrated development environment (IDE) for C++ projects, currently in development
 
 ## 📰 Latest News
 
