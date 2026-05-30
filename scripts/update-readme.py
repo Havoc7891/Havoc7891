@@ -423,7 +423,7 @@ def generateReadme():
     readmeContent = f"""\
 # Hi 🤘
 
-My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer / Indie Game Developer.
+My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie Game Developer.
 
 ## 🔖 Featured Projects
 - **[hav Commit Guard](https://havoc.de/project/havCommitGuard)**: A VS Code commit guard that scans staged Git changes for TODOs, debug leftovers, merge conflict markers, and custom regex matches before you commit
