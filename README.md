@@ -16,7 +16,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 - 05/02/2026 - [hav Commit Guard Released](https://havoc.de/articles/2026-05-02)
 - 04/28/2026 - [Adding Code Metrics to Project Pages with havCodeMetrics](https://havoc.de/articles/2026-04-28)
 
-[More news on havoc.de](https://havoc.de/#news)
+[More news on havoc.de](https://havoc.de/articles)
 
 ## 📹 Latest Videos
 
