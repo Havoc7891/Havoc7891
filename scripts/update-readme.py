@@ -5,7 +5,7 @@ import requests
 from datetime import datetime
 from collections import Counter
 
-NEWSPAGEURL = "https://havoc.de/#news"
+NEWSPAGEURL = "https://havoc.de/articles"
 FEEDURL = "https://havoc.de/rss.xml"
 FEEDMAXENTRIES = 5
 USERNAME = "Havoc7891"
