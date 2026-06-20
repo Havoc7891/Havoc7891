@@ -30,8 +30,17 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
-          python scripts/update-readme.py
-          mv updated-readme.md README.md
+          set -euo pipefail
+
+          generated_readme="$RUNNER_TEMP/generated-readme.md"
+          python scripts/update-readme.py --output "$generated_readme"
+          test -s "$generated_readme"
+
+          if cmp -s "$generated_readme" README.md; then
+            echo "README content unchanged."
+          else
+            mv "$generated_readme" README.md
+          fi
 
       - name: Commit and push changes
         run: |
@@ -40,11 +49,6 @@ jobs:
 
           # Add all changed or newly created files
           git add -A
-
-          # Delete updated-readme.md
-          if [ -f "updated-readme.md" ]; then
-            git rm -f updated-readme.md
-          fi
 
           # Commit only if there are changes
           if [ -n "$(git status --porcelain)" ]; then

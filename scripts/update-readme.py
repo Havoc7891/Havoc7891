@@ -1,5 +1,7 @@
+import argparse
 import hashlib
 import os
+import sys
 import feedparser
 import requests
 from datetime import datetime
@@ -9,6 +11,13 @@ NEWSPAGEURL = "https://havoc.de/articles"
 FEEDURL = "https://havoc.de/rss.xml"
 FEEDMAXENTRIES = 5
 USERNAME = "Havoc7891"
+READMEPATH = "README.md"
+DEFAULTOUTPUTPATH = "generated-readme.md"
+REQUESTTIMEOUT = 20
+NEWSHEADING = "## 📰 Latest News"
+VIDEOSHEADING = "## 📹 Latest Videos"
+LANGUAGESHEADING = "## 📊 Top Languages Across My Public GitHub Repositories"
+TOOLSHEADING = "## 🧰 Tools & Technologies I Use"
 MINLANGUAGEPERCENT = 0.1 # Group all languages below this percentage under "Other"
 GITHUBLANGUAGECOLORS = {
     "C": "#555555",
@@ -30,10 +39,56 @@ LEGENDICONSFOLDER = "legend-icons"
 YOUTUBECHANNELID = "UCaGa30jV6OWFpjBWY3r4GWQ"
 YOUTUBEMAXENTRIES = 6
 
+class DynamicContentError(RuntimeError):
+    pass
+
+def fetchResponse(url: str, sourceName: str, **kwargs):
+    try:
+        response = requests.get(url, timeout=REQUESTTIMEOUT, **kwargs)
+    except requests.RequestException as ex:
+        raise DynamicContentError(f"{sourceName} request failed: {ex}") from ex
+
+    if not response.ok:
+        raise DynamicContentError(f"{sourceName} returned HTTP {response.status_code}.")
+
+    return response
+
+def fetchJson(url: str, sourceName: str, **kwargs):
+    response = fetchResponse(url, sourceName, **kwargs)
+
+    try:
+        return response.json()
+    except ValueError as ex:
+        raise DynamicContentError(f"{sourceName} returned malformed JSON.") from ex
+
+def extractReadmeSection(readmePath: str, startHeading: str, endHeading: str, sectionName: str) -> str:
+    try:
+        with open(readmePath, "r", encoding="utf-8") as file:
+            readme = file.read()
+    except FileNotFoundError as ex:
+        raise DynamicContentError(f"Cannot preserve {sectionName}: {readmePath} does not exist.") from ex
+
+    start = readme.find(startHeading)
+    if start == -1:
+        raise DynamicContentError(f"Cannot preserve {sectionName}: heading '{startHeading}' was not found.")
+
+    end = readme.find(endHeading, start + len(startHeading))
+    if end == -1:
+        raise DynamicContentError(f"Cannot preserve {sectionName}: next heading '{endHeading}' was not found.")
+
+    return readme[start:end].rstrip()
+
+def buildSectionOrPreserve(sectionName: str, startHeading: str, endHeading: str, builder):
+    try:
+        return builder()
+    except DynamicContentError as ex:
+        print(f"Warning: preserving existing {sectionName}: {ex}", file=sys.stderr)
+        return extractReadmeSection(READMEPATH, startHeading, endHeading, sectionName)
+
 def getAggregatedLanguages(username: str) -> dict:
     token = os.getenv("GH_TOKEN")
     if not token:
-        return {}
+        raise DynamicContentError("GH_TOKEN is missing.")
 
     headers = {"Authorization": f"Bearer {token}"}
     reposUrl = f"https://api.github.com/users/{username}/repos"
@@ -41,33 +96,49 @@ def getAggregatedLanguages(username: str) -> dict:
     repos = []
     page = 1
     while True:
-        resp = requests.get(reposUrl, headers=headers, params={"page": page, "per_page": 100})
-        if resp.status_code != 200:
-            break
-        data = resp.json()
+        data = fetchJson(
+            reposUrl,
+            f"GitHub repository page {page}",
+            headers=headers,
+            params={"page": page, "per_page": 100},
+        )
+        if not isinstance(data, list):
+            raise DynamicContentError(f"GitHub repository page {page} returned malformed data.")
         if not data:
             break
         repos.extend(data)
         page += 1
 
+    if not repos:
+        raise DynamicContentError("GitHub returned no repositories.")
+
     langTotals = Counter()
+    usableRepos = 0
 
     for repo in repos:
+        if not isinstance(repo, dict):
+            raise DynamicContentError("GitHub returned a malformed repository entry.")
+
         # Skip forked repositories
         if repo.get("fork"):
             continue
 
+        usableRepos += 1
         langUrl = repo.get("languages_url")
         if not langUrl:
             continue
 
-        langResp = requests.get(langUrl, headers=headers)
-        if langResp.status_code == 200:
-            langTotals.update(langResp.json())
+        langData = fetchJson(langUrl, f"GitHub language data for {repo.get('name', 'unknown repository')}", headers=headers)
+        if not isinstance(langData, dict):
+            raise DynamicContentError(f"GitHub language data for {repo.get('name', 'unknown repository')} returned malformed data.")
+        langTotals.update(langData)
+
+    if usableRepos == 0:
+        raise DynamicContentError("GitHub returned no non-fork repositories.")
 
     totalBytes = sum(langTotals.values())
     if totalBytes == 0:
-        return {}
+        raise DynamicContentError("GitHub returned zero language bytes.")
 
     return {
         lang: round((count / totalBytes) * 100, 2)
@@ -192,7 +263,7 @@ def cleanupLegendIcons(currentLanguages: dict, directory: str):
 
 def buildLanguagesSection(languages: dict, colorMap: dict):
     if not languages:
-        return "## 📊 Top Languages Across My Public GitHub Repositories\nCould not fetch language stats."
+        raise DynamicContentError("No language stats are available.")
 
     os.makedirs(LEGENDICONSFOLDER, exist_ok=True)
 
@@ -228,23 +299,27 @@ def getUploadsPlaylistId(channelId, apiKey):
         "key": apiKey
     }
 
-    resp = requests.get(url, params=params)
-    resp.raise_for_status()
-    data = resp.json()
+    data = fetchJson(url, "YouTube channel lookup", params=params)
+    items = data.get("items") if isinstance(data, dict) else None
+    if not isinstance(items, list) or not items:
+        raise DynamicContentError("YouTube channel lookup returned no channel items.")
 
     try:
-        return data["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
-    except (KeyError, IndexError):
-        return None
+        uploadsPlaylistId = items[0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    except (KeyError, TypeError) as ex:
+        raise DynamicContentError("YouTube channel lookup returned malformed playlist data.") from ex
+
+    if not uploadsPlaylistId:
+        raise DynamicContentError("YouTube channel lookup did not include an uploads playlist.")
+
+    return uploadsPlaylistId
 
 def fetchLatestYouTubeVideos(channelId, maxEntries):
     apiKey = os.getenv("YOUTUBE_API_KEY")
     if not apiKey:
-        return []
+        raise DynamicContentError("YOUTUBE_API_KEY is missing.")
 
     uploadsPlaylistId = getUploadsPlaylistId(channelId, apiKey)
-    if not uploadsPlaylistId:
-        return []
 
     url = "https://www.googleapis.com/youtube/v3/playlistItems"
     params = {
@@ -254,29 +329,47 @@ def fetchLatestYouTubeVideos(channelId, maxEntries):
         "key": apiKey
     }
 
-    resp = requests.get(url, params=params)
-    resp.raise_for_status()
-    data = resp.json()
+    data = fetchJson(url, "YouTube playlist items", params=params)
+    items = data.get("items") if isinstance(data, dict) else None
+    if not isinstance(items, list):
+        raise DynamicContentError("YouTube playlist items returned malformed data.")
+    if not items:
+        raise DynamicContentError("YouTube playlist items returned no videos.")
 
     videos = []
-    for item in data.get("items", []):
-        snippet = item["snippet"]
-        videoId = snippet["resourceId"]["videoId"]
+    for item in items:
+        try:
+            snippet = item["snippet"]
+            videoId = snippet["resourceId"]["videoId"]
+            title = snippet["title"]
+            publishedAt = snippet["publishedAt"]
+        except (KeyError, TypeError) as ex:
+            raise DynamicContentError("YouTube playlist items returned malformed video data.") from ex
+
+        if not title or not videoId or not publishedAt:
+            raise DynamicContentError("YouTube playlist items returned incomplete video data.")
+
+        try:
+            published = datetime.strptime(publishedAt, "%Y-%m-%dT%H:%M:%SZ").strftime("%B %d, %Y")
+        except ValueError as ex:
+            raise DynamicContentError(f"YouTube video '{title}' has an invalid publishedAt value.") from ex
 
         videos.append({
-            "title": snippet["title"],
+            "title": title,
             "url": f"https://www.youtube.com/watch?v={videoId}",
             "thumb": f"https://img.youtube.com/vi/{videoId}/maxresdefault.jpg",
-            "published": datetime.strptime(snippet["publishedAt"], "%Y-%m-%dT%H:%M:%SZ").strftime("%B %d, %Y")
+            "published": published
         })
 
     return videos
 
 def buildVideosSection(videos):
     if not videos:
-        return "No recent videos found."
+        raise DynamicContentError("No recent videos are available.")
 
     htmlParts = []
+    htmlParts.append(VIDEOSHEADING)
+    htmlParts.append("\n\n")
     htmlParts.append("<div>\n")
 
     for video in videos:
@@ -293,18 +386,32 @@ def buildVideosSection(videos):
     return "".join(htmlParts)
 
 def fetchFeedEntries(feedUrl, maxEntries):
-    feed = feedparser.parse(feedUrl)
+    response = fetchResponse(feedUrl, "RSS feed")
+    if not response.content or not response.content.strip():
+        raise DynamicContentError("RSS feed returned an empty response.")
+
+    feed = feedparser.parse(response.content)
+    if feed.get("bozo"):
+        raise DynamicContentError(f"RSS feed could not be parsed: {feed.get('bozo_exception')}")
+
+    if not hasattr(feed, "entries"):
+        raise DynamicContentError("RSS feed returned malformed data.")
 
     entries = feed.entries[:maxEntries]
+    if not entries:
+        raise DynamicContentError("RSS feed returned no entries.")
 
     lines = []
 
     for entry in entries:
-        title = entry.title
-        link = entry.link
+        title = entry.get("title")
+        link = entry.get("link")
+        if not title or not link:
+            raise DynamicContentError("RSS feed returned an entry without title or link.")
+
         publicationDate = "Unknown Date"
 
-        if hasattr(entry, "published_parsed"):
+        if entry.get("published_parsed"):
             publicationDate = datetime(*entry.published_parsed[:6]).strftime("%m/%d/%Y")
 
         lines.append(f"- {publicationDate} - [{title}]({link})")
@@ -316,12 +423,10 @@ def fetchFeedEntries(feedUrl, maxEntries):
 
     return "\n".join(lines)
 
-def generateReadme():
-    newsSection = fetchFeedEntries(FEEDURL, FEEDMAXENTRIES)
+def buildNewsSection(feedUrl, maxEntries):
+    return f"{NEWSHEADING}\n\n{fetchFeedEntries(feedUrl, maxEntries)}"
 
-    videos = fetchLatestYouTubeVideos(YOUTUBECHANNELID, YOUTUBEMAXENTRIES)
-    videosSection = buildVideosSection(videos)
-
+def buildLanguageStatsSection():
     languages = getAggregatedLanguages(USERNAME)
 
     mainLanguages = {k: v for k, v in languages.items() if v >= MINLANGUAGEPERCENT}
@@ -332,7 +437,29 @@ def generateReadme():
 
     languages = mainLanguages
 
-    languagesSection = buildLanguagesSection(languages, GITHUBLANGUAGECOLORS)
+    return buildLanguagesSection(languages, GITHUBLANGUAGECOLORS)
+
+def generateReadme(outputPath: str):
+    newsSection = buildSectionOrPreserve(
+        "Latest News",
+        NEWSHEADING,
+        VIDEOSHEADING,
+        lambda: buildNewsSection(FEEDURL, FEEDMAXENTRIES),
+    )
+
+    videosSection = buildSectionOrPreserve(
+        "Latest Videos",
+        VIDEOSHEADING,
+        LANGUAGESHEADING,
+        lambda: buildVideosSection(fetchLatestYouTubeVideos(YOUTUBECHANNELID, YOUTUBEMAXENTRIES)),
+    )
+
+    languagesSection = buildSectionOrPreserve(
+        "Top Languages",
+        LANGUAGESHEADING,
+        TOOLSHEADING,
+        buildLanguageStatsSection,
+    )
 
     toolsSection = """\
 ## 🧰 Tools & Technologies I Use
@@ -432,11 +559,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 - **[Portals](https://havoc.de/project/portals)**: A Doom-inspired custom game engine, currently in development for a future game project
 - **[havIDE](https://havoc.de/project/havIDE)**: An integrated development environment (IDE) for C++ projects, currently in development
 
-## 📰 Latest News
-
 {newsSection}
-
-## 📹 Latest Videos
 
 {videosSection}
 
@@ -449,8 +572,26 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 <a href="https://github.com/Havoc7891/Havoc7891/actions"><img src="https://github.com/Havoc7891/Havoc7891/workflows/Update%20README/badge.svg" alt="Update README" title="Update README" aria-label="Update README" align="right"></a>
 """
 
-    with open("updated-readme.md", "w", encoding="utf-8") as file:
+    outputDirectory = os.path.dirname(os.path.abspath(outputPath))
+    os.makedirs(outputDirectory, exist_ok=True)
+
+    with open(outputPath, "w", encoding="utf-8") as file:
         file.write(readmeContent)
 
+def parseArgs():
+    parser = argparse.ArgumentParser(description="Generate the profile README.")
+    parser.add_argument(
+        "--output",
+        default=DEFAULTOUTPUTPATH,
+        help=f"Path for the generated README candidate. Defaults to {DEFAULTOUTPUTPATH}.",
+    )
+    return parser.parse_args()
+
 if __name__ == "__main__":
-    generateReadme()
+    args = parseArgs()
+
+    try:
+        generateReadme(args.output)
+    except DynamicContentError as ex:
+        print(f"README update failed: {ex}", file=sys.stderr)
+        sys.exit(1)
