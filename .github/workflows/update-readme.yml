@@ -12,20 +12,20 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Check Out Repository
         uses: actions/checkout@v6
 
-      - name: Set up Python
+      - name: Set Up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.14"
           cache: "pip"
 
-      - name: Install Dependencies
+      - name: Install Python Dependencies
         run: |
           pip install -r requirements.txt
 
-      - name: Generate README Content
+      - name: Generate Profile Content
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
@@ -37,25 +37,23 @@ jobs:
           test -s "$generated_readme"
 
           if cmp -s "$generated_readme" README.md; then
-            echo "README content unchanged."
+            echo "README markdown unchanged."
           else
             mv "$generated_readme" README.md
           fi
 
-      - name: Commit and push changes
+      - name: Commit and Push Generated Profile Content
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Add all changed or newly created files
           git add -A
 
-          # Commit only if there are changes
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Update README"
+            git commit -m "Update Generated Profile Content"
             git push
           else
-            echo "README up to date."
+            echo "No generated profile content changes to commit."
           fi
 
   cleanup-cache:
@@ -65,18 +63,19 @@ jobs:
       actions: write
       contents: read
     steps:
-      - name: Delete caches >= 3 days old
+      - name: Delete Stale Actions Caches
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
 
-          echo "Fetching caches for $REPO..."
           cutoff=$(date -d "-3 days" +%s)
           cutoff_readable=$(date -d "@$cutoff" --iso-8601=seconds)
-          echo "Cutoff timestamp: $cutoff ($cutoff_readable)"
-          echo "Deleting caches last accessed on or before: $cutoff_readable"
+
+          echo "Fetching Actions caches for $REPO..."
+          echo "Cache cleanup cutoff: $cutoff_readable"
+          echo "Deleting caches last accessed on or before the cutoff."
           echo ""
 
           caches=$(gh api --paginate "repos/$REPO/actions/caches" --jq '.actions_caches[]')
@@ -98,14 +97,14 @@ jobs:
             age_hours=$(( (age_seconds % 86400) / 3600 ))
 
             if [ "$ts" -le "$cutoff" ]; then
-              echo "Deleting cache id $id (last accessed $last_accessed, ${age_days}d ${age_hours}h old)"
+              echo "Deleting cache ID $id (last accessed $last_accessed, ${age_days}d ${age_hours}h old)"
               if gh api --method DELETE "repos/$REPO/actions/caches/$id"; then
                 deleted=$((deleted + 1))
               else
-                echo "Failed to delete cache $id"
+                echo "Failed to delete cache ID $id"
               fi
             else
-              echo "Keeping cache id $id (last accessed $last_accessed, ${age_days}d ${age_hours}h old)"
+              echo "Keeping cache ID $id (last accessed $last_accessed, ${age_days}d ${age_hours}h old)"
               kept=$((kept + 1))
             fi
           done < <(echo "$caches" | jq -c '.')
