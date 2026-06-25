@@ -1,4 +1,4 @@
-name: Update README
+name: Update Profile Content
 
 on:
   schedule:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  update-readme:
+  update-profile-content:
     runs-on: ubuntu-latest
     steps:
       - name: Check Out Repository
@@ -32,14 +32,14 @@ jobs:
         run: |
           set -euo pipefail
 
-          generated_readme="$RUNNER_TEMP/generated-readme.md"
-          python scripts/update-readme.py --output "$generated_readme"
-          test -s "$generated_readme"
+          generated_profile_content="$RUNNER_TEMP/generated-profile-content.md"
+          python scripts/generate-profile-content.py --output "$generated_profile_content"
+          test -s "$generated_profile_content"
 
-          if cmp -s "$generated_readme" README.md; then
-            echo "README markdown unchanged."
+          if cmp -s "$generated_profile_content" README.md; then
+            echo "Profile README markdown unchanged."
           else
-            mv "$generated_readme" README.md
+            mv "$generated_profile_content" README.md
           fi
 
       - name: Commit and Push Generated Profile Content
@@ -58,7 +58,7 @@ jobs:
 
   cleanup-cache:
     runs-on: ubuntu-latest
-    needs: update-readme
+    needs: update-profile-content
     permissions:
       actions: write
       contents: read
