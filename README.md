@@ -38,8 +38,8 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 <img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 5.0%
 <img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 4.1%
 <img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.4%
-<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.2%
-<img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.0%
+<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.1%
+<img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.1%
 <img src="legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.3%
 <img src="legend-icons/legend-cmake.svg" width="12" height="12"> **CMake** 0.2%
 
@@ -131,4 +131,4 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ---
 
-<a href="https://github.com/Havoc7891/Havoc7891/actions"><img src="https://github.com/Havoc7891/Havoc7891/workflows/Update%20README/badge.svg" alt="Update README" title="Update README" aria-label="Update README" align="right"></a>
+<a href="https://github.com/Havoc7891/Havoc7891/actions/workflows/profile-content.yml"><img src="https://github.com/Havoc7891/Havoc7891/actions/workflows/profile-content.yml/badge.svg" alt="Update Profile Content" title="Update Profile Content" aria-label="Update Profile Content" align="right"></a>

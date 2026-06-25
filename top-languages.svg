@@ -4,13 +4,13 @@
 <clipPath id="barClip"><rect x="0" y="2" width="720" height="8" rx="4.0" ry="4.0" /></clipPath>
 </defs>
 <g clip-path="url(#barClip)">
-<rect x="0.00" y="2" width="471.36" height="8" fill="#F34B7D" />
-<rect x="471.36" y="2" width="124.72" height="8" fill="#178600" />
-<rect x="596.08" y="2" width="35.72" height="8" fill="#3178C6" />
-<rect x="631.79" y="2" width="29.74" height="8" fill="#555555" />
-<rect x="661.53" y="2" width="24.48" height="8" fill="#F1E05A" />
-<rect x="686.01" y="2" width="22.90" height="8" fill="#3572A5" />
-<rect x="708.91" y="2" width="7.49" height="8" fill="#563D7C" />
+<rect x="0.00" y="2" width="471.60" height="8" fill="#F34B7D" />
+<rect x="471.60" y="2" width="124.78" height="8" fill="#178600" />
+<rect x="596.38" y="2" width="35.71" height="8" fill="#3178C6" />
+<rect x="632.09" y="2" width="29.74" height="8" fill="#555555" />
+<rect x="661.82" y="2" width="24.55" height="8" fill="#F1E05A" />
+<rect x="686.38" y="2" width="22.46" height="8" fill="#3572A5" />
+<rect x="708.84" y="2" width="7.56" height="8" fill="#563D7C" />
 <rect x="716.40" y="2" width="2.09" height="8" fill="#012456" />
 <rect x="718.49" y="2" width="1.51" height="8" fill="#DA3434" />
 </g>
