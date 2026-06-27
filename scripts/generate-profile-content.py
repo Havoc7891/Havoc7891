@@ -554,6 +554,7 @@ def generateReadme(outputPath: str):
 My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie Game Developer.
 
 ## 🔖 Featured Projects
+- **[hav Task List](https://havoc.de/project/havTaskList)**: A VS Code extension that scans workspace files for TODO-style task tags and shows them in a dedicated tree view
 - **[hav Commit Guard](https://havoc.de/project/havCommitGuard)**: A VS Code commit guard that scans staged Git changes for TODOs, debug leftovers, merge conflict markers, and custom regex matches before you commit
 - **[havPreviewHandler](https://havoc.de/project/havPreviewHandler)**: A shell extension DLL for File Explorer on Windows 11 that provides animated image previews and representative static thumbnails for GIF, WebP, and PNG files (including APNG content in PNG containers), plus still-frame preview / thumbnail support for MP4 and WMV files
 - **[Portals](https://havoc.de/project/portals)**: A Doom-inspired custom game engine, currently in development for a future game project
