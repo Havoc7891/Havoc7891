@@ -3,6 +3,7 @@
 My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie Game Developer.
 
 ## 🔖 Featured Projects
+- **[hav Task List](https://havoc.de/project/havTaskList)**: A VS Code extension that scans workspace files for TODO-style task tags and shows them in a dedicated tree view
 - **[hav Commit Guard](https://havoc.de/project/havCommitGuard)**: A VS Code commit guard that scans staged Git changes for TODOs, debug leftovers, merge conflict markers, and custom regex matches before you commit
 - **[havPreviewHandler](https://havoc.de/project/havPreviewHandler)**: A shell extension DLL for File Explorer on Windows 11 that provides animated image previews and representative static thumbnails for GIF, WebP, and PNG files (including APNG content in PNG containers), plus still-frame preview / thumbnail support for MP4 and WMV files
 - **[Portals](https://havoc.de/project/portals)**: A Doom-inspired custom game engine, currently in development for a future game project
@@ -10,11 +11,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ## 📰 Latest News
 
+- 06/27/2026 - [hav Task List Released](https://havoc.de/articles/2026-06-27)
 - 06/02/2026 - [Website Update and 12,000 YouTube Views](https://havoc.de/articles/2026-06-02)
 - 05/15/2026 - [havINI v0.7, havCSON v0.3, and havJSON v0.4 Released](https://havoc.de/articles/2026-05-15)
 - 05/04/2026 - [havPreviewHandler v0.4.1 Released](https://havoc.de/articles/2026-05-04)
 - 05/02/2026 - [hav Commit Guard Released](https://havoc.de/articles/2026-05-02)
-- 04/28/2026 - [Adding Code Metrics to Project Pages with havCodeMetrics](https://havoc.de/articles/2026-04-28)
 
 [More news on havoc.de](https://havoc.de/articles)
 
@@ -33,13 +34,13 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ![Top Languages](top-languages.svg)
 
-<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 65.5%
-<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 17.3%
-<img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 5.0%
-<img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 4.1%
-<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.4%
-<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.1%
-<img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.1%
+<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 62.3%
+<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 16.5%
+<img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 9.5%
+<img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 3.9%
+<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.2%
+<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.0%
+<img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.0%
 <img src="legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.3%
 <img src="legend-icons/legend-cmake.svg" width="12" height="12"> **CMake** 0.2%
 
