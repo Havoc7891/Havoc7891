@@ -11,11 +11,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ## 📰 Latest News
 
+- 07/01/2026 - [havTermKit v0.3 Released](https://havoc.de/articles/2026-07-01)
 - 06/27/2026 - [hav Task List Released](https://havoc.de/articles/2026-06-27)
 - 06/02/2026 - [Website Update and 12,000 YouTube Views](https://havoc.de/articles/2026-06-02)
 - 05/15/2026 - [havINI v0.7, havCSON v0.3, and havJSON v0.4 Released](https://havoc.de/articles/2026-05-15)
 - 05/04/2026 - [havPreviewHandler v0.4.1 Released](https://havoc.de/articles/2026-05-04)
-- 05/02/2026 - [hav Commit Guard Released](https://havoc.de/articles/2026-05-02)
 
 [More news on havoc.de](https://havoc.de/articles)
 
@@ -34,11 +34,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ![Top Languages](top-languages.svg)
 
-<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 62.3%
-<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 16.5%
-<img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 9.5%
-<img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 3.9%
-<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.2%
+<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 62.9%
+<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 16.6%
+<img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 9.6%
+<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.3%
+<img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 3.0%
 <img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.0%
 <img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.0%
 <img src="legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.3%
