@@ -34,11 +34,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ![Top Languages](top-languages.svg)
 
-<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 51.4%
-<img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 17.0%
-<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 13.6%
+<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 51.0%
+<img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 16.8%
+<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 13.5%
 <img src="legend-icons/legend-html.svg" width="12" height="12"> **HTML** 5.6%
-<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 4.6%
+<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 5.4%
 <img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 2.5%
 <img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 2.5%
 <img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.8%
