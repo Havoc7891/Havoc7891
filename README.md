@@ -11,11 +11,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ## 📰 Latest News
 
+- 07/25/2026 - [hav Task List v0.2.0 Released](https://havoc.de/articles/2026-07-25)
 - 07/21/2026 - [havResonance v0.2.0 Released](https://havoc.de/articles/2026-07-21)
 - 07/20/2026 - [havResonance and havResonance Proxy Released](https://havoc.de/articles/2026-07-20)
 - 07/11/2026 - [havLightbox v0.4 Released](https://havoc.de/articles/2026-07-11)
 - 07/09/2026 - [hav Commit Guard v0.1.1 Released](https://havoc.de/articles/2026-07-09)
-- 07/06/2026 - [Animated the Landing Page Avatar](https://havoc.de/articles/2026-07-06)
 
 [More news on havoc.de](https://havoc.de/articles)
 
@@ -34,13 +34,13 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ![Top Languages](top-languages.svg)
 
-<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 51.0%
-<img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 16.8%
-<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 13.5%
-<img src="legend-icons/legend-html.svg" width="12" height="12"> **HTML** 5.6%
-<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 5.4%
-<img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 2.5%
-<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 2.5%
+<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 50.0%
+<img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 18.4%
+<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 13.2%
+<img src="legend-icons/legend-html.svg" width="12" height="12"> **HTML** 5.5%
+<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 5.3%
+<img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 2.4%
+<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 2.4%
 <img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.8%
 <img src="legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.8%
 <img src="legend-icons/legend-cmake.svg" width="12" height="12"> **CMake** 0.2%
