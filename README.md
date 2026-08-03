@@ -11,11 +11,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ## 📰 Latest News
 
+- 08/03/2026 - [havMediaControls v1.1.1.0 Released](https://havoc.de/articles/2026-08-03)
 - 07/31/2026 - [havMediaControls v1.1.0.0 Released](https://havoc.de/articles/2026-07-31)
 - 07/30/2026 - [havMediaControls Released](https://havoc.de/articles/2026-07-30)
 - 07/26/2026 - [havResonance v0.3.0 Released](https://havoc.de/articles/2026-07-26)
 - 07/25/2026 - [hav Task List v0.2.0 Released](https://havoc.de/articles/2026-07-25)
-- 07/21/2026 - [havResonance v0.2.0 Released](https://havoc.de/articles/2026-07-21)
 
 [More news on havoc.de](https://havoc.de/articles)
 
