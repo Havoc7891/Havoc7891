@@ -1,11 +1,13 @@
 import argparse
 import hashlib
 import os
+import re
 import sys
 import feedparser
 import requests
 from datetime import datetime
 from collections import Counter
+from html import escape
 
 NEWSPAGEURL = "https://havoc.de/articles"
 FEEDURL = "https://havoc.de/rss.xml"
@@ -36,8 +38,10 @@ GITHUBLANGUAGECOLORS = {
     "Other": "#EDEDED",
 }
 LEGENDICONSFOLDER = "legend-icons"
+TOPLANGUAGESSVGPATH = "top-languages.svg"
 YOUTUBECHANNELID = "UCaGa30jV6OWFpjBWY3r4GWQ"
 YOUTUBEMAXENTRIES = 6
+YOUTUBEVIDEOIDPATTERN = re.compile(r"^[A-Za-z0-9_-]{11}$")
 
 class DynamicContentError(RuntimeError):
     pass
@@ -61,12 +65,12 @@ def fetchJson(url: str, sourceName: str, **kwargs):
     except ValueError as ex:
         raise DynamicContentError(f"{sourceName} returned malformed JSON.") from ex
 
-def extractReadmeSection(readmePath: str, startHeading: str, endHeading: str, sectionName: str) -> str:
+def extractReadmeSection(startHeading: str, endHeading: str, sectionName: str) -> str:
     try:
-        with open(readmePath, "r", encoding="utf-8") as file:
+        with open(READMEPATH, "r", encoding="utf-8") as file:
             readme = file.read()
     except FileNotFoundError as ex:
-        raise DynamicContentError(f"Cannot preserve {sectionName}: {readmePath} does not exist.") from ex
+        raise DynamicContentError(f"Cannot preserve {sectionName}: {READMEPATH} does not exist.") from ex
 
     start = readme.find(startHeading)
     if start == -1:
@@ -83,15 +87,15 @@ def buildSectionOrPreserve(sectionName: str, startHeading: str, endHeading: str,
         return builder()
     except DynamicContentError as ex:
         print(f"Warning: preserving existing {sectionName}: {ex}", file=sys.stderr)
-        return extractReadmeSection(READMEPATH, startHeading, endHeading, sectionName)
+        return extractReadmeSection(startHeading, endHeading, sectionName)
 
-def getAggregatedLanguages(username: str) -> dict:
+def getAggregatedLanguages() -> dict:
     token = os.getenv("GH_TOKEN")
     if not token:
         raise DynamicContentError("GH_TOKEN is missing.")
 
     headers = {"Authorization": f"Bearer {token}"}
-    reposUrl = f"https://api.github.com/users/{username}/repos"
+    reposUrl = f"https://api.github.com/users/{USERNAME}/repos"
 
     repos = []
     page = 1
@@ -145,7 +149,7 @@ def getAggregatedLanguages(username: str) -> dict:
         for lang, count in langTotals.most_common()
     }
 
-def generateTopLanguagesSvg(languages: dict, colorMap: dict, filename: str):
+def generateTopLanguagesSvg(languages: dict):
     if not languages:
         svg = """<svg xmlns="http://www.w3.org/2000/svg" width="400" height="40" viewBox="0 0 400 40" role="img">
   <title>Top Languages</title>
@@ -154,7 +158,7 @@ def generateTopLanguagesSvg(languages: dict, colorMap: dict, filename: str):
   </text>
 </svg>
 """
-        with open(filename, "w", encoding="utf-8") as file:
+        with open(TOPLANGUAGESSVGPATH, "w", encoding="utf-8") as file:
             file.write(svg)
         return
 
@@ -204,7 +208,7 @@ def generateTopLanguagesSvg(languages: dict, colorMap: dict, filename: str):
         if i == len(items) - 1:
             segmentWidth = width - (currentX - barX)
 
-        color = colorMap.get(lang, "#999999")
+        color = GITHUBLANGUAGECOLORS.get(lang, "#999999")
 
         svgParts.append(
             f'<rect x="{currentX:.2f}" y="{barY}" width="{segmentWidth:.2f}" '
@@ -216,7 +220,7 @@ def generateTopLanguagesSvg(languages: dict, colorMap: dict, filename: str):
     svgParts.append("</g>")
     svgParts.append("</svg>")
 
-    with open(filename, "w", encoding="utf-8") as file:
+    with open(TOPLANGUAGESSVGPATH, "w", encoding="utf-8") as file:
         file.write("\n".join(svgParts))
 
 def generateLegendCircleSvg(color: str, filename: str):
@@ -245,8 +249,8 @@ def generateLegendCircleSvg(color: str, filename: str):
     with open(filename, "w", encoding="utf-8") as file:
         file.write(svgTemplate)
 
-def cleanupLegendIcons(currentLanguages: dict, directory: str):
-    if not os.path.isdir(directory):
+def cleanupLegendIcons(currentLanguages: dict):
+    if not os.path.isdir(LEGENDICONSFOLDER):
         return # Nothing to clean
 
     # Create the set of expected filenames
@@ -256,109 +260,87 @@ def cleanupLegendIcons(currentLanguages: dict, directory: str):
         expected.add(f"legend-{safeName}.svg")
 
     # Walk through the folder and delete old ones
-    for filename in os.listdir(directory):
+    for filename in os.listdir(LEGENDICONSFOLDER):
         if filename.endswith(".svg") and filename.startswith("legend-"):
             if filename not in expected:
-                os.remove(os.path.join(directory, filename))
+                os.remove(os.path.join(LEGENDICONSFOLDER, filename))
 
-def buildLanguagesSection(languages: dict, colorMap: dict):
+def buildLanguagesSection(languages: dict):
     if not languages:
         raise DynamicContentError("No language stats are available.")
 
     os.makedirs(LEGENDICONSFOLDER, exist_ok=True)
 
     # Generate / update the SVG file for the stacked bar
-    generateTopLanguagesSvg(languages, colorMap, "top-languages.svg")
+    generateTopLanguagesSvg(languages)
 
     # Markdown section embedding the SVG
     lines = [
-        "## 📊 Top Languages Across My Public GitHub Repositories",
+        LANGUAGESHEADING,
         "",
-        "![Top Languages](top-languages.svg)",
+        f"![Top Languages]({TOPLANGUAGESSVGPATH})",
         "",
     ]
 
     # Generate / update legend
     for lang, pct in sorted(languages.items(), key=lambda x: x[1], reverse=True):
-        color = colorMap.get(lang, "#999999")
+        color = GITHUBLANGUAGECOLORS.get(lang, "#999999")
         safeName = lang.lower().replace("#", "sharp").replace("+", "plus")
         iconFile = os.path.join(LEGENDICONSFOLDER, f"legend-{safeName}.svg")
         generateLegendCircleSvg(color, iconFile)
         webPath = iconFile.replace(os.sep, "/")
         lines.append(f"<img src=\"{webPath}\" width=\"12\" height=\"12\"> **{lang}** {pct:.1f}%")
 
-    cleanupLegendIcons(languages, LEGENDICONSFOLDER)
+    cleanupLegendIcons(languages)
 
     return "\n".join(lines)
 
-def getUploadsPlaylistId(channelId, apiKey):
-    url = "https://www.googleapis.com/youtube/v3/channels"
-    params = {
-        "part": "contentDetails",
-        "id": channelId,
-        "key": apiKey
-    }
+def formatViewCount(value):
+    if not isinstance(value, str) or not value.isdigit():
+        raise DynamicContentError("YouTube RSS feed returned a malformed view count.")
 
-    data = fetchJson(url, "YouTube channel lookup", params=params)
-    items = data.get("items") if isinstance(data, dict) else None
-    if not isinstance(items, list) or not items:
-        raise DynamicContentError("YouTube channel lookup returned no channel items.")
+    count = int(value)
+    for minimum, suffix in ((1_000_000_000, "B"), (1_000_000, "M"), (1_000, "K")):
+        if count >= minimum:
+            compact = f"{count / minimum:.1f}".removesuffix(".0")
+            return f"{compact}{suffix}"
 
-    try:
-        uploadsPlaylistId = items[0]["contentDetails"]["relatedPlaylists"]["uploads"]
-    except (KeyError, TypeError) as ex:
-        raise DynamicContentError("YouTube channel lookup returned malformed playlist data.") from ex
+    return str(count)
 
-    if not uploadsPlaylistId:
-        raise DynamicContentError("YouTube channel lookup did not include an uploads playlist.")
+def fetchLatestYouTubeVideos():
+    url = f"https://www.youtube.com/feeds/videos.xml?channel_id={YOUTUBECHANNELID}"
+    response = fetchResponse(url, "YouTube RSS feed")
+    if not response.content or not response.content.strip():
+        raise DynamicContentError("YouTube RSS feed returned an empty response.")
 
-    return uploadsPlaylistId
+    feed = feedparser.parse(response.content)
+    if feed.get("bozo"):
+        raise DynamicContentError(f"YouTube RSS feed could not be parsed: {feed.get('bozo_exception')}")
 
-def fetchLatestYouTubeVideos(channelId, maxEntries):
-    apiKey = os.getenv("YOUTUBE_API_KEY")
-    if not apiKey:
-        raise DynamicContentError("YOUTUBE_API_KEY is missing.")
-
-    uploadsPlaylistId = getUploadsPlaylistId(channelId, apiKey)
-
-    url = "https://www.googleapis.com/youtube/v3/playlistItems"
-    params = {
-        "part": "snippet",
-        "playlistId": uploadsPlaylistId,
-        "maxResults": maxEntries,
-        "key": apiKey
-    }
-
-    data = fetchJson(url, "YouTube playlist items", params=params)
-    items = data.get("items") if isinstance(data, dict) else None
-    if not isinstance(items, list):
-        raise DynamicContentError("YouTube playlist items returned malformed data.")
-    if not items:
-        raise DynamicContentError("YouTube playlist items returned no videos.")
+    entries = feed.entries[:YOUTUBEMAXENTRIES] if hasattr(feed, "entries") else []
+    if not entries:
+        raise DynamicContentError("YouTube RSS feed returned no videos.")
 
     videos = []
-    for item in items:
-        try:
-            snippet = item["snippet"]
-            videoId = snippet["resourceId"]["videoId"]
-            title = snippet["title"]
-            publishedAt = snippet["publishedAt"]
-        except (KeyError, TypeError) as ex:
-            raise DynamicContentError("YouTube playlist items returned malformed video data.") from ex
+    for entry in entries:
+        videoId = entry.get("yt_videoid")
+        title = entry.get("title")
+        publishedParsed = entry.get("published_parsed")
+        statistics = entry.get("media_statistics")
+        viewCount = statistics.get("views") if isinstance(statistics, dict) else None
+        if not title or not publishedParsed or not isinstance(videoId, str):
+            raise DynamicContentError("YouTube RSS feed returned incomplete video data.")
+        if not YOUTUBEVIDEOIDPATTERN.fullmatch(videoId):
+            raise DynamicContentError("YouTube RSS feed returned an invalid video ID.")
 
-        if not title or not videoId or not publishedAt:
-            raise DynamicContentError("YouTube playlist items returned incomplete video data.")
-
-        try:
-            published = datetime.strptime(publishedAt, "%Y-%m-%dT%H:%M:%SZ").strftime("%B %d, %Y")
-        except ValueError as ex:
-            raise DynamicContentError(f"YouTube video '{title}' has an invalid publishedAt value.") from ex
+        published = datetime(*publishedParsed[:6]).strftime("%B %d, %Y")
 
         videos.append({
             "title": title,
             "url": f"https://www.youtube.com/watch?v={videoId}",
-            "thumb": f"https://img.youtube.com/vi/{videoId}/maxresdefault.jpg",
-            "published": published
+            "thumb": f"https://i.ytimg.com/vi/{videoId}/maxresdefault.jpg",
+            "published": published,
+            "viewCount": formatViewCount(viewCount)
         })
 
     return videos
@@ -367,26 +349,31 @@ def buildVideosSection(videos):
     if not videos:
         raise DynamicContentError("No recent videos are available.")
 
-    htmlParts = []
-    htmlParts.append(VIDEOSHEADING)
-    htmlParts.append("\n\n")
-    htmlParts.append("<div>\n")
+    htmlParts = [VIDEOSHEADING, "\n\n", "<table>\n"]
 
-    for video in videos:
-        htmlParts.append(
-            f'    <a href="{video["url"]}">'
-            f'<img src="{video["thumb"]}" width="400" '
-            f'alt="{video["title"]} | {video["published"]}" '
-            f'title="{video["title"]} | {video["published"]}" '
-            f'aria-label="{video["title"]} | {video["published"]}">'
-            f'</a>\n'
-        )
+    for index in range(0, len(videos), 2):
+        htmlParts.append("  <tr>\n")
 
-    htmlParts.append("</div>")
+        for video in videos[index:index + 2]:
+            label = f'{escape(video["title"], quote=True)} | {video["published"]}'
+            htmlParts.append(
+                "    <td align=\"center\" valign=\"top\">\n"
+                f'      <a href="{video["url"]}">'
+                f'<img src="{video["thumb"]}" width="400" '
+                f'alt="{label}" title="{label}" aria-label="{label}">'
+                "</a>\n"
+                f'      <div align="right">◉ {video["viewCount"]} views</div>\n'
+                "    </td>\n"
+            )
+
+        htmlParts.append("  </tr>\n")
+
+    htmlParts.append("</table>")
+
     return "".join(htmlParts)
 
-def fetchFeedEntries(feedUrl, maxEntries):
-    response = fetchResponse(feedUrl, "RSS feed")
+def fetchFeedEntries():
+    response = fetchResponse(FEEDURL, "RSS feed")
     if not response.content or not response.content.strip():
         raise DynamicContentError("RSS feed returned an empty response.")
 
@@ -397,7 +384,7 @@ def fetchFeedEntries(feedUrl, maxEntries):
     if not hasattr(feed, "entries"):
         raise DynamicContentError("RSS feed returned malformed data.")
 
-    entries = feed.entries[:maxEntries]
+    entries = feed.entries[:FEEDMAXENTRIES]
     if not entries:
         raise DynamicContentError("RSS feed returned no entries.")
 
@@ -423,11 +410,11 @@ def fetchFeedEntries(feedUrl, maxEntries):
 
     return "\n".join(lines)
 
-def buildNewsSection(feedUrl, maxEntries):
-    return f"{NEWSHEADING}\n\n{fetchFeedEntries(feedUrl, maxEntries)}"
+def buildNewsSection():
+    return f"{NEWSHEADING}\n\n{fetchFeedEntries()}"
 
 def buildLanguageStatsSection():
-    languages = getAggregatedLanguages(USERNAME)
+    languages = getAggregatedLanguages()
 
     mainLanguages = {k: v for k, v in languages.items() if v >= MINLANGUAGEPERCENT}
     otherTotal = sum(v for v in languages.values() if v < MINLANGUAGEPERCENT)
@@ -437,21 +424,21 @@ def buildLanguageStatsSection():
 
     languages = mainLanguages
 
-    return buildLanguagesSection(languages, GITHUBLANGUAGECOLORS)
+    return buildLanguagesSection(languages)
 
 def generateReadme(outputPath: str):
     newsSection = buildSectionOrPreserve(
         "Latest News",
         NEWSHEADING,
         VIDEOSHEADING,
-        lambda: buildNewsSection(FEEDURL, FEEDMAXENTRIES),
+        buildNewsSection,
     )
 
     videosSection = buildSectionOrPreserve(
         "Latest Videos",
         VIDEOSHEADING,
         LANGUAGESHEADING,
-        lambda: buildVideosSection(fetchLatestYouTubeVideos(YOUTUBECHANNELID, YOUTUBEMAXENTRIES)),
+        lambda: buildVideosSection(fetchLatestYouTubeVideos()),
     )
 
     languagesSection = buildSectionOrPreserve(
