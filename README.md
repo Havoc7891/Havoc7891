@@ -21,14 +21,38 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ## 📹 Latest Videos
 
-<div>
-    <a href="https://www.youtube.com/watch?v=LYvdPmw3VHs"><img src="https://img.youtube.com/vi/LYvdPmw3VHs/maxresdefault.jpg" width="400" alt="Network Crisis | April 19, 2026" title="Network Crisis | April 19, 2026" aria-label="Network Crisis | April 19, 2026"></a>
-    <a href="https://www.youtube.com/watch?v=RAP8-QavhC4"><img src="https://img.youtube.com/vi/RAP8-QavhC4/maxresdefault.jpg" width="400" alt="Asphalt Strike | April 04, 2026" title="Asphalt Strike | April 04, 2026" aria-label="Asphalt Strike | April 04, 2026"></a>
-    <a href="https://www.youtube.com/watch?v=tpGcLdPe4KI"><img src="https://img.youtube.com/vi/tpGcLdPe4KI/maxresdefault.jpg" width="400" alt="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" title="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" aria-label="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026"></a>
-    <a href="https://www.youtube.com/watch?v=OBIG8NlgEOg"><img src="https://img.youtube.com/vi/OBIG8NlgEOg/maxresdefault.jpg" width="400" alt="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" title="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" aria-label="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026"></a>
-    <a href="https://www.youtube.com/watch?v=bJVEPD9KDO4"><img src="https://img.youtube.com/vi/bJVEPD9KDO4/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Mod Manager & Test Mod Demo (February 2026) | February 08, 2026" title="Hovertank (id Software) Source Port - Mod Manager & Test Mod Demo (February 2026) | February 08, 2026" aria-label="Hovertank (id Software) Source Port - Mod Manager & Test Mod Demo (February 2026) | February 08, 2026"></a>
-    <a href="https://www.youtube.com/watch?v=koTnosr6xOw"><img src="https://img.youtube.com/vi/koTnosr6xOw/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" title="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" aria-label="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025"></a>
-</div>
+<table>
+  <tr>
+    <td align="center" valign="top">
+      <a href="https://www.youtube.com/watch?v=LYvdPmw3VHs"><img src="https://i.ytimg.com/vi/LYvdPmw3VHs/maxresdefault.jpg" width="400" alt="Network Crisis | April 19, 2026" title="Network Crisis | April 19, 2026" aria-label="Network Crisis | April 19, 2026"></a>
+      <div align="right">◉ 6 views</div>
+    </td>
+    <td align="center" valign="top">
+      <a href="https://www.youtube.com/watch?v=RAP8-QavhC4"><img src="https://i.ytimg.com/vi/RAP8-QavhC4/maxresdefault.jpg" width="400" alt="Asphalt Strike | April 04, 2026" title="Asphalt Strike | April 04, 2026" aria-label="Asphalt Strike | April 04, 2026"></a>
+      <div align="right">◉ 10 views</div>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <a href="https://www.youtube.com/watch?v=tpGcLdPe4KI"><img src="https://i.ytimg.com/vi/tpGcLdPe4KI/maxresdefault.jpg" width="400" alt="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" title="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" aria-label="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026"></a>
+      <div align="right">◉ 49 views</div>
+    </td>
+    <td align="center" valign="top">
+      <a href="https://www.youtube.com/watch?v=OBIG8NlgEOg"><img src="https://i.ytimg.com/vi/OBIG8NlgEOg/maxresdefault.jpg" width="400" alt="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" title="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" aria-label="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026"></a>
+      <div align="right">◉ 23 views</div>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <a href="https://www.youtube.com/watch?v=bJVEPD9KDO4"><img src="https://i.ytimg.com/vi/bJVEPD9KDO4/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026" title="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026" aria-label="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026"></a>
+      <div align="right">◉ 110 views</div>
+    </td>
+    <td align="center" valign="top">
+      <a href="https://www.youtube.com/watch?v=koTnosr6xOw"><img src="https://i.ytimg.com/vi/koTnosr6xOw/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" title="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" aria-label="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025"></a>
+      <div align="right">◉ 465 views</div>
+    </td>
+  </tr>
+</table>
 
 ## 📊 Top Languages Across My Public GitHub Repositories
 
@@ -38,8 +62,8 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 <img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 27.4%
 <img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 20.9%
 <img src="legend-icons/legend-html.svg" width="12" height="12"> **HTML** 6.4%
-<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.5%
 <img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.5%
+<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.5%
 <img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 1.6%
 <img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.2%
 <img src="legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.6%
