@@ -5,13 +5,15 @@ import re
 import sys
 import feedparser
 import requests
-from datetime import datetime
+from datetime import datetime, timezone
 from collections import Counter
 from html import escape
+from zoneinfo import ZoneInfo
 
 NEWSPAGEURL = "https://havoc.de/articles"
 FEEDURL = "https://havoc.de/rss.xml"
-FEEDMAXENTRIES = 5
+FEEDMAXDATES = 5
+FEEDTIMEZONE = ZoneInfo("Europe/Berlin")
 USERNAME = "Havoc7891"
 READMEPATH = "README.md"
 DEFAULTOUTPUTPATH = "generated-profile-content.md"
@@ -372,6 +374,66 @@ def buildVideosSection(videos):
 
     return "".join(htmlParts)
 
+def formatFeedEntries(entries):
+    if not entries:
+        raise DynamicContentError("RSS feed returned no entries.")
+
+    groups = []
+    currentGroupKey = None
+
+    for entryIndex, entry in enumerate(entries):
+        publishedParsed = entry.get("published_parsed")
+        if publishedParsed:
+            published = datetime(*publishedParsed[:6], tzinfo=timezone.utc).astimezone(FEEDTIMEZONE)
+            groupKey = published.strftime("%Y-%m-%d")
+            publicationDate = published.strftime("%m/%d/%Y")
+            publicationTime = published.strftime("%I:%M %p")
+        else:
+            groupKey = f"unknown-{entryIndex}"
+            publicationDate = "Unknown Date"
+            publicationTime = None
+
+        if groupKey != currentGroupKey:
+            if len(groups) >= FEEDMAXDATES:
+                break
+
+            groups.append({
+                "date": publicationDate,
+                "entries": [],
+            })
+            currentGroupKey = groupKey
+
+        title = entry.get("title")
+        link = entry.get("link")
+        if not title or not link:
+            raise DynamicContentError("RSS feed returned an entry without title or link.")
+
+        groups[-1]["entries"].append({
+            "title": title,
+            "link": link,
+            "time": publicationTime,
+        })
+
+    lines = []
+
+    for group in groups:
+        groupEntries = group["entries"]
+        if len(groupEntries) == 1:
+            entry = groupEntries[0]
+            lines.append(f'- {group["date"]} - [{entry["title"]}]({entry["link"]})')
+            continue
+
+        lines.append(f'- {group["date"]}')
+        for entry in groupEntries:
+            lines.append(f'  - {entry["time"]} - [{entry["title"]}]({entry["link"]})')
+
+    if lines:
+        lines.append("")
+
+    lines.append(f"[More news on havoc.de]({NEWSPAGEURL})")
+
+    return "\n".join(lines)
+
 def fetchFeedEntries():
     response = fetchResponse(FEEDURL, "RSS feed")
     if not response.content or not response.content.strip():
@@ -384,31 +446,7 @@ def fetchFeedEntries():
     if not hasattr(feed, "entries"):
         raise DynamicContentError("RSS feed returned malformed data.")
 
-    entries = feed.entries[:FEEDMAXENTRIES]
-    if not entries:
-        raise DynamicContentError("RSS feed returned no entries.")
-
-    lines = []
-
-    for entry in entries:
-        title = entry.get("title")
-        link = entry.get("link")
-        if not title or not link:
-            raise DynamicContentError("RSS feed returned an entry without title or link.")
-
-        publicationDate = "Unknown Date"
-
-        if entry.get("published_parsed"):
-            publicationDate = datetime(*entry.published_parsed[:6]).strftime("%m/%d/%Y")
-
-        lines.append(f"- {publicationDate} - [{title}]({link})")
-
-    if lines:
-        lines.append("")
-
-    lines.append(f"[More news on havoc.de]({NEWSPAGEURL})")
-
-    return "\n".join(lines)
+    return formatFeedEntries(feed.entries)
 
 def buildNewsSection():
     return f"{NEWSHEADING}\n\n{fetchFeedEntries()}"
