@@ -25,19 +25,19 @@ TOOLSHEADING = "## 🧰 Tools & Technologies I Use"
 MINLANGUAGEPERCENT = 0.1 # Group all languages below this percentage under "Other"
 GITHUBLANGUAGECOLORS = {
     "C": "#555555",
-    "C++": "#F34B7D",
-    "C#": "#178600",
-    "JavaScript": "#F1E05A",
-    "TypeScript": "#3178C6",
-    "HTML": "#E34C26",
-    "CSS": "#563D7C",
-    "Java": "#B07219",
-    "PHP": "#4F5D95",
-    "SQL": "#E38C00",
-    "Python": "#3572A5",
-    "CMake": "#DA3434",
+    "C++": "#f34b7d",
+    "C#": "#7355dd",
+    "JavaScript": "#f1e05a",
+    "TypeScript": "#3178c6",
+    "HTML": "#e34c26",
+    "CSS": "#663399",
+    "Java": "#b07219",
+    "PHP": "#4f5d95",
+    "SQL": "#e38c00",
+    "Python": "#3572a5",
+    "CMake": "#da3434",
     "PowerShell": "#012456",
-    "Other": "#EDEDED",
+    "Other": "#ededed",
 }
 LEGENDICONSFOLDER = "legend-icons"
 TOPLANGUAGESSVGPATH = "top-languages.svg"
@@ -493,13 +493,13 @@ def generateReadme(outputPath: str):
 
 ![C](https://img.shields.io/badge/C-5F86AA?logo=c&logoColor=white&style=for-the-badge)
 ![C++](https://img.shields.io/badge/C++-00599C?logo=cplusplus&logoColor=white&style=for-the-badge)
-![C#](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white&style=for-the-badge)
+![C#](https://img.shields.io/badge/C%23-7355DD?style=for-the-badge)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white&style=for-the-badge)
 ![Blazor](https://img.shields.io/badge/Blazor-512BD4?logo=blazor&logoColor=white&style=for-the-badge)
 ![MudBlazor](https://img.shields.io/badge/MudBlazor-594AE2?style=for-the-badge)
 ![wxWidgets](https://img.shields.io/badge/wxWidgets-2222FF?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css&logoColor=white&style=for-the-badge)
+![CSS3](https://img.shields.io/badge/CSS3-663399?logo=css&logoColor=white&style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge)
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=white&style=for-the-badge)
