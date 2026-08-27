@@ -35,7 +35,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=tpGcLdPe4KI"><img src="https://i.ytimg.com/vi/tpGcLdPe4KI/maxresdefault.jpg" width="400" alt="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" title="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" aria-label="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026"></a>
-      <div align="right">◉ 49 views</div>
+      <div align="right">◉ 50 views</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=OBIG8NlgEOg"><img src="https://i.ytimg.com/vi/OBIG8NlgEOg/maxresdefault.jpg" width="400" alt="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" title="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" aria-label="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026"></a>
@@ -75,13 +75,13 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ![C](https://img.shields.io/badge/C-5F86AA?logo=c&logoColor=white&style=for-the-badge)
 ![C++](https://img.shields.io/badge/C++-00599C?logo=cplusplus&logoColor=white&style=for-the-badge)
-![C#](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white&style=for-the-badge)
+![C#](https://img.shields.io/badge/C%23-7355DD?style=for-the-badge)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white&style=for-the-badge)
 ![Blazor](https://img.shields.io/badge/Blazor-512BD4?logo=blazor&logoColor=white&style=for-the-badge)
 ![MudBlazor](https://img.shields.io/badge/MudBlazor-594AE2?style=for-the-badge)
 ![wxWidgets](https://img.shields.io/badge/wxWidgets-2222FF?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css&logoColor=white&style=for-the-badge)
+![CSS3](https://img.shields.io/badge/CSS3-663399?logo=css&logoColor=white&style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge)
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=white&style=for-the-badge)
