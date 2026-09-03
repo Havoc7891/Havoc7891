@@ -11,11 +11,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ## 📰 Latest News
 
+- 09/03/2026 - [havMediaControls v1.3.2.0 Released](https://havoc.de/articles/2026-09-03)
 - 08/30/2026 - [havMediaControls v1.3.1.0 Released](https://havoc.de/articles/2026-08-30)
 - 08/25/2026 - [havMediaControls v1.3.0.0 Released](https://havoc.de/articles/2026-08-25)
 - 08/23/2026 - [Website Update: Project Videos and Multiple News Entries per Day](https://havoc.de/articles/2026-08-23)
 - 08/13/2026 - [havCSON v0.4.0 Released](https://havoc.de/articles/2026-08-13)
-- 08/05/2026 - [havMediaControls v1.2.0.0 Released](https://havoc.de/articles/2026-08-05)
 
 [More news on havoc.de](https://havoc.de/articles)
 
@@ -58,11 +58,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ![Top Languages](top-languages.svg)
 
-<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 34.4%
-<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 27.9%
-<img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 20.8%
+<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 34.1%
+<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 28.7%
+<img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 20.5%
 <img src="legend-icons/legend-html.svg" width="12" height="12"> **HTML** 6.3%
-<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.6%
+<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.5%
 <img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.5%
 <img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 1.6%
 <img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.2%
