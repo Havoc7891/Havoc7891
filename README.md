@@ -49,7 +49,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=koTnosr6xOw"><img src="https://i.ytimg.com/vi/koTnosr6xOw/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" title="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" aria-label="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025"></a>
-      <div align="right">◉ 468 views</div>
+      <div align="right">◉ 469 views</div>
     </td>
   </tr>
 </table>
