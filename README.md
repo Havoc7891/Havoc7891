@@ -11,13 +11,13 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ## 📰 Latest News
 
+- 09/10/2026 - [havCSON v0.5.0 Released](https://havoc.de/articles/2026-09-10)
 - 09/05/2026
   - 09:10 PM - [Website Update: Project Versions and Shared News Tags](https://havoc.de/articles/2026-09-05-2)
   - 06:05 PM - [hav Task List v0.2.1 Released](https://havoc.de/articles/2026-09-05)
 - 09/03/2026 - [havMediaControls v1.3.2.0 Released](https://havoc.de/articles/2026-09-03)
 - 08/30/2026 - [havMediaControls v1.3.1.0 Released](https://havoc.de/articles/2026-08-30)
 - 08/25/2026 - [havMediaControls v1.3.0.0 Released](https://havoc.de/articles/2026-08-25)
-- 08/23/2026 - [Website Update: Project Videos and Multiple News Entries per Day](https://havoc.de/articles/2026-08-23)
 
 [More news on havoc.de](https://havoc.de/articles)
 
@@ -60,14 +60,14 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ![Top Languages](top-languages.svg)
 
-<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 34.0%
-<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 28.6%
-<img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 20.7%
-<img src="legend-icons/legend-html.svg" width="12" height="12"> **HTML** 6.2%
-<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.5%
-<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.5%
-<img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 1.6%
-<img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.2%
+<img src="legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 36.3%
+<img src="legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 27.6%
+<img src="legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 20.0%
+<img src="legend-icons/legend-html.svg" width="12" height="12"> **HTML** 6.0%
+<img src="legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.4%
+<img src="legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 3.3%
+<img src="legend-icons/legend-c.svg" width="12" height="12"> **C** 1.5%
+<img src="legend-icons/legend-css.svg" width="12" height="12"> **CSS** 1.1%
 <img src="legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.6%
 <img src="legend-icons/legend-cmake.svg" width="12" height="12"> **CMake** 0.1%
 
