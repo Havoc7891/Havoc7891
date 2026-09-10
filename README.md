@@ -37,7 +37,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=tpGcLdPe4KI"><img src="https://i.ytimg.com/vi/tpGcLdPe4KI/maxresdefault.jpg" width="400" alt="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" title="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" aria-label="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026"></a>
-      <div align="right">◉ 54 views</div>
+      <div align="right">◉ 55 views</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=OBIG8NlgEOg"><img src="https://i.ytimg.com/vi/OBIG8NlgEOg/maxresdefault.jpg" width="400" alt="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" title="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" aria-label="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026"></a>
@@ -47,11 +47,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=bJVEPD9KDO4"><img src="https://i.ytimg.com/vi/bJVEPD9KDO4/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026" title="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026" aria-label="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026"></a>
-      <div align="right">◉ 114 views</div>
+      <div align="right">◉ 116 views</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=koTnosr6xOw"><img src="https://i.ytimg.com/vi/koTnosr6xOw/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" title="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" aria-label="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025"></a>
-      <div align="right">◉ 469 views</div>
+      <div align="right">◉ 470 views</div>
     </td>
   </tr>
 </table>
