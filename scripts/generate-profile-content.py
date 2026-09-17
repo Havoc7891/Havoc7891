@@ -293,7 +293,8 @@ def buildLanguagesSection(languages: dict):
         iconFile = os.path.join(LEGENDICONSFOLDER, f"legend-{safeName}.svg")
         generateLegendCircleSvg(color, iconFile)
         webPath = iconFile.replace(os.sep, "/")
-        lines.append(f"<img src=\"{webPath}\" width=\"12\" height=\"12\"> **{lang}** {pct:.1f}%")
+        percentage = "<0.1" if 0 < pct < 0.1 else f"{pct:.1f}"
+        lines.append(f"<img src=\"{webPath}\" width=\"12\" height=\"12\"> **{lang}** {percentage}%")
 
     cleanupLegendIcons(languages)
 
