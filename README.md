@@ -70,7 +70,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 <img src="assets/legend-icons/legend-css.svg" width="12" height="12"> **CSS** 0.6%
 <img src="assets/legend-icons/legend-c.svg" width="12" height="12"> **C** 0.5%
 <img src="assets/legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.5%
-<img src="assets/legend-icons/legend-other.svg" width="12" height="12"> **Other** 0.0%
+<img src="assets/legend-icons/legend-other.svg" width="12" height="12"> **Other** <0.1%
 
 ## 🧰 Tools & Technologies I Use
 
