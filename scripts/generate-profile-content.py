@@ -367,7 +367,7 @@ def buildVideosSection(videos):
                 f'<img src="{video["thumb"]}" width="400" '
                 f'alt="{label}" title="{label}" aria-label="{label}">'
                 "</a>\n"
-                f'      <div align="right">◉ {video["viewCount"]} views</div>\n'
+                f'      <div align="right">▷ {video["viewCount"]} views</div>\n'
                 "    </td>\n"
             )
 
