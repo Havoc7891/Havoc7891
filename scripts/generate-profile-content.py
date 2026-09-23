@@ -307,10 +307,44 @@ def formatViewCount(value):
     count = int(value)
     for minimum, suffix in ((1_000_000_000, "B"), (1_000_000, "M"), (1_000, "K")):
         if count >= minimum:
-            compact = f"{count / minimum:.1f}".removesuffix(".0")
+            if count >= 10 * minimum:
+                return f"{count // minimum}{suffix}"
+            tenths = count * 10 // minimum
+            compact = f"{tenths // 10}.{tenths % 10}".removesuffix(".0")
             return f"{compact}{suffix}"
 
     return str(count)
+
+def formatPublishedAgo(published: datetime, now: datetime, *, compact: bool = True) -> str:
+    published = published.astimezone(timezone.utc)
+    now = now.astimezone(timezone.utc)
+    seconds = max(0, int((now - published).total_seconds()))
+
+    # Convert the year difference to months, then add the difference in month numbers
+    months = (now.year - published.year) * 12 + now.month - published.month
+    # Subtract one if we've not yet reached the publication day and time this month
+    if (now.day, now.time()) < (published.day, published.time()):
+        months -= 1
+
+    if months >= 12:
+        count, unit = months // 12, "year"
+    elif months >= 1:
+        count, unit = months, "month"
+    elif seconds >= 1_209_600:
+        count, unit = seconds // 604_800, "week"
+    else:
+        for minimum, unit in ((86_400, "day"), (3_600, "hour"), (60, "minute")):
+            if seconds >= minimum:
+                count = seconds // minimum
+                break
+        else:
+            return "Just now"
+
+    if compact:
+        suffix = {"year": "y", "month": "mo", "week": "w", "day": "d", "hour": "h", "minute": "m"}[unit]
+        return f"{count}{suffix} ago"
+
+    return f"{count} {unit}{'s' if count != 1 else ''} ago"
 
 def fetchLatestYouTubeVideos():
     url = f"https://www.youtube.com/feeds/videos.xml?channel_id={YOUTUBECHANNELID}"
@@ -327,6 +361,7 @@ def fetchLatestYouTubeVideos():
         raise DynamicContentError("YouTube RSS feed returned no videos.")
 
     videos = []
+    now = datetime.now(timezone.utc)
     for entry in entries:
         videoId = entry.get("yt_videoid")
         title = entry.get("title")
@@ -338,13 +373,15 @@ def fetchLatestYouTubeVideos():
         if not YOUTUBEVIDEOIDPATTERN.fullmatch(videoId):
             raise DynamicContentError("YouTube RSS feed returned an invalid video ID.")
 
-        published = datetime(*publishedParsed[:6]).strftime("%B %d, %Y")
+        published = datetime(*publishedParsed[:6], tzinfo=timezone.utc)
 
         videos.append({
             "title": title,
             "url": f"https://www.youtube.com/watch?v={videoId}",
             "thumb": f"https://i.ytimg.com/vi/{videoId}/maxresdefault.jpg",
-            "published": published,
+            "published": published.strftime("%B %d, %Y"),
+            "publishedAgo": formatPublishedAgo(published, now),
+            "publishedAgoLabel": formatPublishedAgo(published, now, compact=False),
             "viewCount": formatViewCount(viewCount)
         })
 
@@ -361,13 +398,17 @@ def buildVideosSection(videos):
 
         for video in videos[index:index + 2]:
             label = f'{escape(video["title"], quote=True)} | {video["published"]}'
+            viewLabel = f'{video["viewCount"]} {"view" if video["viewCount"] == "1" else "views"}'
+            metadataLabel = f'{viewLabel} | {video["published"]}'
             htmlParts.append(
                 "    <td align=\"center\" valign=\"top\">\n"
                 f'      <a href="{video["url"]}">'
                 f'<img src="{video["thumb"]}" width="400" '
                 f'alt="{label}" title="{label}" aria-label="{label}">'
                 "</a>\n"
-                f'      <div align="right">▷ {video["viewCount"]} views</div>\n'
+                f'      <div align="left" title="{metadataLabel}" '
+                f'aria-label="{viewLabel} {video["publishedAgoLabel"]}">'
+                f'▷ {video["viewCount"]}&nbsp;&nbsp;{video["publishedAgo"]}</div>\n'
                 "    </td>\n"
             )
 
