@@ -37,11 +37,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=tpGcLdPe4KI"><img src="https://i.ytimg.com/vi/tpGcLdPe4KI/maxresdefault.jpg" width="400" alt="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" title="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" aria-label="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026"></a>
-      <div align="left" title="55 views | March 25, 2026" aria-label="55 views 5 months ago">▷ 55&nbsp;&nbsp;5mo ago</div>
+      <div align="left" title="59 views | March 25, 2026" aria-label="59 views 5 months ago">▷ 59&nbsp;&nbsp;5mo ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=OBIG8NlgEOg"><img src="https://i.ytimg.com/vi/OBIG8NlgEOg/maxresdefault.jpg" width="400" alt="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" title="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" aria-label="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026"></a>
-      <div align="left" title="24 views | February 25, 2026" aria-label="24 views 6 months ago">▷ 24&nbsp;&nbsp;6mo ago</div>
+      <div align="left" title="24 views | February 25, 2026" aria-label="24 views 7 months ago">▷ 24&nbsp;&nbsp;7mo ago</div>
     </td>
   </tr>
   <tr>
