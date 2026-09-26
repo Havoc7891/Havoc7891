@@ -11,13 +11,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ## 📰 Latest News
 
+- 09/26/2026 - [havCurCtr v1.1.0.0, havWndSwitcher v1.1.0.0, and havTransparentWnd v1.1.0.0 Released](https://havoc.de/articles/2026-09-26)
 - 09/23/2026 - [Trying Out Suno](https://havoc.de/articles/2026-09-23)
 - 09/17/2026 - [havRemote v0.1.0 Released](https://havoc.de/articles/2026-09-17)
 - 09/12/2026 - [havCSON v0.5.1 Released](https://havoc.de/articles/2026-09-12)
 - 09/10/2026 - [havCSON v0.5.0 Released](https://havoc.de/articles/2026-09-10)
-- 09/05/2026
-  - 09:10 PM - [Website Update: Project Versions and Shared News Tags](https://havoc.de/articles/2026-09-05-2)
-  - 06:05 PM - [hav Task List v0.2.1 Released](https://havoc.de/articles/2026-09-05)
 
 [More news on havoc.de](https://havoc.de/articles)
 
@@ -60,12 +58,12 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ![Top Languages](top-languages.svg)
 
-<img src="assets/legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 69.7%
-<img src="assets/legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 9.8%
-<img src="assets/legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 7.1%
+<img src="assets/legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 69.4%
+<img src="assets/legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 10.1%
+<img src="assets/legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 7.0%
 <img src="assets/legend-icons/legend-html.svg" width="12" height="12"> **HTML** 4.9%
 <img src="assets/legend-icons/legend-cmake.svg" width="12" height="12"> **CMake** 3.5%
-<img src="assets/legend-icons/legend-python.svg" width="12" height="12"> **Python** 2.3%
+<img src="assets/legend-icons/legend-python.svg" width="12" height="12"> **Python** 2.2%
 <img src="assets/legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 1.2%
 <img src="assets/legend-icons/legend-css.svg" width="12" height="12"> **CSS** 0.6%
 <img src="assets/legend-icons/legend-c.svg" width="12" height="12"> **C** 0.5%
