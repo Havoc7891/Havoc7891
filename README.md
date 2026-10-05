@@ -29,7 +29,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=RAP8-QavhC4"><img src="https://i.ytimg.com/vi/RAP8-QavhC4/maxresdefault.jpg" width="400" alt="Asphalt Strike | April 04, 2026" title="Asphalt Strike | April 04, 2026" aria-label="Asphalt Strike | April 04, 2026"></a>
-      <div align="left" title="10 views | April 04, 2026" aria-label="10 views 5 months ago">▷ 10&nbsp;&nbsp;5mo ago</div>
+      <div align="left" title="10 views | April 04, 2026" aria-label="10 views 6 months ago">▷ 10&nbsp;&nbsp;6mo ago</div>
     </td>
   </tr>
   <tr>
