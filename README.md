@@ -11,11 +11,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ## 📰 Latest News
 
+- 10/09/2026 - [Exeligmos - First Look at My Fury³-Inspired Game](https://havoc.de/articles/2026-10-09)
 - 09/26/2026 - [havCurCtr v1.1.0.0, havWndSwitcher v1.1.0.0, and havTransparentWnd v1.1.0.0 Released](https://havoc.de/articles/2026-09-26)
 - 09/23/2026 - [Trying Out Suno](https://havoc.de/articles/2026-09-23)
 - 09/17/2026 - [havRemote v0.1.0 Released](https://havoc.de/articles/2026-09-17)
 - 09/12/2026 - [havCSON v0.5.1 Released](https://havoc.de/articles/2026-09-12)
-- 09/10/2026 - [havCSON v0.5.0 Released](https://havoc.de/articles/2026-09-10)
 
 [More news on havoc.de](https://havoc.de/articles)
 
@@ -24,32 +24,32 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 <table>
   <tr>
     <td align="center" valign="top">
+      <a href="https://www.youtube.com/watch?v=l7gtJysFcqQ"><img src="https://i.ytimg.com/vi/l7gtJysFcqQ/maxresdefault.jpg" width="400" alt="Exeligmos - Milestone 1 | October 09, 2026" title="Exeligmos - Milestone 1 | October 09, 2026" aria-label="Exeligmos - Milestone 1 | October 09, 2026"></a>
+      <div align="left" title="1 view | October 09, 2026" aria-label="1 view 7 minutes ago">▷ 1&nbsp;&nbsp;7m ago</div>
+    </td>
+    <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=LYvdPmw3VHs"><img src="https://i.ytimg.com/vi/LYvdPmw3VHs/maxresdefault.jpg" width="400" alt="Network Crisis | April 19, 2026" title="Network Crisis | April 19, 2026" aria-label="Network Crisis | April 19, 2026"></a>
       <div align="left" title="6 views | April 19, 2026" aria-label="6 views 5 months ago">▷ 6&nbsp;&nbsp;5mo ago</div>
     </td>
+  </tr>
+  <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=RAP8-QavhC4"><img src="https://i.ytimg.com/vi/RAP8-QavhC4/maxresdefault.jpg" width="400" alt="Asphalt Strike | April 04, 2026" title="Asphalt Strike | April 04, 2026" aria-label="Asphalt Strike | April 04, 2026"></a>
       <div align="left" title="10 views | April 04, 2026" aria-label="10 views 6 months ago">▷ 10&nbsp;&nbsp;6mo ago</div>
     </td>
-  </tr>
-  <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=tpGcLdPe4KI"><img src="https://i.ytimg.com/vi/tpGcLdPe4KI/maxresdefault.jpg" width="400" alt="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" title="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" aria-label="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026"></a>
       <div align="left" title="63 views | March 25, 2026" aria-label="63 views 6 months ago">▷ 63&nbsp;&nbsp;6mo ago</div>
     </td>
+  </tr>
+  <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=OBIG8NlgEOg"><img src="https://i.ytimg.com/vi/OBIG8NlgEOg/maxresdefault.jpg" width="400" alt="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" title="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" aria-label="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026"></a>
       <div align="left" title="24 views | February 25, 2026" aria-label="24 views 7 months ago">▷ 24&nbsp;&nbsp;7mo ago</div>
     </td>
-  </tr>
-  <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=bJVEPD9KDO4"><img src="https://i.ytimg.com/vi/bJVEPD9KDO4/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026" title="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026" aria-label="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026"></a>
       <div align="left" title="121 views | February 08, 2026" aria-label="121 views 8 months ago">▷ 121&nbsp;&nbsp;8mo ago</div>
-    </td>
-    <td align="center" valign="top">
-      <a href="https://www.youtube.com/watch?v=koTnosr6xOw"><img src="https://i.ytimg.com/vi/koTnosr6xOw/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" title="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025" aria-label="Hovertank (id Software) Source Port - Preview (December 2025) | December 26, 2025"></a>
-      <div align="left" title="484 views | December 26, 2025" aria-label="484 views 9 months ago">▷ 484&nbsp;&nbsp;9mo ago</div>
     </td>
   </tr>
 </table>
