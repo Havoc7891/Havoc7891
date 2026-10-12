@@ -25,7 +25,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=l7gtJysFcqQ"><img src="https://i.ytimg.com/vi/l7gtJysFcqQ/maxresdefault.jpg" width="400" alt="Exeligmos - Milestone 1 | October 09, 2026" title="Exeligmos - Milestone 1 | October 09, 2026" aria-label="Exeligmos - Milestone 1 | October 09, 2026"></a>
-      <div align="left" title="7 views | October 09, 2026" aria-label="7 views 1 day ago">▷ 7&nbsp;&nbsp;1d ago</div>
+      <div align="left" title="7 views | October 09, 2026" aria-label="7 views 3 days ago">▷ 7&nbsp;&nbsp;3d ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=LYvdPmw3VHs"><img src="https://i.ytimg.com/vi/LYvdPmw3VHs/maxresdefault.jpg" width="400" alt="Network Crisis | April 19, 2026" title="Network Crisis | April 19, 2026" aria-label="Network Crisis | April 19, 2026"></a>
@@ -49,7 +49,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=bJVEPD9KDO4"><img src="https://i.ytimg.com/vi/bJVEPD9KDO4/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026" title="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026" aria-label="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026"></a>
-      <div align="left" title="121 views | February 08, 2026" aria-label="121 views 8 months ago">▷ 121&nbsp;&nbsp;8mo ago</div>
+      <div align="left" title="122 views | February 08, 2026" aria-label="122 views 8 months ago">▷ 122&nbsp;&nbsp;8mo ago</div>
     </td>
   </tr>
 </table>
