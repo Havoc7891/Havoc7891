@@ -29,7 +29,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=LYvdPmw3VHs"><img src="https://i.ytimg.com/vi/LYvdPmw3VHs/maxresdefault.jpg" width="400" alt="Network Crisis | April 19, 2026" title="Network Crisis | April 19, 2026" aria-label="Network Crisis | April 19, 2026"></a>
-      <div align="left" title="6 views | April 19, 2026" aria-label="6 views 5 months ago">▷ 6&nbsp;&nbsp;5mo ago</div>
+      <div align="left" title="6 views | April 19, 2026" aria-label="6 views 6 months ago">▷ 6&nbsp;&nbsp;6mo ago</div>
     </td>
   </tr>
   <tr>
