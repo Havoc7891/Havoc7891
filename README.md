@@ -25,7 +25,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=l7gtJysFcqQ"><img src="https://i.ytimg.com/vi/l7gtJysFcqQ/maxresdefault.jpg" width="400" alt="Exeligmos - Milestone 1 | October 09, 2026" title="Exeligmos - Milestone 1 | October 09, 2026" aria-label="Exeligmos - Milestone 1 | October 09, 2026"></a>
-      <div align="left" title="20 views | October 09, 2026" aria-label="20 views 10 days ago">▷ 20&nbsp;&nbsp;10d ago</div>
+      <div align="left" title="20 views | October 09, 2026" aria-label="20 views 11 days ago">▷ 20&nbsp;&nbsp;11d ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=LYvdPmw3VHs"><img src="https://i.ytimg.com/vi/LYvdPmw3VHs/maxresdefault.jpg" width="400" alt="Network Crisis | April 19, 2026" title="Network Crisis | April 19, 2026" aria-label="Network Crisis | April 19, 2026"></a>
