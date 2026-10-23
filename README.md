@@ -25,7 +25,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=l7gtJysFcqQ"><img src="https://i.ytimg.com/vi/l7gtJysFcqQ/maxresdefault.jpg" width="400" alt="Exeligmos - Milestone 1 | October 09, 2026" title="Exeligmos - Milestone 1 | October 09, 2026" aria-label="Exeligmos - Milestone 1 | October 09, 2026"></a>
-      <div align="left" title="20 views | October 09, 2026" aria-label="20 views 12 days ago">▷ 20&nbsp;&nbsp;12d ago</div>
+      <div align="left" title="21 views | October 09, 2026" aria-label="21 views 13 days ago">▷ 21&nbsp;&nbsp;13d ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=LYvdPmw3VHs"><img src="https://i.ytimg.com/vi/LYvdPmw3VHs/maxresdefault.jpg" width="400" alt="Network Crisis | April 19, 2026" title="Network Crisis | April 19, 2026" aria-label="Network Crisis | April 19, 2026"></a>
@@ -39,7 +39,7 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=tpGcLdPe4KI"><img src="https://i.ytimg.com/vi/tpGcLdPe4KI/maxresdefault.jpg" width="400" alt="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" title="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" aria-label="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026"></a>
-      <div align="left" title="64 views | March 25, 2026" aria-label="64 views 6 months ago">▷ 64&nbsp;&nbsp;6mo ago</div>
+      <div align="left" title="65 views | March 25, 2026" aria-label="65 views 6 months ago">▷ 65&nbsp;&nbsp;6mo ago</div>
     </td>
   </tr>
   <tr>
