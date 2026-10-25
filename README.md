@@ -11,17 +11,35 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ## 📰 Latest News
 
+- 10/25/2026 - [havGamePatcher v0.1.0 Released and Revisiting the SideWinder 3D Pro](https://havoc.de/articles/2026-10-25)
 - 10/09/2026 - [Exeligmos - First Look at My Fury³-Inspired Game](https://havoc.de/articles/2026-10-09)
 - 09/26/2026 - [havCurCtr v1.1.0.0, havWndSwitcher v1.1.0.0, and havTransparentWnd v1.1.0.0 Released](https://havoc.de/articles/2026-09-26)
 - 09/23/2026 - [Trying Out Suno](https://havoc.de/articles/2026-09-23)
 - 09/17/2026 - [havRemote v0.1.0 Released](https://havoc.de/articles/2026-09-17)
-- 09/12/2026 - [havCSON v0.5.1 Released](https://havoc.de/articles/2026-09-12)
 
 [More news on havoc.de](https://havoc.de/articles)
+
+## 🎬 Featured Video
+
+<a href="https://www.youtube.com/watch?v=l7gtJysFcqQ"><img src="https://i.ytimg.com/vi/l7gtJysFcqQ/maxresdefault.jpg" width="800" alt="Exeligmos - Milestone 1" title="Exeligmos - Milestone 1" aria-label="Exeligmos - Milestone 1"></a>
+
+<strong><a href="https://www.youtube.com/watch?v=l7gtJysFcqQ">Exeligmos - Milestone 1</a></strong>
+
+A first look at my Fury³-inspired game, Exeligmos.
 
 ## 📹 Latest Videos
 
 <table>
+  <tr>
+    <td align="center" valign="top">
+      <a href="https://www.youtube.com/watch?v=5n2FRqAc4hI"><img src="https://i.ytimg.com/vi/5n2FRqAc4hI/maxresdefault.jpg" width="400" alt="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
+      <div align="left" title="1 view | October 25, 2026" aria-label="1 view 17 minutes ago">▷ 1&nbsp;&nbsp;17m ago</div>
+    </td>
+    <td align="center" valign="top">
+      <a href="https://www.youtube.com/watch?v=c3teE9b7Sfw"><img src="https://i.ytimg.com/vi/c3teE9b7Sfw/maxresdefault.jpg" width="400" alt="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
+      <div align="left" title="0 views | October 25, 2026" aria-label="0 views 17 minutes ago">▷ 0&nbsp;&nbsp;17m ago</div>
+    </td>
+  </tr>
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=l7gtJysFcqQ"><img src="https://i.ytimg.com/vi/l7gtJysFcqQ/maxresdefault.jpg" width="400" alt="Exeligmos - Milestone 1 | October 09, 2026" title="Exeligmos - Milestone 1 | October 09, 2026" aria-label="Exeligmos - Milestone 1 | October 09, 2026"></a>
@@ -42,32 +60,22 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
       <div align="left" title="65 views | March 25, 2026" aria-label="65 views 6 months ago">▷ 65&nbsp;&nbsp;6mo ago</div>
     </td>
   </tr>
-  <tr>
-    <td align="center" valign="top">
-      <a href="https://www.youtube.com/watch?v=OBIG8NlgEOg"><img src="https://i.ytimg.com/vi/OBIG8NlgEOg/maxresdefault.jpg" width="400" alt="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" title="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026" aria-label="GCR - Milestone 1 (GTA 1-Style Game) | February 25, 2026"></a>
-      <div align="left" title="24 views | February 25, 2026" aria-label="24 views 8 months ago">▷ 24&nbsp;&nbsp;8mo ago</div>
-    </td>
-    <td align="center" valign="top">
-      <a href="https://www.youtube.com/watch?v=bJVEPD9KDO4"><img src="https://i.ytimg.com/vi/bJVEPD9KDO4/maxresdefault.jpg" width="400" alt="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026" title="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026" aria-label="Hovertank (id Software) Source Port - Mod Manager &amp; Test Mod Demo (February 2026) | February 08, 2026"></a>
-      <div align="left" title="124 views | February 08, 2026" aria-label="124 views 8 months ago">▷ 124&nbsp;&nbsp;8mo ago</div>
-    </td>
-  </tr>
 </table>
 
 ## 📊 Top Languages Across My Public GitHub Repositories
 
 ![Top Languages](top-languages.svg)
 
-<img src="assets/legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 69.4%
-<img src="assets/legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 10.1%
-<img src="assets/legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 7.0%
-<img src="assets/legend-icons/legend-html.svg" width="12" height="12"> **HTML** 4.9%
-<img src="assets/legend-icons/legend-cmake.svg" width="12" height="12"> **CMake** 3.5%
-<img src="assets/legend-icons/legend-python.svg" width="12" height="12"> **Python** 2.2%
-<img src="assets/legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 1.2%
-<img src="assets/legend-icons/legend-css.svg" width="12" height="12"> **CSS** 0.6%
-<img src="assets/legend-icons/legend-c.svg" width="12" height="12"> **C** 0.5%
-<img src="assets/legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 0.5%
+<img src="assets/legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 83.3%
+<img src="assets/legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 4.5%
+<img src="assets/legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.2%
+<img src="assets/legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 3.1%
+<img src="assets/legend-icons/legend-html.svg" width="12" height="12"> **HTML** 2.1%
+<img src="assets/legend-icons/legend-cmake.svg" width="12" height="12"> **CMake** 1.7%
+<img src="assets/legend-icons/legend-powershell.svg" width="12" height="12"> **PowerShell** 1.0%
+<img src="assets/legend-icons/legend-javascript.svg" width="12" height="12"> **JavaScript** 0.5%
+<img src="assets/legend-icons/legend-css.svg" width="12" height="12"> **CSS** 0.2%
+<img src="assets/legend-icons/legend-c.svg" width="12" height="12"> **C** 0.2%
 <img src="assets/legend-icons/legend-other.svg" width="12" height="12"> **Other** <0.1%
 
 ## 🧰 Tools & Technologies I Use
