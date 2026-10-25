@@ -21,6 +21,7 @@ READMEPATH = "README.md"
 DEFAULTOUTPUTPATH = "generated-profile-content.md"
 REQUESTTIMEOUT = 20
 NEWSHEADING = "## 📰 Latest News"
+FEATUREDVIDEOHEADING = "## 🎬 Featured Video"
 VIDEOSHEADING = "## 📹 Latest Videos"
 LANGUAGESHEADING = "## 📊 Top Languages Across My Public GitHub Repositories"
 TOOLSHEADING = "## 🧰 Tools & Technologies I Use"
@@ -46,6 +47,9 @@ TOPLANGUAGESSVGPATH = "top-languages.svg"
 YOUTUBECHANNELID = "UCaGa30jV6OWFpjBWY3r4GWQ"
 YOUTUBEMAXENTRIES = 6
 YOUTUBEVIDEOIDPATTERN = re.compile(r"^[A-Za-z0-9_-]{11}$")
+FEATUREDVIDEOID = "l7gtJysFcqQ"
+FEATUREDVIDEOTITLE = "Exeligmos - Milestone 1"
+FEATUREDVIDEODESCRIPTION = "A first look at my Fury³-inspired game, Exeligmos."
 
 class DynamicContentError(RuntimeError):
     pass
@@ -387,6 +391,19 @@ def fetchLatestYouTubeVideos():
 
     return videos
 
+def buildFeaturedVideoSection():
+    title = escape(FEATUREDVIDEOTITLE, quote=True)
+    url = f"https://www.youtube.com/watch?v={FEATUREDVIDEOID}"
+    thumbnail = f"https://i.ytimg.com/vi/{FEATUREDVIDEOID}/maxresdefault.jpg"
+
+    return (
+        f"{FEATUREDVIDEOHEADING}\n\n"
+        f'<a href="{url}"><img src="{thumbnail}" width="800" '
+        f'alt="{title}" title="{title}" aria-label="{title}"></a>\n\n'
+        f'<strong><a href="{url}">{title}</a></strong>\n\n'
+        f"{escape(FEATUREDVIDEODESCRIPTION)}"
+    )
+
 def buildVideosSection(videos):
     if not videos:
         raise DynamicContentError("No recent videos are available.")
@@ -527,7 +544,7 @@ def generateReadme(outputPath: str):
     newsSection = buildSectionOrPreserve(
         "Latest News",
         NEWSHEADING,
-        VIDEOSHEADING,
+        FEATUREDVIDEOHEADING,
         buildNewsSection,
     )
 
@@ -645,6 +662,8 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 - **[havIDE](https://havoc.de/project/havIDE)**: An integrated development environment (IDE) for C++ projects, currently in development
 
 {newsSection}
+
+{buildFeaturedVideoSection()}
 
 {videosSection}
 
