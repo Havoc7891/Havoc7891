@@ -33,17 +33,17 @@ A first look at my Fury³-inspired game, Exeligmos.
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=5n2FRqAc4hI"><img src="https://i.ytimg.com/vi/5n2FRqAc4hI/maxresdefault.jpg" width="400" alt="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="1 view | October 25, 2026" aria-label="1 view 17 minutes ago">▷ 1&nbsp;&nbsp;17m ago</div>
+      <div align="left" title="7 views | October 25, 2026" aria-label="7 views 21 hours ago">▷ 7&nbsp;&nbsp;21h ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=c3teE9b7Sfw"><img src="https://i.ytimg.com/vi/c3teE9b7Sfw/maxresdefault.jpg" width="400" alt="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="0 views | October 25, 2026" aria-label="0 views 17 minutes ago">▷ 0&nbsp;&nbsp;17m ago</div>
+      <div align="left" title="3 views | October 25, 2026" aria-label="3 views 21 hours ago">▷ 3&nbsp;&nbsp;21h ago</div>
     </td>
   </tr>
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=l7gtJysFcqQ"><img src="https://i.ytimg.com/vi/l7gtJysFcqQ/maxresdefault.jpg" width="400" alt="Exeligmos - Milestone 1 | October 09, 2026" title="Exeligmos - Milestone 1 | October 09, 2026" aria-label="Exeligmos - Milestone 1 | October 09, 2026"></a>
-      <div align="left" title="21 views | October 09, 2026" aria-label="21 views 2 weeks ago">▷ 21&nbsp;&nbsp;2w ago</div>
+      <div align="left" title="22 views | October 09, 2026" aria-label="22 views 2 weeks ago">▷ 22&nbsp;&nbsp;2w ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=LYvdPmw3VHs"><img src="https://i.ytimg.com/vi/LYvdPmw3VHs/maxresdefault.jpg" width="400" alt="Network Crisis | April 19, 2026" title="Network Crisis | April 19, 2026" aria-label="Network Crisis | April 19, 2026"></a>
@@ -57,7 +57,7 @@ A first look at my Fury³-inspired game, Exeligmos.
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=tpGcLdPe4KI"><img src="https://i.ytimg.com/vi/tpGcLdPe4KI/maxresdefault.jpg" width="400" alt="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" title="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" aria-label="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026"></a>
-      <div align="left" title="65 views | March 25, 2026" aria-label="65 views 6 months ago">▷ 65&nbsp;&nbsp;6mo ago</div>
+      <div align="left" title="65 views | March 25, 2026" aria-label="65 views 7 months ago">▷ 65&nbsp;&nbsp;7mo ago</div>
     </td>
   </tr>
 </table>
