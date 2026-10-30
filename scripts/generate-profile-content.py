@@ -613,7 +613,7 @@ def generateReadme(outputPath: str):
 ![VS Code](https://img.shields.io/badge/VS_Code-007acc?logo=visualstudiocode&logoColor=white&style=for-the-badge)
 ![Copilot Studio](https://img.shields.io/badge/Copilot_Studio-13b4d7?style=for-the-badge)
 ![CodeLite](https://img.shields.io/badge/CodeLite-3a4557?style=for-the-badge)
-![C++ Builder](https://img.shields.io/badge/C++_Builder-e62431?logo=cplusplusbuilder&logoColor=white&style=for-the-badge)
+![C++ Builder](https://img.shields.io/badge/C%2B%2B_Builder-e62431?logo=cplusplusbuilder&logoColor=white&style=for-the-badge)
 ![Lazygit](https://img.shields.io/badge/Lazygit-303030?style=for-the-badge)
 ![CMake](https://img.shields.io/badge/CMake-da3434?logo=cmake&logoColor=white&style=for-the-badge)
 ![Figma](https://img.shields.io/badge/Figma-f24e1e?logo=figma&logoColor=white&style=for-the-badge)
