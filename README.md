@@ -33,11 +33,11 @@ A first look at my Fury³-inspired game, Exeligmos.
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=5n2FRqAc4hI"><img src="https://i.ytimg.com/vi/5n2FRqAc4hI/maxresdefault.jpg" width="400" alt="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="20 views | October 25, 2026" aria-label="20 views 3 days ago">▷ 20&nbsp;&nbsp;3d ago</div>
+      <div align="left" title="22 views | October 25, 2026" aria-label="22 views 4 days ago">▷ 22&nbsp;&nbsp;4d ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=c3teE9b7Sfw"><img src="https://i.ytimg.com/vi/c3teE9b7Sfw/maxresdefault.jpg" width="400" alt="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="9 views | October 25, 2026" aria-label="9 views 3 days ago">▷ 9&nbsp;&nbsp;3d ago</div>
+      <div align="left" title="11 views | October 25, 2026" aria-label="11 views 4 days ago">▷ 11&nbsp;&nbsp;4d ago</div>
     </td>
   </tr>
   <tr>
@@ -128,7 +128,7 @@ A first look at my Fury³-inspired game, Exeligmos.
 ![VS Code](https://img.shields.io/badge/VS_Code-007acc?logo=visualstudiocode&logoColor=white&style=for-the-badge)
 ![Copilot Studio](https://img.shields.io/badge/Copilot_Studio-13b4d7?style=for-the-badge)
 ![CodeLite](https://img.shields.io/badge/CodeLite-3a4557?style=for-the-badge)
-![C++ Builder](https://img.shields.io/badge/C++_Builder-e62431?logo=cplusplusbuilder&logoColor=white&style=for-the-badge)
+![C++ Builder](https://img.shields.io/badge/C%2B%2B_Builder-e62431?logo=cplusplusbuilder&logoColor=white&style=for-the-badge)
 ![Lazygit](https://img.shields.io/badge/Lazygit-303030?style=for-the-badge)
 ![CMake](https://img.shields.io/badge/CMake-da3434?logo=cmake&logoColor=white&style=for-the-badge)
 ![Figma](https://img.shields.io/badge/Figma-f24e1e?logo=figma&logoColor=white&style=for-the-badge)
