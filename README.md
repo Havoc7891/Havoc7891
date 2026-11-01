@@ -33,11 +33,11 @@ A first look at my Fury³-inspired game, Exeligmos.
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=5n2FRqAc4hI"><img src="https://i.ytimg.com/vi/5n2FRqAc4hI/maxresdefault.jpg" width="400" alt="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="26 views | October 25, 2026" aria-label="26 views 5 days ago">▷ 26&nbsp;&nbsp;5d ago</div>
+      <div align="left" title="27 views | October 25, 2026" aria-label="27 views 6 days ago">▷ 27&nbsp;&nbsp;6d ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=c3teE9b7Sfw"><img src="https://i.ytimg.com/vi/c3teE9b7Sfw/maxresdefault.jpg" width="400" alt="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="17 views | October 25, 2026" aria-label="17 views 5 days ago">▷ 17&nbsp;&nbsp;5d ago</div>
+      <div align="left" title="18 views | October 25, 2026" aria-label="18 views 6 days ago">▷ 18&nbsp;&nbsp;6d ago</div>
     </td>
   </tr>
   <tr>
@@ -57,7 +57,7 @@ A first look at my Fury³-inspired game, Exeligmos.
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=tpGcLdPe4KI"><img src="https://i.ytimg.com/vi/tpGcLdPe4KI/maxresdefault.jpg" width="400" alt="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" title="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" aria-label="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026"></a>
-      <div align="left" title="66 views | March 25, 2026" aria-label="66 views 7 months ago">▷ 66&nbsp;&nbsp;7mo ago</div>
+      <div align="left" title="68 views | March 25, 2026" aria-label="68 views 7 months ago">▷ 68&nbsp;&nbsp;7mo ago</div>
     </td>
   </tr>
 </table>
