@@ -33,11 +33,11 @@ A first look at my Fury³-inspired game, Exeligmos.
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=5n2FRqAc4hI"><img src="https://i.ytimg.com/vi/5n2FRqAc4hI/maxresdefault.jpg" width="400" alt="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="27 views | October 25, 2026" aria-label="27 views 6 days ago">▷ 27&nbsp;&nbsp;6d ago</div>
+      <div align="left" title="30 views | October 25, 2026" aria-label="30 views 8 days ago">▷ 30&nbsp;&nbsp;8d ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=c3teE9b7Sfw"><img src="https://i.ytimg.com/vi/c3teE9b7Sfw/maxresdefault.jpg" width="400" alt="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="18 views | October 25, 2026" aria-label="18 views 6 days ago">▷ 18&nbsp;&nbsp;6d ago</div>
+      <div align="left" title="18 views | October 25, 2026" aria-label="18 views 8 days ago">▷ 18&nbsp;&nbsp;8d ago</div>
     </td>
   </tr>
   <tr>
