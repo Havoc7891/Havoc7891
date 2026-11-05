@@ -33,11 +33,11 @@ A first look at my Fury³-inspired game, Exeligmos.
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=5n2FRqAc4hI"><img src="https://i.ytimg.com/vi/5n2FRqAc4hI/maxresdefault.jpg" width="400" alt="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="32 views | October 25, 2026" aria-label="32 views 9 days ago">▷ 32&nbsp;&nbsp;9d ago</div>
+      <div align="left" title="33 views | October 25, 2026" aria-label="33 views 10 days ago">▷ 33&nbsp;&nbsp;10d ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=c3teE9b7Sfw"><img src="https://i.ytimg.com/vi/c3teE9b7Sfw/maxresdefault.jpg" width="400" alt="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="18 views | October 25, 2026" aria-label="18 views 9 days ago">▷ 18&nbsp;&nbsp;9d ago</div>
+      <div align="left" title="19 views | October 25, 2026" aria-label="19 views 10 days ago">▷ 19&nbsp;&nbsp;10d ago</div>
     </td>
   </tr>
   <tr>
@@ -53,7 +53,7 @@ A first look at my Fury³-inspired game, Exeligmos.
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=RAP8-QavhC4"><img src="https://i.ytimg.com/vi/RAP8-QavhC4/maxresdefault.jpg" width="400" alt="Asphalt Strike | April 04, 2026" title="Asphalt Strike | April 04, 2026" aria-label="Asphalt Strike | April 04, 2026"></a>
-      <div align="left" title="10 views | April 04, 2026" aria-label="10 views 6 months ago">▷ 10&nbsp;&nbsp;6mo ago</div>
+      <div align="left" title="10 views | April 04, 2026" aria-label="10 views 7 months ago">▷ 10&nbsp;&nbsp;7mo ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=tpGcLdPe4KI"><img src="https://i.ytimg.com/vi/tpGcLdPe4KI/maxresdefault.jpg" width="400" alt="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" title="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" aria-label="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026"></a>
