@@ -57,7 +57,7 @@ A first look at my Fury³-inspired game, Exeligmos.
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=tpGcLdPe4KI"><img src="https://i.ytimg.com/vi/tpGcLdPe4KI/maxresdefault.jpg" width="400" alt="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" title="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" aria-label="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026"></a>
-      <div align="left" title="73 views | March 25, 2026" aria-label="73 views 7 months ago">▷ 73&nbsp;&nbsp;7mo ago</div>
+      <div align="left" title="72 views | March 25, 2026" aria-label="72 views 7 months ago">▷ 72&nbsp;&nbsp;7mo ago</div>
     </td>
   </tr>
 </table>
