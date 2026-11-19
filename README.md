@@ -33,7 +33,7 @@ A first look at my Fury³-inspired game, Exeligmos.
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=5n2FRqAc4hI"><img src="https://i.ytimg.com/vi/5n2FRqAc4hI/maxresdefault.jpg" width="400" alt="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="46 views | October 25, 2026" aria-label="46 views 3 weeks ago">▷ 46&nbsp;&nbsp;3w ago</div>
+      <div align="left" title="47 views | October 25, 2026" aria-label="47 views 3 weeks ago">▷ 47&nbsp;&nbsp;3w ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=c3teE9b7Sfw"><img src="https://i.ytimg.com/vi/c3teE9b7Sfw/maxresdefault.jpg" width="400" alt="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
@@ -47,7 +47,7 @@ A first look at my Fury³-inspired game, Exeligmos.
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=LYvdPmw3VHs"><img src="https://i.ytimg.com/vi/LYvdPmw3VHs/maxresdefault.jpg" width="400" alt="Network Crisis | April 19, 2026" title="Network Crisis | April 19, 2026" aria-label="Network Crisis | April 19, 2026"></a>
-      <div align="left" title="6 views | April 19, 2026" aria-label="6 views 6 months ago">▷ 6&nbsp;&nbsp;6mo ago</div>
+      <div align="left" title="6 views | April 19, 2026" aria-label="6 views 7 months ago">▷ 6&nbsp;&nbsp;7mo ago</div>
     </td>
   </tr>
   <tr>
