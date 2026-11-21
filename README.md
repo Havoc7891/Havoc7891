@@ -37,7 +37,7 @@ A first look at my Fury³-inspired game, Exeligmos.
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=c3teE9b7Sfw"><img src="https://i.ytimg.com/vi/c3teE9b7Sfw/maxresdefault.jpg" width="400" alt="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="28 views | October 25, 2026" aria-label="28 views 3 weeks ago">▷ 28&nbsp;&nbsp;3w ago</div>
+      <div align="left" title="29 views | October 25, 2026" aria-label="29 views 3 weeks ago">▷ 29&nbsp;&nbsp;3w ago</div>
     </td>
   </tr>
   <tr>
