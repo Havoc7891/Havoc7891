@@ -11,11 +11,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ## 📰 Latest News
 
+- 11/21/2026 - [Reckless Road - Milestone 1 of My Road Rash-Style Game](https://havoc.de/articles/2026-11-21)
 - 11/08/2026 - [havOPL v0.1.0 Released](https://havoc.de/articles/2026-11-08)
 - 10/25/2026 - [havGamePatcher v0.1.0 Released and Revisiting the SideWinder 3D Pro](https://havoc.de/articles/2026-10-25)
 - 10/09/2026 - [Exeligmos - First Look at My Fury³-Inspired Game](https://havoc.de/articles/2026-10-09)
 - 09/26/2026 - [havCurCtr v1.1.0.0, havWndSwitcher v1.1.0.0, and havTransparentWnd v1.1.0.0 Released](https://havoc.de/articles/2026-09-26)
-- 09/23/2026 - [Trying Out Suno](https://havoc.de/articles/2026-09-23)
 
 [More news on havoc.de](https://havoc.de/articles)
 
@@ -32,32 +32,32 @@ A first look at my Fury³-inspired game, Exeligmos.
 <table>
   <tr>
     <td align="center" valign="top">
+      <a href="https://www.youtube.com/watch?v=5cOj5ihNvDA"><img src="https://i.ytimg.com/vi/5cOj5ihNvDA/maxresdefault.jpg" width="400" alt="Reckless Road - Milestone 1 | November 21, 2026" title="Reckless Road - Milestone 1 | November 21, 2026" aria-label="Reckless Road - Milestone 1 | November 21, 2026"></a>
+      <div align="left" title="0 views | November 21, 2026" aria-label="0 views 7 minutes ago">▷ 0&nbsp;&nbsp;7m ago</div>
+    </td>
+    <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=5n2FRqAc4hI"><img src="https://i.ytimg.com/vi/5n2FRqAc4hI/maxresdefault.jpg" width="400" alt="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
       <div align="left" title="47 views | October 25, 2026" aria-label="47 views 3 weeks ago">▷ 47&nbsp;&nbsp;3w ago</div>
     </td>
+  </tr>
+  <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=c3teE9b7Sfw"><img src="https://i.ytimg.com/vi/c3teE9b7Sfw/maxresdefault.jpg" width="400" alt="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
       <div align="left" title="29 views | October 25, 2026" aria-label="29 views 3 weeks ago">▷ 29&nbsp;&nbsp;3w ago</div>
     </td>
-  </tr>
-  <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=l7gtJysFcqQ"><img src="https://i.ytimg.com/vi/l7gtJysFcqQ/maxresdefault.jpg" width="400" alt="Exeligmos - Milestone 1 | October 09, 2026" title="Exeligmos - Milestone 1 | October 09, 2026" aria-label="Exeligmos - Milestone 1 | October 09, 2026"></a>
       <div align="left" title="24 views | October 09, 2026" aria-label="24 views 1 month ago">▷ 24&nbsp;&nbsp;1mo ago</div>
     </td>
+  </tr>
+  <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=LYvdPmw3VHs"><img src="https://i.ytimg.com/vi/LYvdPmw3VHs/maxresdefault.jpg" width="400" alt="Network Crisis | April 19, 2026" title="Network Crisis | April 19, 2026" aria-label="Network Crisis | April 19, 2026"></a>
       <div align="left" title="6 views | April 19, 2026" aria-label="6 views 7 months ago">▷ 6&nbsp;&nbsp;7mo ago</div>
     </td>
-  </tr>
-  <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=RAP8-QavhC4"><img src="https://i.ytimg.com/vi/RAP8-QavhC4/maxresdefault.jpg" width="400" alt="Asphalt Strike | April 04, 2026" title="Asphalt Strike | April 04, 2026" aria-label="Asphalt Strike | April 04, 2026"></a>
       <div align="left" title="10 views | April 04, 2026" aria-label="10 views 7 months ago">▷ 10&nbsp;&nbsp;7mo ago</div>
-    </td>
-    <td align="center" valign="top">
-      <a href="https://www.youtube.com/watch?v=tpGcLdPe4KI"><img src="https://i.ytimg.com/vi/tpGcLdPe4KI/maxresdefault.jpg" width="400" alt="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" title="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026" aria-label="RR - Road Rash-Style Pseudo 3D Engine | March 25, 2026"></a>
-      <div align="left" title="73 views | March 25, 2026" aria-label="73 views 7 months ago">▷ 73&nbsp;&nbsp;7mo ago</div>
     </td>
   </tr>
 </table>
