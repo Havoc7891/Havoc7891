@@ -11,11 +11,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ## 📰 Latest News
 
+- 11/22/2026 - [havSF2 v0.1.0 Released](https://havoc.de/articles/2026-11-22)
 - 11/21/2026 - [Reckless Road - Milestone 1 of My Road Rash-Style Game](https://havoc.de/articles/2026-11-21)
 - 11/08/2026 - [havOPL v0.1.0 Released](https://havoc.de/articles/2026-11-08)
 - 10/25/2026 - [havGamePatcher v0.1.0 Released and Revisiting the SideWinder 3D Pro](https://havoc.de/articles/2026-10-25)
 - 10/09/2026 - [Exeligmos - First Look at My Fury³-Inspired Game](https://havoc.de/articles/2026-10-09)
-- 09/26/2026 - [havCurCtr v1.1.0.0, havWndSwitcher v1.1.0.0, and havTransparentWnd v1.1.0.0 Released](https://havoc.de/articles/2026-09-26)
 
 [More news on havoc.de](https://havoc.de/articles)
 
@@ -33,7 +33,7 @@ A first look at my Fury³-inspired game, Exeligmos.
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=5cOj5ihNvDA"><img src="https://i.ytimg.com/vi/5cOj5ihNvDA/maxresdefault.jpg" width="400" alt="Reckless Road - Milestone 1 | November 21, 2026" title="Reckless Road - Milestone 1 | November 21, 2026" aria-label="Reckless Road - Milestone 1 | November 21, 2026"></a>
-      <div align="left" title="48 views | November 21, 2026" aria-label="48 views 21 hours ago">▷ 48&nbsp;&nbsp;21h ago</div>
+      <div align="left" title="48 views | November 21, 2026" aria-label="48 views 22 hours ago">▷ 48&nbsp;&nbsp;22h ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=5n2FRqAc4hI"><img src="https://i.ytimg.com/vi/5n2FRqAc4hI/maxresdefault.jpg" width="400" alt="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
@@ -66,9 +66,9 @@ A first look at my Fury³-inspired game, Exeligmos.
 
 ![Top Languages](top-languages.svg)
 
-<img src="assets/legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 83.4%
+<img src="assets/legend-icons/legend-cplusplus.svg" width="12" height="12"> **C++** 83.6%
 <img src="assets/legend-icons/legend-csharp.svg" width="12" height="12"> **C#** 4.4%
-<img src="assets/legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.2%
+<img src="assets/legend-icons/legend-python.svg" width="12" height="12"> **Python** 3.1%
 <img src="assets/legend-icons/legend-typescript.svg" width="12" height="12"> **TypeScript** 3.1%
 <img src="assets/legend-icons/legend-html.svg" width="12" height="12"> **HTML** 2.1%
 <img src="assets/legend-icons/legend-cmake.svg" width="12" height="12"> **CMake** 1.7%
