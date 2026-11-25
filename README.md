@@ -11,11 +11,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ## 📰 Latest News
 
+- 11/25/2026 - [A New Look for My Avatar](https://havoc.de/articles/2026-11-25)
 - 11/22/2026 - [havSF2 v0.1.0 Released](https://havoc.de/articles/2026-11-22)
 - 11/21/2026 - [Reckless Road - Milestone 1 of My Road Rash-Style Game](https://havoc.de/articles/2026-11-21)
 - 11/08/2026 - [havOPL v0.1.0 Released](https://havoc.de/articles/2026-11-08)
 - 10/25/2026 - [havGamePatcher v0.1.0 Released and Revisiting the SideWinder 3D Pro](https://havoc.de/articles/2026-10-25)
-- 10/09/2026 - [Exeligmos - First Look at My Fury³-Inspired Game](https://havoc.de/articles/2026-10-09)
 
 [More news on havoc.de](https://havoc.de/articles)
 
@@ -37,7 +37,7 @@ A first look at my Fury³-inspired game, Exeligmos.
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=5n2FRqAc4hI"><img src="https://i.ytimg.com/vi/5n2FRqAc4hI/maxresdefault.jpg" width="400" alt="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="50 views | October 25, 2026" aria-label="50 views 4 weeks ago">▷ 50&nbsp;&nbsp;4w ago</div>
+      <div align="left" title="53 views | October 25, 2026" aria-label="53 views 4 weeks ago">▷ 53&nbsp;&nbsp;4w ago</div>
     </td>
   </tr>
   <tr>
