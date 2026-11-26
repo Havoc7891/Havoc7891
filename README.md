@@ -11,11 +11,11 @@ My name is **René "Havoc" Nicolaus**. I'm a Senior Software Engineer and Indie 
 
 ## 📰 Latest News
 
+- 11/26/2026 - [havCSON v0.6.0 Released](https://havoc.de/articles/2026-11-26)
 - 11/25/2026 - [A New Look for My Avatar](https://havoc.de/articles/2026-11-25)
 - 11/22/2026 - [havSF2 v0.1.0 Released](https://havoc.de/articles/2026-11-22)
 - 11/21/2026 - [Reckless Road - Milestone 1 of My Road Rash-Style Game](https://havoc.de/articles/2026-11-21)
 - 11/08/2026 - [havOPL v0.1.0 Released](https://havoc.de/articles/2026-11-08)
-- 10/25/2026 - [havGamePatcher v0.1.0 Released and Revisiting the SideWinder 3D Pro](https://havoc.de/articles/2026-10-25)
 
 [More news on havoc.de](https://havoc.de/articles)
 
@@ -33,17 +33,17 @@ A first look at my Fury³-inspired game, Exeligmos.
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=5cOj5ihNvDA"><img src="https://i.ytimg.com/vi/5cOj5ihNvDA/maxresdefault.jpg" width="400" alt="Reckless Road - Milestone 1 | November 21, 2026" title="Reckless Road - Milestone 1 | November 21, 2026" aria-label="Reckless Road - Milestone 1 | November 21, 2026"></a>
-      <div align="left" title="51 views | November 21, 2026" aria-label="51 views 4 days ago">▷ 51&nbsp;&nbsp;4d ago</div>
+      <div align="left" title="51 views | November 21, 2026" aria-label="51 views 5 days ago">▷ 51&nbsp;&nbsp;5d ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=5n2FRqAc4hI"><img src="https://i.ytimg.com/vi/5n2FRqAc4hI/maxresdefault.jpg" width="400" alt="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="54 views | October 25, 2026" aria-label="54 views 1 month ago">▷ 54&nbsp;&nbsp;1mo ago</div>
+      <div align="left" title="56 views | October 25, 2026" aria-label="56 views 1 month ago">▷ 56&nbsp;&nbsp;1mo ago</div>
     </td>
   </tr>
   <tr>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=c3teE9b7Sfw"><img src="https://i.ytimg.com/vi/c3teE9b7Sfw/maxresdefault.jpg" width="400" alt="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Fury3 on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="31 views | October 25, 2026" aria-label="31 views 1 month ago">▷ 31&nbsp;&nbsp;1mo ago</div>
+      <div align="left" title="32 views | October 25, 2026" aria-label="32 views 1 month ago">▷ 32&nbsp;&nbsp;1mo ago</div>
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=l7gtJysFcqQ"><img src="https://i.ytimg.com/vi/l7gtJysFcqQ/maxresdefault.jpg" width="400" alt="Exeligmos - Milestone 1 | October 09, 2026" title="Exeligmos - Milestone 1 | October 09, 2026" aria-label="Exeligmos - Milestone 1 | October 09, 2026"></a>
