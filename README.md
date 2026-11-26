@@ -37,7 +37,7 @@ A first look at my Fury³-inspired game, Exeligmos.
     </td>
     <td align="center" valign="top">
       <a href="https://www.youtube.com/watch?v=5n2FRqAc4hI"><img src="https://i.ytimg.com/vi/5n2FRqAc4hI/maxresdefault.jpg" width="400" alt="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" title="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026" aria-label="Hellbender on Windows 11: Joystick &amp; Fullscreen Fixes with havGamePatcher | October 25, 2026"></a>
-      <div align="left" title="53 views | October 25, 2026" aria-label="53 views 1 month ago">▷ 53&nbsp;&nbsp;1mo ago</div>
+      <div align="left" title="54 views | October 25, 2026" aria-label="54 views 1 month ago">▷ 54&nbsp;&nbsp;1mo ago</div>
     </td>
   </tr>
   <tr>
